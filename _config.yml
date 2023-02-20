@@ -85,10 +85,10 @@ author:
   name             : "Jannis Strecker"
   avatar           : "profile.jpg"
   bio              : "PhD Student"
-  location         :
-  employer         :
+  location         : "St.Gallen, Stwitzerland"
+  employer         : "University of St.Gallen"
   pubmed           :
-  orcid            : "https://orcid.org/0000-0001-7607-8064l"
+  orcid            : "https://orcid.org/0000-0001-7607-8064"
   googlescholar    : "https://scholar.google.com/citations?user=OhhyXBwAAAAJ"
   email            : "jannisrene.strecker@unisg.ch"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
@@ -113,7 +113,7 @@ author:
   stackoverflow    : #"https://stackoverflow.com/users/10912314/jayrobwilliams"
   steam            :
   tumblr           :
-  twitter          : 
+  twitter          : jannis_strecker
   vine             :
   weibo            :
   xing             :
