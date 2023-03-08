@@ -6,6 +6,16 @@
    Typography
    ========================================================================== */
 
+
+@font-face {
+      font-family: 'Manrope';
+      src: asset-url('./fonts/Manrope-Regular.woff2');
+      src: asset-url('./fonts/Manrope-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+}
+
+
 $doc-font-size              : 16;
 
 /* paragraph indention */
@@ -14,7 +24,7 @@ $indent-var                 : 1.3em;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif;
-$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$sans-serif                 : "Manrope", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
