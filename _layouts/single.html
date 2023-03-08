@@ -70,10 +70,14 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+        {% if page.abstract %}
+            <h3>Abstract</h3>
+            <blockquote> {{ page.abstract }} </blockquote>
+        {% endif %}
         {{ content }}
         <div>
-          {% if page.paperurl %}<a href="{{ page.paperurl }}" class="btn">Download Paper</a>{% endif %}
-          {% if page.link %}<a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a>{% endif %}
+          {% if page.paperurl %}<a href="{{ page.paperurl }}" target="_blank" class="btn text-decoration-none">Download Paper</a>{% endif %}
+          {% if page.link %}<a href="{{ page.link }}" target="_blank" class="btn btn-info text-decoration-none">Link to Published Paper</a>{% endif %}
         </div>
       </section>
 
