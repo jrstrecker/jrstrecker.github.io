@@ -14,6 +14,18 @@
       font-weight: normal;
       font-style: normal;
 }
+@font-face {
+   font-family: 'Alice';
+   src: asset-url('./fonts/Alice-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Inter';
+   src: asset-url('./fonts/Inter-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
 
 
 $doc-font-size              : 16;
@@ -23,8 +35,8 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 1.3em;
 
 /* system typefaces */
-$serif                      : Georgia, Times, serif;
-$sans-serif                 : "Manrope", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$serif                      : "Alice", Georgia, Times, serif;
+$sans-serif                 : "Inter", "Manrope", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
 $monospace                  : Monaco, Consolas, "Lucida Console", monospace;
 
 /* sans serif typefaces */
@@ -39,7 +51,7 @@ $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
 $global-font-family         : $sans-serif;
-$header-font-family         : $sans-serif;
+$header-font-family         : $serif;
 $caption-font-family        : $serif;
 
 /* type scale */
