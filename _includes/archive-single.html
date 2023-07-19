@@ -46,7 +46,7 @@
       <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.collection == 'publications' %}
       {% if post.abstract %}
-        <details><summary><i class="fa fa-fw fa-file-alt fa-info-color" aria-hidden="true"> </i>Abstract</i></summary>
+        <details><summary><i class="fa fa-fw fa-file-alt fa-info-color" aria-hidden="true"> </i> Abstract</summary>
         <blockquote>
         <p>
         {{ post.abstract }}
@@ -58,7 +58,7 @@
       <!-- citation and icon code -->
       <p>
       {% if post.citation %}
-      <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i>Reference</i></summary>
+      <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Reference</summary>
         <blockquote>
         <p>
         {{ post.citation }}
