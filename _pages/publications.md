@@ -13,12 +13,12 @@ author_profile: true
 
 {% capture written_year %}{{'None'}}{% endcapture %}
 {% for post in site.publications reversed %}
+  <div class="list__item">
    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
     {% if year != written_year %}
-    <div>
     <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    </div>
     {% capture written_year %}{{ year }}{% endcapture %}
   {% endif %}
+  </div>
   {% include archive-single.html %}
 {% endfor %}
