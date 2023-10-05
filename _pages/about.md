@@ -10,7 +10,7 @@ redirect_from:
 
 Hi there! I’m a second year PhD Student in Computer Science at the [University of St. Gallen](https://unisg.ch) in Switzerland in the lab for [Interactions- and Communication-based Systems](https://interactions.ics.unisg.ch). 
 
-In my research I explore the following concepts:
+My research is a combination of the following areas:
 - Mixed Reality
 - Ubiquitous Computing
 - Personalization
@@ -20,4 +20,4 @@ In my research I explore the following concepts:
 - Technology Acceptance
 
 
-For updates on what I'm doing, have a look at my [Publications](./publications), follow me on the Fediverse ([https://hci.social/@jannis](https://hci.social/@jannis), or contact me via email ([jannisrene.strecker@unisg.ch](mailto:jannisrene.strecker@unisg.ch)). 😀
+For updates on what I'm doing, have a look at my [Publications](./publications), follow me on the Fediverse ([https://hci.social/@jannis](https://hci.social/@jannis)), or contact me via email ([jannisrene.strecker@unisg.ch](mailto:jannisrene.strecker@unisg.ch)). 😀
