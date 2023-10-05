@@ -20,5 +20,4 @@ In my research I explore the following concepts:
 - Technology Acceptance
 
 
-
-(This website is under progress, so expect more to be found here in the future.)
+For updates on what I'm doing, have a look at my [Publications](./publications), follow me on the Fediverse ([https://hci.social/@jannis](https://hci.social/@jannis), or contact me via email ([jannisrene.strecker@unisg.ch](mailto:jannisrene.strecker@unisg.ch)). 😀
