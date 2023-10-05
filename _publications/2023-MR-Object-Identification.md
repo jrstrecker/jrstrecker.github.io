@@ -11,6 +11,6 @@ abstract: 'The increasing number of objects in ubiquitous computing environments
 code: https://github.com/Interactions-HSG/blearvis
 ---
 
-<details><summary><i class="fa fa-fw fa-film fa-info-color" aria-hidden="true"></i> Short Demo Video</summary>
+<details open><summary><i class="fa fa-fw fa-film fa-info-color" aria-hidden="true"></i> Short Demo Video</summary>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pmwpOFGvSwc?si=HBNIOHo0Rtze_Ziu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  </details>
