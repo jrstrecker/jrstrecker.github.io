@@ -38,15 +38,12 @@
     </h2>
 
     {% if post.venue %}
-    <details open>
-      <summary><i class="fas fa-info-circle fa-info-color"></i> Venue</summary>
-      <p>
-      {{ post.venue }} 
-      </p>
-      <p>
-      <i>Date: {{ post.date | default: "1900-01-01" | date: "%Y-%m-%d" }}</i>
-      </p>
-      </details>
+    <p>
+      <i class="fas fa-info-circle fa-info-color"></i> 
+      In: {{ post.venue }} ({{ post.date | date: "%Y-%m-%d" }})
+    </p>
+      
+    
     {% endif %}
     <p></p>
 
