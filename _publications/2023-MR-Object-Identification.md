@@ -2,7 +2,7 @@
 title: "MR Object Identification and Interaction: Fusing Object Situation Information from Heterogeneous Sources"
 collection: publications
 permalink: /publication/2022-MR-Object-Identification
-date: 2023-09-03
+date: 2023-09-27
 venue: 'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies'
 paperurl: '/files/pdf/research/2023-Sharing-P-MR.pdf'
 link: 'https://www.alexandria.unisg.ch/handle/20.500.14171/117736'
