@@ -63,6 +63,8 @@ summary:before {
   transform-origin: .2rem 50%;
   transition: .25s transform ease;
 }
+
+/*
 details[open] summary ~ * {
   animation: sweep .5s ease-in-out;
 }
@@ -71,6 +73,10 @@ details[open] summary ~ * {
   0%    {opacity: 0; margin-left: -10px}
   100%  {opacity: 1; margin-left: 0px}
 }
+*/
 
+details {
+  transition: height 1s ease;
+}
 
 details summary::-webkit-details-marker { display:none; }
