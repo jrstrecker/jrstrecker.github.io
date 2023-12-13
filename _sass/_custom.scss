@@ -42,3 +42,35 @@
 .fa-info-color {
   color: $info-color;
 }
+
+
+summary {
+  background: #ecebeb;
+  padding: 5px 8px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  top: 1.3rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-left: -10px}
+  100%  {opacity: 1; margin-left: 0px}
+}
+
+
+details summary::-webkit-details-marker { display:none; }
