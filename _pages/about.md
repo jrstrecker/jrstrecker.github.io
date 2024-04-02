@@ -25,9 +25,9 @@ follow me on the Fediverse ([https://hci.social/@jannis](https://hci.social/@jan
 or contact me via email ([jannisrene.strecker@unisg.ch](mailto:jannisrene.strecker@unisg.ch)). 😀
 
 
-## Recent Publications
+## 📑 Recent Publications
 
-{% for post in site.publications reversed limit:3%}
+{% for post in site.publications limit:3 reversed%}
   {% include archive-single.html %}
 {% endfor %}
 
