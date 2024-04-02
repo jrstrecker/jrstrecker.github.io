@@ -27,6 +27,8 @@ or contact me via email ([jannisrene.strecker@unisg.ch](mailto:jannisrene.streck
 
 ## Recent Publications
 
-{% for post in site.publications limit:5 %}
-- {{ post.title }}, {{ post.venue }}
+{% for post in site.publications reversed limit:5%}
+  {% include archive-single.html %}
 {% endfor %}
+
+<a href="./publications" target="_blank" class="btn btn--light text-decoration-none">See all publications</a>
