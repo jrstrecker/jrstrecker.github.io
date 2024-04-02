@@ -90,8 +90,21 @@ details summary::-webkit-details-marker { display:none; }
   background: #fbf8f8;
   padding: 10px 15px;
   border-radius: 5px;
+  margin: 1em 0;
 }
 
 .publications-list-item h2 {
-  font-weight: 400 !important;
+  font-weight: 600 !important;
+  margin: 0.5em 0;
+}
+
+.btn--info-outline {
+  border: 1px solid #2979ab !important;
+  background-color: transparent;
+  color: #2979ab !important;
+}
+
+.btn--info-outline:hover {
+  background-color: #2979ab !important;
+  color: #fff !important;
 }
