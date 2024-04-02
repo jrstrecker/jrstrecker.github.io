@@ -84,3 +84,14 @@ details summary::-webkit-details-marker { display:none; }
 .page__content a {
   text-decoration: none !important;
 }
+
+
+.publications-list-item {
+  background: #fbf8f8;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.publications-list-item h2 {
+  font-weight: 400 !important;
+}
