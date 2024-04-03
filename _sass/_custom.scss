@@ -136,3 +136,32 @@ details summary::-webkit-details-marker { display:none; }
 .greedy-nav .visible-links a::before {
   background: #fff !important;
 }
+
+article details p {
+  padding: 0.25em 0.7em;
+  text-align: justify;
+}
+
+article .info-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+article .info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+article .info-title {
+  font-weight: bold;
+}
+
+article .info-description {
+  text-align: right;
+}

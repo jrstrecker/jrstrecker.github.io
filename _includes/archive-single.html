@@ -37,13 +37,34 @@
       {% endif %}
     </h2>
 
-    {% if post.venue %}
+    <!-- {% if post.venue %}
     <p> 
       In: {{ post.venue }} ({{ post.date | date: "%Y-%m-%d" }})
-    </p>
-      
-    
+    </p> -->
+    {% if post.venue or post.date %}
+    <div class="info-card">
+      {% if post.venue %}
+      <div class="info-item">
+        <h4 class="info-title">In</h4>
+        <p class="info-description">{{ post.venue }} </p>
+      </div>
+      {% endif %}
+      {% if post.date %}
+      <div class="info-item">
+        <h4 class="info-title">Date</h4>
+        <p class="info-description">{{ post.date | date: "%Y-%m-%d" }}</p>
+      </div>
+      {% endif %}
+      {% if post.authors %}
+      <div class="info-item">
+        <h4 class="info-title">Authors</h4>
+        <p class="info-description">{{ post.authors }}</p>
+      </div>
+      {% endif %}
+    </div>
     {% endif %}
+    
+    
     <p></p>
 
     {% if post.read_time %}
