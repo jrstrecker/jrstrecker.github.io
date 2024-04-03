@@ -52,7 +52,7 @@
       {% if post.date %}
       <div class="info-item">
         <p class="info-title">Date</p>
-        <p class="info-description">{{ post.date | date: "%Y-%m-%d" }}</p>
+        <p class="info-description">{{ post.date | date: "%B %d, %Y" }}</p>
       </div>
       {% endif %}
       {% if post.authors %}
