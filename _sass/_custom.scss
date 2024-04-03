@@ -142,6 +142,7 @@ article details p {
   text-align: justify;
 }
 
+
 .info-card {
   display: flex;
   flex-direction: column;
@@ -159,12 +160,21 @@ article details p {
 }
 
 .info-title {
-  font-size: 1.2em;
-  color: #333;
+  font-size: 1em;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
 .info-description {
   font-size: 1em;
   color: #666;
+}
+
+@media (min-width: 768px) {
+  .info-card {
+    flex-direction: row;
+  }
+  .info-item {
+    flex: 1;
+  }
 }
