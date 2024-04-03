@@ -142,26 +142,29 @@ article details p {
   text-align: justify;
 }
 
-article .info-card {
+.info-card {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
+  gap: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
-article .info-item {
+.info-item {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  flex-direction: column;
+  gap: 10px;
 }
 
-article .info-title {
-  font-weight: bold;
+.info-title {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 5px;
 }
 
-article .info-description {
-  text-align: right;
+.info-description {
+  font-size: 1em;
+  color: #666;
 }
