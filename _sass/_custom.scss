@@ -125,7 +125,7 @@ details summary::-webkit-details-marker { display:none; }
 .greedy-nav {
   background: #d9d9d924;
   border-radius: 5px;
-  padding: 0.5em;
+  padding: 0.5em 1em;
 }
 .greedy-nav a {
   color: #575c60 !important;
@@ -148,6 +148,12 @@ article details p {
 
 article details .video-container {
   padding: 0.7em;
+}
+
+article details pre {
+  margin: 0.5em 1em;
+  background: #fafafa;
+  padding: 0.5em;
 }
 
 .info-card {

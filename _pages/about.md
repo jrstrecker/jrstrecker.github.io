@@ -11,7 +11,7 @@ redirect_from:
 I’m a second year PhD Student in Computer Science at the [University of St. Gallen](https://unisg.ch) in Switzerland \
 in the lab for [Interactions- and Communication-based Systems](https://interactions.ics.unisg.ch). 
 
-My research is a combination of the following areas:
+My research combines the following areas:
 - Mixed Reality
 - Ubiquitous Computing
 - Personalization
