@@ -85,12 +85,19 @@
       <!-- citation and icon code -->
       <p>
       {% if post.citation %}
-      <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Reference</summary>
+      <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Full Reference</summary>
         <blockquote>
         <p>
         {{ post.citation }}
         </p>
       </blockquote>
+      </details>
+      {% endif %}
+      {% if post.bib %}
+      <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> BibTex Reference</summary>
+        <pre>
+        {{ post.bib }}
+        </pre>
       </details>
       {% endif %}
       <!-- {% if post.excerpt %}
@@ -141,7 +148,7 @@
       {% if post.github %}
         <a href="{{ post.github }}"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
       {% endif %}
-      </p>
+    </p>
     {% elsif post.collection == 'posts' and post.date %}
       <p class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
     {% endif %}
