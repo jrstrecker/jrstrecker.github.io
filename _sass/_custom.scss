@@ -112,10 +112,10 @@ details summary::-webkit-details-marker { display:none; }
 }
 
 .author__urls li {
-  font-size: 1em !important;
+  font-size: 0.9em !important;
 }
 .author__urls li i {
-  font-size: 1.5em !important;
+  font-size: 1em !important;
 }
 
 .masthead {
@@ -123,18 +123,19 @@ details summary::-webkit-details-marker { display:none; }
 }
 
 .greedy-nav {
-  background: #2979ab;
-  padding: 1em 1em;
+  background: #d9d9d924;
+  border-radius: 5px;
+  padding: 0.5em;
 }
 .greedy-nav a {
-  color: #fff !important;
+  color: #575c60 !important;
 }
 .greedy-nav a:hover {
-  color: #fff !important;
+  color: #2979ab !important;
 }
 
 .greedy-nav .visible-links a::before {
-  background: #fff !important;
+  background: #2979ab !important;
 }
 
 article details p {
