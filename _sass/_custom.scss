@@ -137,7 +137,10 @@ details summary::-webkit-details-marker { display:none; }
 .greedy-nav .visible-links a::before {
   background: #2979ab !important;
 }
-
+.greedy-nav button {
+  top: 0 !important;
+  height: 98% !important;
+}
 article details p {
   padding: 0.25em 0.7em;
   text-align: justify;
