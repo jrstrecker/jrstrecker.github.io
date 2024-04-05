@@ -17,7 +17,9 @@ bib: |
     year = {2024},
     langid = {english},
     doi = {10.1145/3613905.3650795},
-    publisher = {ACM}
+    publisher = {ACM},
+    location = {Honolulu, HI, USA},
+    series = {CHI EA '24}
     }
 ---
 

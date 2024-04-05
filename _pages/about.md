@@ -33,4 +33,4 @@ or contact me via email: [jannisrene.strecker@unisg.ch](mailto:jannisrene.streck
   {% include archive-single.html %}
 {% endfor %}
 
-<a href="./publications" target="_blank" class="btn btn--light btn--large text-decoration-none">See all publications</a>
+<a href="./publications" target="_top" class="btn btn--light btn--large text-decoration-none">See all publications</a>
