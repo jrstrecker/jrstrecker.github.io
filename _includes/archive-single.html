@@ -85,7 +85,7 @@
       <!-- citation and icon code -->
       <p>
       {% if post.citation %}
-      <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Full Reference</summary>
+      <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Text Reference</summary>
         <blockquote>
         <p>
         {{ post.citation }}
@@ -94,10 +94,8 @@
       </details>
       {% endif %}
       {% if post.bib %}
-      <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> BibTex Reference</summary>
-        <pre>
-        {{ post.bib }}
-        </pre>
+      <details><summary><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="true"> </i> BibTex Reference</summary>
+        <pre>{{ post.bib }}</pre>
       </details>
       {% endif %}
       <!-- {% if post.excerpt %}
