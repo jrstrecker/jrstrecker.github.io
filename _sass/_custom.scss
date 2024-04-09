@@ -98,6 +98,9 @@ details summary::-webkit-details-marker { display:none; }
 .publications-list-item h2 {
   font-weight: 600 !important;
   margin: 0.5em 0;
+  font-size: 1.4em !important;
+  padding: 0.5em;
+  border-bottom: 2px dotted #2979ab;
 }
 
 .btn--info-outline {
@@ -159,6 +162,7 @@ article details pre {
 .info-card {
   display: flex;
   flex-direction: column;
+  margin-bottom: 0.75em;
   // gap: 20px;
   // background-color: #f9f9f9;
   // padding: 0.25em 0.5em;
