@@ -129,6 +129,7 @@ details summary::-webkit-details-marker { display:none; }
   background: #d9d9d924;
   border-radius: 5px;
   padding: 0.5em 1em;
+  box-shadow: 5px 5px #88888824;
 }
 .greedy-nav a {
   color: #575c60 !important;
@@ -144,6 +145,16 @@ details summary::-webkit-details-marker { display:none; }
   top: 0 !important;
   height: 98% !important;
 }
+
+.about-box {
+  border: 1px solid #fafafa !important;
+  // box-shadow: 5px 5px #88888824;
+  box-shadow: 5px 5px #2979ab1c;
+  background: #fdfdfd;
+  border-radius: 5px;
+  padding: 1em;
+}
+
 article details p {
   padding: 0.25em 0.7em;
   text-align: justify;

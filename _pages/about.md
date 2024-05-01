@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
+<div class="about-box">
 I’m a second year PhD Student in Computer Science at the [University of St. Gallen](https://unisg.ch) in Switzerland in the lab for [Interactions- and Communication-based Systems](https://interactions.ics.unisg.ch). 
 
 My research combines the following areas:
@@ -15,7 +15,7 @@ My research combines the following areas:
 - Ubiquitous Computing
 - Personalization
 - Privacy
-- Internet of Things
+- Algorithms and Society
 - Computer Vision
 - Technology Acceptance
 
@@ -23,7 +23,7 @@ My research combines the following areas:
 For updates on what I'm doing, have a look at the [Publications](./publications) of my colleagues and me,
 follow me on the Fediverse: [https://hci.social/@jannis](https://hci.social/@jannis),
 or contact me via email: [jannisrene.strecker@unisg.ch](mailto:jannisrene.strecker@unisg.ch). 😀
-
+</div>
 
 ## 📑 Recent Publications
 
