@@ -7,7 +7,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-<div class="about-box">
+<div class="about-box"  markdown="1">
+
 I’m a second year PhD Student in Computer Science at the [University of St. Gallen](https://unisg.ch) in Switzerland in the lab for [Interactions- and Communication-based Systems](https://interactions.ics.unisg.ch). 
 
 My research combines the following areas:
