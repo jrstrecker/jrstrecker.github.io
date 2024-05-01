@@ -1,8 +1,8 @@
 ---
 title: "NeighboAR: Efficient Object Retrieval using Proximity-and Gaze-based Object Grouping with an AR System"
 collection: publications
-permalink: /publication/2022-NeighboAR
-date: 2023-05-04
+permalink: /publication/2024-NeighboAR
+date: 2024-06-04
 venue: 'Proceedings of the ACM on Human-Computer Interaction (ETRA)'
 paperurl: '/files/pdf/research/2024-NeighboAR.pdf'
 link: 'https://www.alexandria.unisg.ch/handle/20.500.14171/119906' 
