@@ -153,6 +153,11 @@ article details .video-container {
   padding: 0.7em;
 }
 
+article details .fluid-width-video-wrapper {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 article details pre {
   margin: 0.5em 1em;
   background: #fafafa;

@@ -20,8 +20,8 @@ My research combines the following areas:
 - Technology Acceptance
 
 
-For updates on what I'm doing, have a look at the [Publications](./publications) of my colleagues and me, \
-follow me on the Fediverse: [https://hci.social/@jannis](https://hci.social/@jannis), \
+For updates on what I'm doing, have a look at the [Publications](./publications) of my colleagues and me,
+follow me on the Fediverse: [https://hci.social/@jannis](https://hci.social/@jannis),
 or contact me via email: [jannisrene.strecker@unisg.ch](mailto:jannisrene.strecker@unisg.ch). 😀
 
 
