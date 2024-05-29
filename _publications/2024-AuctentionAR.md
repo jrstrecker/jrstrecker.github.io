@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/2024-AuctentionAR
 date: 2024-05-11
 venue: 'Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’24)'
-link: 'https://www.alexandria.unisg.ch/handle/20.500.14171/119777' 
+link: 'https://doi.org/10.1145/3613905.3650941' 
 paperurl: '/files/pdf/research/2024-AuctentionAR.pdf'
 authors: "Adrian Pandjaitan, Jannis Strecker, Kenan Bektaş, and Simon Mayer"
 citation: 'Adrian Pandjaitan, Jannis Strecker, Kenan Bektaş, and Simon Mayer. 2024. AuctentionAR - Auctioning Off Visual Attention in Mixed Reality. In Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’24), May 11–16, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, 6 pages. https://doi.org/10.1145/3613905.3650941'
