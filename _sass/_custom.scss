@@ -241,3 +241,12 @@ article details pre {
   -ms-transform: scaleX(0);
   transform: scaleX(0);
 }
+
+.paper-type {
+  /* border: 1px solid #2979ab; */
+  border-radius: 4px;
+  padding: 0.5em 0.7em;
+  font-size: .8em;
+  margin: 0.5em;
+  background: #fafafa;
+}

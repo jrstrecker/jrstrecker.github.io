@@ -26,6 +26,8 @@
       </div>
     {% endif %}
 
+   
+
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.collection == 'publications' %}
         {{ title }}
@@ -47,6 +49,9 @@
       <div class="info-item">
         <p class="info-title">In</p>
         <p class="info-description">{{ post.venue }} </p>
+        {% if post.papertype  %}
+        <div class="paper-type">{{ post.papertype }}</div>
+        {% endif %}
       </div>
       {% endif %}
       {% if post.date %}

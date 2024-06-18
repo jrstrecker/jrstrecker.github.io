@@ -2,8 +2,9 @@
 title: "NeighboAR: Efficient Object Retrieval using Proximity-and Gaze-based Object Grouping with an AR System"
 collection: publications
 permalink: /publication/2024-NeighboAR
-date: 2024-06-04
+date: 2024-05-28
 venue: 'Proceedings of the ACM on Human-Computer Interaction (ETRA)'
+papertype: "Journal"
 paperurl: '/files/pdf/research/2024-NeighboAR.pdf'
 link: 'https://doi.org/10.1145/3655599' 
 authors: "Aleksandar Slavuljica, Kenan Bektaş, Jannis Strecker, and Simon Mayer"
