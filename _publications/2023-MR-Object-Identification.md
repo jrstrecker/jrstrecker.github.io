@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/2022-MR-Object-Identification
 date: 2023-09-27
 venue: 'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies'
+papertype: "Journal"
 paperurl: '/files/pdf/research/2023-Sharing-P-MR.pdf'
 link: 'https://www.alexandria.unisg.ch/handle/20.500.14171/117736'
 authors: "Jannis Strecker, Khakim Akhunov, Federico Carbone, Kimberly García, Kenan Bektaş, Andres Gomez, Simon Mayer, and Kasim Sinan Yildirim"

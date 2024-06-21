@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/2022-Sharing-P-MR
 date: 2023-09-03
 venue: 'ABIS 2023 - 27th International Workshop on Personalization and Recommendation at Mensch und Computer 2023'
+papertype: "Workshop"
 paperurl: '/files/pdf/research/2023-Sharing-P-MR.pdf'
 link: 'https://doi.org/10.18420/muc2023-mci-ws12-263'
 authors: "Jannis Strecker, Simon Mayer, and Kenan Bektas"

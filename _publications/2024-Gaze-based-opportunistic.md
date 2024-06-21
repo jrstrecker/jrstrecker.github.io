@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/2024-Gaze-based-opportunistic
 date: 2024-05-11
 venue: 'Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’24)'
+papertype: "Conference"
 link: 'https://doi.org/10.1145/3613905.3651066' 
 paperurl: '/files/pdf/research/2024-GOPHAC.pdf'
 authors: "Jan Grau, Simon Mayer, Jannis Strecker, Kimberly Garcia, and Kenan Bektaş"

@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/2024-AuctentionAR
 date: 2024-05-11
 venue: 'Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’24)'
+papertype: "Conference"
 link: 'https://doi.org/10.1145/3613905.3650941' 
 paperurl: '/files/pdf/research/2024-AuctentionAR.pdf'
 authors: "Adrian Pandjaitan, Jannis Strecker, Kenan Bektaş, and Simon Mayer"
