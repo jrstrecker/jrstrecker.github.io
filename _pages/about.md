@@ -20,6 +20,10 @@ My research combines the following areas:
 - Computer Vision
 - Technology Acceptance
 
+Next to my main PhD topic _Personalized Reality_, I work with colleagues on related topics, I am teaching assistant for multiple lectures (see [Teaching](./teaching)), and I am co-supervising Bachelor- and Master Theses.
+
+I have been reviewing for multiple conferences and journals, including CHI, IMWUT, UbiComp, and Mensch und Computer. I was an AC at MuC'24 and got two Special Recognitions for Outstanding Reviews (CHI'24 LBW, MuC'24 Short Paper) so far.
+
 
 For updates on what I'm doing, have a look at the [Publications](./publications) of my colleagues and me,
 follow me on the Fediverse: [https://hci.social/@jannis](https://hci.social/@jannis),
