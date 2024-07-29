@@ -103,10 +103,13 @@ details summary::-webkit-details-marker { display:none; }
   border-bottom: 2px dotted #2979ab !important;
 }
 
+
 .btn--info-outline {
   border: 1px solid #2979ab !important;
   background-color: transparent;
   color: #2979ab !important;
+  font-weight: 400 !important;
+  font-size: 0.85em;
 }
 
 .btn--info-outline:hover {
