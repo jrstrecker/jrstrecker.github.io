@@ -38,7 +38,7 @@ layout: default
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <!-- <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>-->
         {% elsif page.date and page.read_time %}
           <p class="page__date">
             <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time>
@@ -64,7 +64,12 @@ layout: default
         </header>
       {% endunless %}
 
-      <section class="page__content" itemprop="text">
+      
+      {% if page.citation %}
+      <section class="page__content publications-list-item" itemprop="text">
+        {% else %}
+        <section class="page__content" itemprop="text"></section>
+        {% endif %}
         {% if page.toc %}
           <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
             <nav class="toc">
@@ -78,8 +83,34 @@ layout: default
             <blockquote> {{ page.abstract }} </blockquote>
         {% endif %} -->
 
+        {% if page.venue or page.date %}
+    <div class="info-card">
+      {% if page.venue %}
+      <div class="info-item">
+        <p class="info-title">In</p>
+        <p class="info-description">{{ page.venue }} </p>
+        {% if page.papertype  %}
+        <div class="paper-type">{{ page.papertype }}</div>
+        {% endif %}
+      </div>
+      {% endif %}
+      {% if page.date %}
+      <div class="info-item">
+        <p class="info-title">Date</p>
+        <p class="info-description">{{ page.date | date: "%B %d, %Y" }}</p>
+      </div>
+      {% endif %}
+      {% if page.authors %}
+      <div class="info-item">
+        <p class="info-title">Authors</p>
+        <p class="info-description">{{ page.authors }}</p>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
         {% if page.abstract %}
-        <details><summary><i class="fa fa-fw fa-file-alt fa-info-color" aria-hidden="true"> </i> Abstract</summary>
+        <details open><summary><i class="fa fa-fw fa-file-alt fa-info-color" aria-hidden="true"> </i> Abstract</summary>
         <p>
         {{ page.abstract }}
         </p>
@@ -87,7 +118,7 @@ layout: default
       {% endif %}
 
         {% if page.citation %}
-        <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="false"> </i> Text Reference</summary>
+        <details open><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Text Reference</summary>
           <blockquote>
           <p>
           {{ page.citation }}
@@ -98,7 +129,7 @@ layout: default
 
         {% if page.bib %}
         <p></p>
-        <details><summary><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="false"> </i> BibTex Reference</summary>
+        <details open><summary><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="true"> </i> BibTex Reference</summary>
           <pre>{{ page.bib }}</pre>
         </details>
         {% endif %}

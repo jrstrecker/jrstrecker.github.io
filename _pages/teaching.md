@@ -4,7 +4,7 @@ title: "Teaching"
 ---
 
 ## Theses
-I was co-supervisng the following theses:
+I was co-supervising the following theses:
 
 - 2024
     - Filter Bubbles in Personalized Recommender Systems (Master). Related paper: [SOAP](/publication/2024-FilterBubbles).
