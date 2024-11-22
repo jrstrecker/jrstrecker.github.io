@@ -48,18 +48,18 @@ layout: default
           <p class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
         
-        <!-- {% if page.citation  %}
-        <p>Recommended citation: <br> {{ page.citation }} </p>
-        {% endif %} -->
+        {% if page.citation  %}
+        <!-- <p>Recommended citation: <br> {{ page.citation }} </p> -->
+        {% endif %}
 
        
         
-        <!-- {% if page.citation and page.paperurl %}
-          <p>Recommended citation: <br> {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
+         {% if page.citation and page.paperurl %}
+          <!-- <p>Recommended citation: <br> {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p> -->
         {% elsif page.citation %}
-          <p>Recommended citation: <br> {{ page.citation }} </p>
+          <!--  <p>Recommended citation: <br> {{ page.citation }} </p> -->
         {% endif %}
-        -->
+        
     
         </header>
       {% endunless %}
@@ -78,50 +78,49 @@ layout: default
             <blockquote> {{ page.abstract }} </blockquote>
         {% endif %} -->
 
-        {% if post.abstract %}
+        {% if page.abstract %}
         <details><summary><i class="fa fa-fw fa-file-alt fa-info-color" aria-hidden="true"> </i> Abstract</summary>
         <p>
-        {{ post.abstract }}
+        {{ page.abstract }}
         </p>
         </details>
       {% endif %}
 
-        {% if post.citation %}
+        {% if page.citation %}
         <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="false"> </i> Text Reference</summary>
           <blockquote>
           <p>
-          {{ post.citation }}
+          {{ page.citation }}
           </p>
         </blockquote>
         </details>
         {% endif %}
 
-        {% if post.bib %}
+        {% if page.bib %}
         <p></p>
         <details><summary><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="false"> </i> BibTex Reference</summary>
-          <pre>{{ post.bib }}</pre>
+          <pre>{{ page.bib }}</pre>
         </details>
         {% endif %}
 
         {{ content }}
         <div>
           <!-- {% if page.paperurl %}<a href="{{ page.paperurl }}" target="_blank" class="btn text-decoration-none">Download Paper</a>{% endif %}
-          {% if page.link %}<a href="{{ page.link }}" target="_blank" class="btn btn-info text-decoration-none">Link to Published Paper</a>{% endif %}
-        -->
-          {% if post.link %}
+          {% if page.link %}<a href="{{ page.link }}" target="_blank" class="btn btn-info text-decoration-none">Link to Published Paper</a>{% endif %} -->
+          {% if page.link %}
           <!-- <a href="{{ post.link }}"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i> Link to paper</a> -->
-          <a href="{{ post.link }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i> Link to Published Paper</a>
+          <a href="{{ page.link }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i> Link to Published Paper</a>
         {% endif %}
-        {% if post.paperurl %}
+        {% if page.paperurl %}
           <!-- <a href="{{ post.paperurl }}"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i> Download paper</a> -->
-          <a href="{{ post.paperurl }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i> Download Paper</a>
+          <a href="{{ page.paperurl }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i> Download Paper</a>
         {% endif %}
-        {% if post.code %}
+        {% if page.code %}
           <!-- <a href="{{ post.code }}"><i class="fas fa-fw fa-code zoom" aria-hidden="true"></i></a> -->
-          <a href="{{ post.code }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-code zoom" aria-hidden="true"></i> Link to Code</a>
+          <a href="{{ page.code }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-code zoom" aria-hidden="true"></i> Link to Code</a>
         {% endif %}
-        {% if post.github %}
-          <a href="{{ post.github }}"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
+        {% if page.github %}
+          <a href="{{ page.github }}"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
         {% endif %}
         
         </div>
