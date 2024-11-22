@@ -163,9 +163,11 @@ layout: default
         {% include page__taxonomy.html %}
       </footer>
 
+      <a href="./publications" target="_top" class="btn btn--light btn--large text-decoration-none">See all publications</a>
+
       {% if page.share %}{% include social-share.html %}{% endif %}
 
-      {% include post_pagination.html %}
+      <!-- {% include post_pagination.html %}-->
     </div>
 
     {% if site.comments.provider and page.comments %}
