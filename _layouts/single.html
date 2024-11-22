@@ -118,7 +118,7 @@ layout: default
       {% endif %}
 
         {% if page.citation %}
-        <details open><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Text Reference</summary>
+        <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Text Reference</summary>
           <blockquote>
           <p>
           {{ page.citation }}
@@ -128,8 +128,7 @@ layout: default
         {% endif %}
 
         {% if page.bib %}
-        <p></p>
-        <details open><summary><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="true"> </i> BibTex Reference</summary>
+        <details><summary><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="true"> </i> BibTex Reference</summary>
           <pre>{{ page.bib }}</pre>
         </details>
         {% endif %}
