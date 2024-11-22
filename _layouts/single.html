@@ -163,8 +163,10 @@ layout: default
         {% include page__taxonomy.html %}
       </footer>
 
-      <a href="./publications" target="_top" class="btn btn--light btn--large text-decoration-none">See all publications</a>
-
+      {% if page.citation %}
+      <a href="/publications" target="_top" class="btn btn--light btn--large text-decoration-none">See all publications</a>
+      {% endif %}
+      
       {% if page.share %}{% include social-share.html %}{% endif %}
 
       <!-- {% include post_pagination.html %}-->
