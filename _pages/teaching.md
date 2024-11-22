@@ -7,12 +7,12 @@ title: "Teaching"
 I was co-supervisng the following theses:
 
 - 2024
-    - Filter Bubbles in Personalized Recommender Systems (Master). Related paper: [SOAP](2024-FilterBubbles.md).
+    - Filter Bubbles in Personalized Recommender Systems (Master). Related paper: [SOAP](/publication/2024-FilterBubbles).
     - MR User Interfaces for IoT Devices (Bachelor)
     - Personalized Advertisements in XR Contexts (Master)
 - 2023
-    - Object Retrieval using Proximity-based Graphs and a Gaze-enabled AR System (Bachelor). Related paper: [NeighboAR](2024-NeighboAR.md).
-    - SupermarketCoach (Bachelor). Related paper: [ShoppingCoach](2024-ShoppingCoach.md).
+    - Object Retrieval using Proximity-based Graphs and a Gaze-enabled AR System (Bachelor). Related paper: [NeighboAR](/publication/2024-NeighboAR).
+    - SupermarketCoach (Bachelor). Related paper: [ShoppingCoach](/publication/2024-ShoppingCoach).
 
 ## Courses 
 I am/was a teaching assistant in various courses:
