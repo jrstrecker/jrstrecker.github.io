@@ -3,9 +3,6 @@ permalink: /service/
 title: "Community Service"
 excerpt: "Community Service"
 author_profile: true
-redirect_from: 
-  - /service/
-  - /service.html
 ---
 
 ## Commitees
