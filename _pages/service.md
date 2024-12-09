@@ -21,4 +21,4 @@ My reviewing service so far:
 
 Venues: CHI, CHI LBW, IMWUT, UbiComp Posters, Mensch und Computer Short Papers.
 
-Special Recognitions for Outstanding Reviews: (1) CHI'24 LBW, (2) MuC'24 Short Paper, (3) CHI'25 Full Paper.
+Special Recognitions for Outstanding Reviews: CHI'24 LBW (1), MuC'24 Short Paper (1), CHI'25 Full Paper (1).
