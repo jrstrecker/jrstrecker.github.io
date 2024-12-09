@@ -7,13 +7,13 @@ title: "Teaching"
 I was co-supervising the following theses:
 
 ### 2024
-    - Luka Bekavac. Filter Bubbles in Personalized Recommender Systems (Master). Related paper: [SOAP](/publication/2024-FilterBubbles).
-    - Lucien Ledermann. MR User Interfaces for IoT Devices (Bachelor)
-    - Adrian Pandjaitan. Personalized Advertisements in XR Contexts (Master)
-    
+- Luka Bekavac. Filter Bubbles in Personalized Recommender Systems (Master). Related paper: [SOAP](/publication/2024-FilterBubbles).
+- Lucien Ledermann. MR User Interfaces for IoT Devices (Bachelor)
+- Adrian Pandjaitan. Personalized Advertisements in XR Contexts (Master)
+
 ### 2023
-    - Aleksandar Slavujica. Object Retrieval using Proximity-based Graphs and a Gaze-enabled AR System (Bachelor). Related paper: [NeighboAR](/publication/2024-NeighboAR).
-    - Conrad Vaslin. SupermarketCoach (Bachelor). Related paper: [ShoppingCoach](/publication/2024-ShoppingCoach).
+- Aleksandar Slavujica. Object Retrieval using Proximity-based Graphs and a Gaze-enabled AR System (Bachelor). Related paper: [NeighboAR](/publication/2024-NeighboAR).
+- Conrad Vaslin. SupermarketCoach (Bachelor). Related paper: [ShoppingCoach](/publication/2024-ShoppingCoach).
 
 ## Courses 
 I am/was a teaching assistant in various courses:
@@ -22,7 +22,7 @@ I am/was a teaching assistant in various courses:
 
 - Ubiquitous Computing
     - Degree Program: Computer Science (Master)
-    - My Role: Teaching Assistant (Creating and grading assignments)
+    - My Role: Teaching Assistant (Creating and grading assignments, student project coordination and support)
 
 ### Spring Semester 2024
 
