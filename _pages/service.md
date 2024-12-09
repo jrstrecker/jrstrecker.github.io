@@ -1,5 +1,5 @@
 ---
-permalink: /service/
+permalink: /communityservice/
 title: "Community Service"
 excerpt: "Community Service"
 author_profile: true
@@ -7,6 +7,8 @@ author_profile: true
 
 ## Commitees
 
+- [IoT Conference 2025](https://iot-conference.org/iot2025/)
+    - Proceedings Chair
 - [Mensch und Computer 2024](https://muc2024.mensch-und-computer.de/en/program-committee/)
     - Short Paper AC
 
