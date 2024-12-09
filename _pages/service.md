@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /service/
 title: "Community Service"
 excerpt: "Community Service"
 author_profile: true
