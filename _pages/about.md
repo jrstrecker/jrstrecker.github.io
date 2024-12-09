@@ -22,7 +22,7 @@ I study  how ubiquitous personalization systems can make people’s interactions
 
 Next to my main PhD topic _Personalized Reality_, I work with colleagues on related topics, I am teaching assistant for multiple lectures (see [Teaching](./teaching)), and I am co-supervising Bachelor- and Master Theses.
 
-I am been reviewing for multiple conferences and journals, for more details see [Community Service](./sommunityservice). 
+I am been reviewing for multiple conferences and journals, for more details see [Community Service](./communityservice). 
 
 For updates on what I'm doing, have a look at the [Publications](./publications) of my colleagues and me,
 follow me on the Fediverse: [https://hci.social/@jannis](https://hci.social/@jannis),
