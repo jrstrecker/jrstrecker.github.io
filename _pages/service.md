@@ -14,7 +14,7 @@ author_profile: true
 
 ## Peer Reviewing
 
-I am more or less regularily reviewing for different venues. If you are a chair or AC in need of a review for a paper that aligns topic-wise with my interests, feel free to contact me via email [jannisrene.strecker@unisg.ch][jannisrene.strecker@unisg.ch)!
+I am more or less regularily reviewing for different venues. If you are a chair or AC in need of a review for a paper that aligns topic-wise with my interests, feel free to contact me via email [jannisrene.strecker@unisg.ch](jannisrene.strecker@unisg.ch)!
 
 My reviewing service so far:
 
