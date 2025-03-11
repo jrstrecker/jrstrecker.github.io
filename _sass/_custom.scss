@@ -64,6 +64,10 @@ summary:before {
   transition: .25s transform ease;
 }
 
+summary:hover  {
+  cursor: pointer;
+}
+
 /*
 details[open] summary ~ * {
   animation: sweep .5s ease-in-out;
