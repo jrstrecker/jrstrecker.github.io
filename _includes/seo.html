@@ -30,7 +30,7 @@
 
 {% if page.title and page.author_profile != true %}
   {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
-{% elsif page.title and page.author_profile == true %}
+{% elsif page.title and page.is_title_page == true %}
   {% assign seo_description = "As a PhD Student at the University of St.Gallen, I am studying how we can realize a 'Personalized Reality' that is responsible and societally beneficial by combining Personalization, Mixed Reality, Ubiquitous Computing and Privacy." %}
 {% endif %}
 

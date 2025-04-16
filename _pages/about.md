@@ -3,9 +3,11 @@ permalink: /
 title: "Hi there!"
 excerpt: "About me"
 author_profile: true
+is_title_page: true
 redirect_from: 
   - /about/
   - /about.html
+  - /research/
 ---
 <div class="about-box"  markdown="1">
 
