@@ -6,7 +6,8 @@ author_profile: true
 ---
 
 ## Commitees
-
+- [AlpCHI Conference 2026](https://alpchi.org)
+    - Web Chair
 - [IoT Conference 2025](https://iot-conference.org/iot2025/)
     - Proceedings Chair
 - [CHI 2025](https://chi2025.acm.org/for-authors/late-breaking-work/)
