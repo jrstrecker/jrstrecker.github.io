@@ -15,6 +15,12 @@ author_profile: true
 - [Mensch und Computer 2024](https://muc2024.mensch-und-computer.de/en/program-committee/)
     - Short Paper AC
 
+## Workshop Organization
+- [ABIS 2025 – International Workshop on Personalization and Recommendation](https://fg-abis.gi.de/veranstaltung/abis-2025)
+    - at [Mensch und Computer 2025](https://muc2025.mensch-und-computer.de/en)
+- [ABIS 2024 – International Workshop on Personalization and Recommendation](https://fg-abis.gi.de/veranstaltung/abis-2024)
+    - at [Mensch und Computer 2024](https://muc2024.mensch-und-computer.de/en)
+
 ## Peer Reviewing
 
 I am more or less regularily reviewing for different venues. If you are a chair or AC in need of a review for a paper that aligns topic-wise with my interests, feel free to contact me via email [jannisrene.strecker@unisg.ch](jannisrene.strecker@unisg.ch)!
