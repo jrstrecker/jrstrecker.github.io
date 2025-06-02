@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/2025-AdBlockedReality
 date: 2025-04-26
 venue: "CHI Conference on Human Factors in Computing Systems (CHI '25)"
+venuelink: "https://chi2025.acm.org/"
 papertype: "Conference"
 paperurl: '/files/pdf/research/2025-AdBlockedReality.pdf'
 link: 'https://doi.org/10.1145/3706598.3713230' 

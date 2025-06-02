@@ -186,6 +186,13 @@ article details pre {
   padding: 0.5em;
 }
 
+.venue-link {
+  color: #333;
+}
+.venue-link:hover {
+  color: #2979ab;
+}
+
 .info-card {
   display: flex;
   flex-direction: column;
