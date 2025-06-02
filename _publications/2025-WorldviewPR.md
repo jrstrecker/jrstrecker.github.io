@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/2025-WorldviewPR
 date: 2025-04-26
 venue: "Purposeful XR: Affordances, Challenges, and Speculations for an Ethical Future (Purposeful XR ’25), co-located with CHI 2025"
+venuelink: "https://smrghsh.github.io/purposefulXR/"
 papertype: "Workshop"
 paperurl: '/files/pdf/research/2025-WorldviewPR.pdf'
 link: 'https://www.alexandria.unisg.ch/handle/20.500.14171/122376' 
