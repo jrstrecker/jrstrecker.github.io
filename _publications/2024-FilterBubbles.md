@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/2024-FilterBubbles
 date: 2024-10-18
 venue: 'NORMalize 2024: The Second Workshop on the Normative Design and Evaluation of Recommender Systems, co-located with the ACM Conference on Recommender Systems 2024 (RecSys 2024)'
+venuelink: "https://sites.google.com/view/normalizeworkshop/recsys24"
 papertype: "Workshop"
 paperurl: '/files/pdf/research/2024-FilterBubbles.pdf'
 link: 'https://www.alexandria.unisg.ch/handle/20.500.14171/120987'

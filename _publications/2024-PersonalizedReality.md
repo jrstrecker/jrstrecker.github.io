@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/2024-PersonalizedReality
 date: 2024-09-01
 venue: 'ABIS 2024 - 28th International Workshop on Personalization and Recommendation at Mensch und Computer 2024'
+venuelink: "https://fg-abis.gi.de/veranstaltung/abis-2024"
 papertype: "Workshop"
 paperurl: '/files/pdf/research/2024-PersonalizedReality.pdf'
 link: 'https://doi.org/10.18420/muc2024-mci-ws11-200'

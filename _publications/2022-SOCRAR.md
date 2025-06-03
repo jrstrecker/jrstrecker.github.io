@@ -4,6 +4,7 @@ collection: publications
 permalink: /publication/2022-SOCRAR
 date: 2022-10-01
 venue: '12th International Conference on the Internet of Things (IoT22)'
+venuelink: "https://iot-conference.org/iot2022/"
 papertype: "Conference"
 paperurl: '/files/pdf/research/2022-SOCRAR.pdf'
 link: 'https://doi.org/10.1145/3567445.3567453'
