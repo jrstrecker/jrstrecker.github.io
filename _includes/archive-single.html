@@ -45,6 +45,13 @@
     </p> -->
     {% if post.venue or post.date %}
     <div class="info-card">
+
+      {% if post.paperaward %}
+      <div class="info-item item-award">
+        <p class="info-title"><i class="fa fa-trophy" aria-hidden="true"></i></p>
+        <p class="info-description">{{ post.paperaward }} Award</p>
+      </div>
+      {% endif %}
       {% if post.venue %}
       <div class="info-item">
         <p class="info-title">In</p>
