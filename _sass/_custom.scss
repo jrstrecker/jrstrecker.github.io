@@ -90,6 +90,9 @@ details[open] summary ~ * {
 details {
   transition: height 1s ease;
   font-size: 0.9em !important;
+border: 2px solid #fafafa;
+  border-radius: 5px;
+  padding: 0.25em;
 }
 
 details summary::-webkit-details-marker { display:none; }
@@ -230,7 +233,7 @@ article details pre {
   margin: 0.25em 0;
   border-radius: 5px;
   // border: 1px solid #ecebeb;
-  padding: 0.25em;
+  padding: 0.4em;
   background: #fafafa;
 }
 
@@ -288,6 +291,7 @@ article details pre {
   // background: #fafafa;
   border: 1px solid #ecebeb;
   color: #666;
+  font-style: italic;
 }
 
 .page_Teaching h3 {
