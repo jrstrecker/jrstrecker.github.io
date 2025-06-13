@@ -53,7 +53,7 @@ a:hover {
 
 
 summary {
-  background: #ecebeb;
+  //background: #ecebeb;
   padding: 5px 8px;
   border-radius: 5px;
   margin: 5px 0;
@@ -89,6 +89,7 @@ details[open] summary ~ * {
 
 details {
   transition: height 1s ease;
+  font-size: 0.9em !important;
 }
 
 details summary::-webkit-details-marker { display:none; }
@@ -205,6 +206,7 @@ article details pre {
   color: #b8860b;
   font-weight: bold;
   border: none !important;
+  background: none !important;
 }
 
 
@@ -226,8 +228,9 @@ article details pre {
   gap: 10px;
   margin: 0.25em 0;
   border-radius: 5px;
-  border: 1px solid #ecebeb;
+  // border: 1px solid #ecebeb;
   padding: 0.25em;
+  background: #fafafa;
 }
 
 .info-title {
@@ -281,7 +284,9 @@ article details pre {
   padding: 0.5em 0.7em;
   font-size: .8em;
   margin: 0.5em;
-  background: #fafafa;
+  // background: #fafafa;
+  border: 1px solid #ecebeb;
+  color: #666;
 }
 
 .page_Teaching h3 {
