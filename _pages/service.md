@@ -10,6 +10,8 @@ author_profile: true
     - Web Chair
 - [IoT Conference 2025](https://iot-conference.org/iot2025/)
     - Proceedings Chair
+- [Mensch und Computer 2024](https://muc2025.mensch-und-computer.de)
+    - Short Paper AC
 - [CHI 2025](https://chi2025.acm.org/for-authors/late-breaking-work/)
     - Late-Breaking Work AC
 - [Mensch und Computer 2024](https://muc2024.mensch-und-computer.de/en/program-committee/)
