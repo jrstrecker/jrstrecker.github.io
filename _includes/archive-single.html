@@ -99,13 +99,15 @@
       {% endif %}
 
       {% if post.presentationurl %}
-       <details><summary><i class="fa fa-fw fa-slideshare fa-info-color" aria-hidden="true"> </i> Presentation</summary>
+      <p></p>
+       <details><summary><i class="fa fa-fw fa-desktop fa-info-color" aria-hidden="true"> </i> Presentation</summary>
         <iframe src="{{ post.presentationurl }}" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
         </details>
       {% endif %}
       <!-- citation and icon code -->
-      <p>
+      
       {% if post.citation %}
+      <p></p>
       <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Text Reference</summary>
         <blockquote>
         <p>
