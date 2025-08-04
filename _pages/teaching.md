@@ -8,7 +8,7 @@ I was co-supervising the following theses:
 
 ### 2024
 - Luka Bekavac. Filter Bubbles in Personalized Recommender Systems (Master). Related paper: [SOAP](/publication/2024-FilterBubbles).
-- Lucien Ledermann. MR User Interfaces for IoT Devices (Bachelor)
+- Lucien Ledermann. MR User Interfaces for IoT Devices (Bachelor). Related paper: [JUIC-IoT](/publications/2025-DogsGoPods)
 - Adrian Pandjaitan. Personalized Advertisements in XR Contexts (Master)
 
 ### 2023
