@@ -6,6 +6,10 @@ title: "Teaching"
 ## Theses
 I was co-supervising the following theses:
 
+### 2025
+- Sandra Dojcinovic. Transparent Personalized Recommendations in Mixed Reality for Strategic Board Gaming (Master). Related paper: [GLAMRec](/publication/2024-PRecMR).
+- Camilla Becker. Enhancing Privacy Awareness in Smart Environments (Master).
+
 ### 2024
 - Luka Bekavac. Filter Bubbles in Personalized Recommender Systems (Master). Related paper: [SOAP](/publication/2024-FilterBubbles).
 - Lucien Ledermann. MR User Interfaces for IoT Devices (Bachelor). Related paper: [JUIC-IoT](/publications/2025-DogsGoPods)
@@ -17,6 +21,12 @@ I was co-supervising the following theses:
 
 ## Courses 
 I am/was a teaching assistant in various courses:
+
+### Autumn Semester 2025
+
+- Ubiquitous Computing
+    - Degree Program: Computer Science (Master)
+    - My Role: Teaching Assistant (Creating and grading assignments, student project coordination and support, lecturing)
 
 ### Autumn Semester 2024
 
