@@ -110,7 +110,9 @@ details summary::-webkit-details-marker { display:none; }
   padding: 0.5em 1em;
   border-radius: 5px;
   margin: 1em 0;
-  border: 1px solid #4d4d4d38 !important;
+  //border: 1px solid #4d4d4d38 !important;
+  box-shadow: 0px 0px 4px #63bfae;
+  border-left: 5px solid #68c3b0 !important;
   box-shadow: 3px 3px 3px $blue-green;
 }
 
