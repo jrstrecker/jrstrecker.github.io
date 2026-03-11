@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline !important;
+  text-decoration: none !important;
 }
 
 .zoom{
@@ -51,7 +51,8 @@ a:hover {
 }
 
 .fa-info-color {
-  color: $info-color;
+  color: $blue-green;
+  ;
 }
 
 
