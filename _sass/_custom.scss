@@ -111,9 +111,9 @@ details summary::-webkit-details-marker { display:none; }
   border-radius: 5px;
   margin: 1em 0;
   //border: 1px solid #4d4d4d38 !important;
-  box-shadow: 0px 0px 4px #63bfae;
-  border-left: 5px solid #68c3b0 !important;
-  box-shadow: 3px 3px 3px $blue-green;
+  box-shadow: 0px 0px 4px #cfcfcf;
+  border-left: 5px solid #6DC7B2 !important;
+  //box-shadow: 1px 1px 5px $blue-green;
 }
 
 .publications-list-item h2 {
@@ -160,7 +160,7 @@ details summary::-webkit-details-marker { display:none; }
 .greedy-nav {
   // background: #d9d9d924;
   background: $blue-green;
-  background: linear-gradient(90deg, rgba(109, 199, 178, 1) 0%, rgba(23, 129, 143, 1) 100%);
+  background: linear-gradient(150deg, rgba(109, 199, 178, 1) 0%, rgba(23, 129, 143, 1) 100%);
   border-radius: 5px;
   padding: 0.5em 1em;
   box-shadow: 3px 3px 3px #88888824;

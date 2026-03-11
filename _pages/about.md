@@ -14,7 +14,7 @@ redirect_from:
 I’m a PhD Student in Computer Science at the [University of St. Gallen](https://unisg.ch) in Switzerland in the lab for [Interactions- and Communication-based Systems](https://interactions.ics.unisg.ch). 
 
 I study  how ubiquitous personalization systems can make people’s interactions with their environment more efficient, safer and more inclusive, and how these systems can be built in a responsible and societally beneficial way, by combining the following research areas:
-<table border="1" cellpadding="8" cellspacing="0">
+<table border="0" cellpadding="8" cellspacing="0">
   <tr>
     <td>Personalization</td>
     <td>Mixed Reality</td>
