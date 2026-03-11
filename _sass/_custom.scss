@@ -6,8 +6,11 @@
    Visibility
    ========================================================================== */
 
+$blue-green: #24A4B5;
+
 a {
   text-decoration: none !important;
+  color: $blue-green !important;
 }
 
 a:hover {
@@ -116,7 +119,7 @@ details summary::-webkit-details-marker { display:none; }
   margin: 0.5em 0;
   font-size: 1.2em !important;
   padding: 0.5em;
-  border-bottom: 2px dotted #2979ab !important;
+  border-bottom: 2px dotted $blue-green !important;
 }
 
 .publications-list-item h2 a {
@@ -125,15 +128,15 @@ details summary::-webkit-details-marker { display:none; }
 
 
 .btn--info-outline {
-  border: 1px solid #2979ab !important;
+  border: 1px solid $blue-green !important;
   background-color: transparent;
-  color: #2979ab !important;
+  color: $blue-green !important;
   font-weight: 400 !important;
   font-size: 0.85em;
 }
 
 .btn--info-outline:hover {
-  background-color: #2979ab !important;
+  background-color: $blue-green !important;
   color: #fff !important;
 }
 
@@ -149,21 +152,23 @@ details summary::-webkit-details-marker { display:none; }
 }
 
 .greedy-nav {
-  background: #d9d9d924;
+  // background: #d9d9d924;
+  background: $blue-green;
+  background: linear-gradient(90deg, rgba(109, 199, 178, 1) 0%, rgba(36, 164, 181, 1) 100%);
   border-radius: 5px;
   padding: 0.5em 1em;
   box-shadow: 5px 5px #88888824;
 }
 .greedy-nav a {
-  color: #575c60 !important;
+  color: #fff !important;
 }
 .greedy-nav a:hover {
-  color: #2979ab !important;
+  color: #fff !important;
   text-decoration: none !important;
 }
 
 .greedy-nav .visible-links a::before {
-  background: #2979ab !important;
+  background: #fff !important;
 }
 .greedy-nav button {
   top: 0 !important;
