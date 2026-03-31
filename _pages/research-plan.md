@@ -4,6 +4,11 @@ permalink: /research-plan/
 author_profile: true
 ---
 
+{{ site.publications | size }}
+
+{% for item in site.publications %}
+  {{ item | jsonify }}
+{% endfor %}
 
 # References for my SMP submission
 
@@ -25,6 +30,7 @@ This RQ is still in progress. Papers that I have contributed to which are (loose
 {% for post in selected_pubs %}
 	{% include archive-single.html post=post type="list" %}
 {% endfor %}
+
 
 ## RQ3: How can PR support humans transparently to efficiently navigate affordance-rich realities?
 
