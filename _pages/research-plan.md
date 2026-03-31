@@ -12,7 +12,7 @@ This pages is a companion to the paper "Creating Personalized Realities That Con
 ## RQ1: How can ubiquitous personalization systems be modeled to support the design, implementation and analysis of such systems in a responsible way?
 
 {% assign selected_ids = "2026-RUPS,2024-ABIS" | split: "," %}
-{% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.basename" %}
+{% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs %}
 	{% include archive-single.html post=post type="list" %}
 {% endfor %}
@@ -21,7 +21,7 @@ This pages is a companion to the paper "Creating Personalized Realities That Con
 
 This RQ is still in progress. Papers that I have contributed to which are (loosely) connected to this RQ:
 {% assign selected_ids = "2024-Gaze-based-opportunistic" | split: "," %}
-{% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.basename" %}
+{% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs %}
 	{% include archive-single.html post=post type="list" %}
 {% endfor %}
@@ -29,14 +29,14 @@ This RQ is still in progress. Papers that I have contributed to which are (loose
 ## RQ3: How can PR support humans transparently to efficiently navigate affordance-rich realities?
 
 {% assign selected_ids = "2026-PRecMR,2024-ShoppingCoach" | split: "," %}
-{% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.basename" %}
+{% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs %}
 	{% include archive-single.html post=post type="list" %}
 {% endfor %}
 
 Papers that I have contributed to which are (loosely) connected to this RQ:
 {% assign selected_ids = "2024-AdBlocked-Reality" | split: "," %}
-{% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.basename" %}
+{% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs %}
 	{% include archive-single.html post=post type="list" %}
 {% endfor %}
@@ -45,7 +45,7 @@ Papers that I have contributed to which are (loosely) connected to this RQ:
 
 This RQ is still in progress. However, this vision paper sketches the basic idea:
 {% assign selected_ids = "2023-Sharing-P-MR" | split: "," %}
-{% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.basename" %}
+{% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs %}
 	{% include archive-single.html post=post type="list" %}
 {% endfor %}
