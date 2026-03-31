@@ -4,10 +4,8 @@ permalink: /research-plan/
 author_profile: true
 ---
 
-{{ site.publications | size }}
-
-{% for item in site.publications %}
-  {{ item | jsonify }}
+{% for item in site.publications limit:1 %}
+  <pre>{{ item | jsonify }}</pre>
 {% endfor %}
 
 # References for my SMP submission
