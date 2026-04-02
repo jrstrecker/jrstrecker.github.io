@@ -1,0 +1,101 @@
+{% include base_path %}
+
+{% if post.id %}
+  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% else %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item publications-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+    <details>
+      <summary>
+        <h2 class="archive__item-title" itemprop="headline">
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        </h2>
+      </summary>
+
+      {% if post.venue or post.date %}
+      <div class="info-card">
+        {% if post.paperaward %}
+        <div class="info-item item-award">
+          <p class="info-title"><i class="fa fa-trophy" aria-hidden="true"></i></p>
+          <p class="info-description">{{ post.paperaward }} Award</p>
+        </div>
+        {% endif %}
+        {% if post.venue %}
+        <div class="info-item">
+          <p class="info-title">In</p>
+          <p class="info-description">{{ post.venue }}
+            {% if post.venuelink %}
+              &nbsp;<a href="{{ post.venuelink}}" target="_blank" class="venue-link"><i class="fa fa-link" aria-hidden="true" title="permalink"></i></a>
+            {% endif %}
+          </p>
+          {% if post.papertype %}
+          <div class="paper-type">{{ post.papertype }}</div>
+          {% endif %}
+        </div>
+        {% endif %}
+        {% if post.date %}
+        <div class="info-item">
+          <p class="info-title">Date</p>
+          <p class="info-description">{{ post.date | date: "%B %d, %Y" }}</p>
+        </div>
+        {% endif %}
+        {% if post.authors %}
+        <div class="info-item">
+          <p class="info-title">Authors</p>
+          <p class="info-description">{{ post.authors }}</p>
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      {% if post.abstract %}
+        <details><summary><i class="fa fa-fw fa-file-alt fa-info-color" aria-hidden="true"> </i> Abstract</summary>
+        <p>{{ post.abstract }}</p>
+        </details>
+      {% endif %}
+
+      {% if post.presentationurl %}
+      <p></p>
+      <details><summary><i class="fa fa-fw fa-desktop fa-info-color" aria-hidden="true"> </i> Presentation</summary>
+        <iframe src="{{ post.presentationurl }}" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
+      </details>
+      {% endif %}
+
+      {% if post.citation %}
+      <p>
+      <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Text Reference</summary>
+        <blockquote><p>{{ post.citation }}</p></blockquote>
+      </details>
+      {% endif %}
+
+      {% if post.bib %}
+      <p></p>
+      <details><summary><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="true"> </i> BibTex Reference</summary>
+        <pre>{{ post.bib }}</pre>
+      </details>
+      {% endif %}
+
+      <p>
+      {% if post.pressurl %}
+        <a href="{{ post.pressurl }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-newspaper" aria-hidden="true"></i> Link to Press Article</a>
+      {% endif %}
+      {% if post.link %}
+        <a href="{{ post.link }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Link to Published Paper</a>
+      {% endif %}
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download Paper</a>
+      {% endif %}
+      {% if post.code %}
+        <a href="{{ post.code }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-code" aria-hidden="true"></i> Link to Code</a>
+      {% endif %}
+      {% if post.github %}
+        <a href="{{ post.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a>
+      {% endif %}
+      </p>
+
+    </details>
+  </article>
+</div>

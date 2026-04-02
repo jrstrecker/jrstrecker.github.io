@@ -6,12 +6,19 @@ author_profile: true
 
 This pages is a companion to the paper "Creating Personalized Realities That Connect People's Perceptions of Reality" that I present at the Stundent Mentoring Program: Dissertation Research Roundtable at [CHI 2026](https://chi2026.acm.org).
 
-## RQ1: How can ubiquitous personalization systems be modeled to support the design, implementation and analysis of such systems in a responsible way?
 
-{% assign selected_ids = "/publication/2025-RUPS,/publication/2024-ABIS" | split: "," %}
+{% assign selected_ids = "/publication/2026-PR-SMP" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs %}
-	{% include archive-single.html %}
+	{% include archive-single-collapsible.html %}
+{% endfor %}
+
+## RQ1: How can ubiquitous personalization systems be modeled to support the design, implementation and analysis of such systems in a responsible way?
+
+{% assign selected_ids = "/publication/2025-RUPS,/publication/2024-PersonalizedReality" | split: "," %}
+{% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
+{% for post in selected_pubs %}
+	{% include archive-single-collapsible.html %}
 {% endfor %}
 
 ## RQ2: What are suitable ways to give humans transparency and agency over the flow of their personal data in resonsible ubiquitous personalization systems?
@@ -20,7 +27,7 @@ This RQ is still in progress. Papers that I have contributed to which are (loose
 {% assign selected_ids = "/publication/2024-Gaze-based-opportunistic" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs %}
-	{% include archive-single.html %}
+	{% include archive-single-collapsible.html %}
 {% endfor %}
 
 
@@ -29,14 +36,14 @@ This RQ is still in progress. Papers that I have contributed to which are (loose
 {% assign selected_ids = "/publication/2026-PRecMR,/publication/2024-ShoppingCoach" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs %}
-	{% include archive-single.html %}
+	{% include archive-single-collapsible.html %}
 {% endfor %}
 
 Papers that I have contributed to which are (loosely) connected to this RQ:
 {% assign selected_ids = "/publication/2025-AdBlockedReality" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs %}
-	{% include archive-single.html %}
+	{% include archive-single-collapsible.html %}
 {% endfor %}
 
 ## RQ4: In a multi-user PR scenario, what are suitable, effective and usable methods to counter isolated perceptions of reality?
@@ -45,5 +52,5 @@ This RQ is still in progress. However, this vision paper sketches the basic idea
 {% assign selected_ids = "/publication/2022-Sharing-P-MR" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs %}
-	{% include archive-single.html %}
+	{% include archive-single-collapsible.html %}
 {% endfor %}
