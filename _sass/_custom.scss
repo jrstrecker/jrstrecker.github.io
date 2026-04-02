@@ -94,7 +94,7 @@ details[open] summary ~ * {
 details {
   transition: height 1s ease;
   font-size: 0.9em !important;
-border: 2px solid #fafafa;
+border: 2px solid #fff;
   border-radius: 5px;
   padding: 0.25em;
 }
@@ -155,11 +155,12 @@ details summary::-webkit-details-marker { display:none; }
 }
 
 body {
-  background: #faf8f5;
+  background: #faf5f5;
 }
 
 .masthead {
-  background: #faf8f5;
+  background: #faf5f5;
+  border: none !important;
 }
 
 
@@ -249,7 +250,7 @@ article details pre {
   margin: 0.25em 0;
   border-radius: 5px;
   padding: 0.4em;
-  background: #fff;
+  background: #fffdfd;
 }
 
 .info-title {
@@ -376,6 +377,19 @@ article details pre {
       color: #4a7c8a;
       &:hover { background: #4a7c8a; color: #fff; }
     }
+  }
+}
+
+.topic-pills {
+  border: none !important;
+  td {
+    background: #ece9e3;
+    border-radius: 20px;
+    padding: 0.3em 0.9em;
+    font-size: 0.88em;
+    color: #3a5068;
+    border: none !important;
+    white-space: nowrap;
   }
 }
 
