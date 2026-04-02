@@ -26,6 +26,7 @@ author_profile: true
 {% endfor %}
 
 <script>
+{% raw %}
 (function() {
   var activeFilters = [];
 
@@ -91,4 +92,5 @@ author_profile: true
     });
   });
 })();
+{% endraw %}
 </script>

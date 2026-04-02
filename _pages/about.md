@@ -14,7 +14,7 @@ redirect_from:
 I’m a PhD Student in Computer Science at the [University of St. Gallen](https://unisg.ch) in Switzerland in the lab for [Interactions- and Communication-based Systems](https://interactions.ics.unisg.ch). 
 
 I study  how ubiquitous personalization systems can make people’s interactions with their environment more efficient, safer and more inclusive, and how these systems can be built in a responsible and societally beneficial way, by combining the following research areas:
-<div class="topic-pills"><span>Personalization</span><span>Mixed Reality</span><span>Ubiquitous Computing</span><span>Privacy</span><span>Algorithms and Society</span><span>Technology Acceptance</span><span>Recommender Systems</span><span>Computer Vision</span></div>
+<div class="topic-pills"><span>Personalization</span><span>Mixed Reality</span><span>Ubiquitous Computing</span><span>Privacy</span><span>Algorithms and Society</span><span>Technology Acceptance</span><span>Regulation</span><span>Recommender Systems</span><span>Computer Vision</span><span>Critical Computing</span><span>Philosophy of Technology</span></div>
 
 Next to my main PhD topic _Personalized Reality_, I work with colleagues on related topics, I am teaching assistant for multiple lectures (see [Teaching](./teaching)), and I am co-supervising Bachelor- and Master Theses.
 

@@ -2,9 +2,9 @@
 main:
   - title: "Publications"
     url: /publications/
-    children:
-      - title: Research Plan
-        url: /research-plan/
+
+  - title: Research Plan
+    url: /research-plan/
 
   - title: "Teaching"
     url: /teaching/
@@ -12,5 +12,3 @@ main:
   - title: "Community Service"
     url: /communityservice/
     
-  - title: "CV"
-    url: /cv/

@@ -6,7 +6,7 @@
    Visibility
    ========================================================================== */
 
-$blue-green: #3a5068;
+$blue-green: #2a6496;
 
 a {
   text-decoration: none !important;
@@ -102,7 +102,12 @@ border: 2px solid #fff;
 details summary::-webkit-details-marker { display:none; }
 
 .page__content a {
-  text-decoration: none !important;
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba($blue-green, 0.4) !important;
+  &:hover {
+    text-decoration-color: $blue-green !important;
+  }
 }
 
 .page__footer {
