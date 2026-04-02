@@ -318,3 +318,60 @@ article details pre {
   color: #9ba1a6;
   border-bottom: 1px solid #f2f3f3;
 }
+
+/* Outer collapsible wrapper on research-plan page */
+details.pub-collapsible {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px #cfcfcf;
+  padding: 0;
+  margin: 0.75em 0;
+  overflow: hidden;
+
+  > summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7em 1em;
+    font-weight: 600;
+    font-size: 1em;
+    color: $blue-green;
+    border-left: 4px solid $blue-green;
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &::after {
+      content: '▶';
+      font-size: 0.65em;
+      color: lighten($blue-green, 20%);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-left: 0.75em;
+    }
+
+    // hide the generic absolute-positioned arrow
+    &::before {
+      display: none !important;
+    }
+
+    &:hover {
+      background: #f0f6f7;
+    }
+  }
+
+  &[open] > summary {
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #eee;
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+
+  > .list__item {
+    overflow: hidden;
+  }
+}
