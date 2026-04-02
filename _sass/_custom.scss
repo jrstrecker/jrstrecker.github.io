@@ -384,6 +384,31 @@ article details pre {
   }
 }
 
+.pub-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 1em 0 1.5em;
+
+  .pub-filter-pill {
+    background: #ece9e3;
+    border-radius: 20px;
+    padding: 0.3em 0.85em;
+    font-size: 0.88em;
+    color: #3a5068;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    user-select: none;
+
+    &:hover { background: darken(#ece9e3, 8%); }
+
+    &.active {
+      background: $blue-green;
+      color: #fff;
+    }
+  }
+}
+
 .topic-pills {
   display: flex;
   flex-wrap: wrap;

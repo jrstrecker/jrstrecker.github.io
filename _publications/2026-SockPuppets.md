@@ -2,6 +2,7 @@
 title: "Scrutinizing Systemic Risks in Personalized Recommender Systems Through Sock-Puppet Auditing of VLOPs"
 collection: publications
 permalink: /publication/2026-SockPuppets
+tags: ["Social Media", "Personalization", "Regulation"]
 date: 2026-01-30
 venue: 'ACM Transactions on Recommender Systems'
 venuelink: "https://dl.acm.org/journal/tors"
