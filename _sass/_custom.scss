@@ -337,11 +337,9 @@ details.pub-collapsible {
     font-weight: 600;
     font-size: 1em;
     color: $blue-green;
-    border-left: 4px solid $blue-green;
     background: #fff;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 0.2s ease;
 
     &::after {
       content: '▶';
@@ -356,10 +354,15 @@ details.pub-collapsible {
     &::before {
       display: none !important;
     }
+  }
 
-    &:hover {
-      background: #f0f6f7;
-    }
+  .pub-collapsible-venue {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 0.15em;
   }
 
   &[open] > summary {
