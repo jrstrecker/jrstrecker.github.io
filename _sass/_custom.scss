@@ -154,9 +154,14 @@ details summary::-webkit-details-marker { display:none; }
   font-size: 1em !important;
 }
 
-.masthead {
-  background: #fff;
+body {
+  background: #faf8f5;
 }
+
+.masthead {
+  background: #faf8f5;
+}
+
 
 .greedy-nav {
   background: #3a5068;
@@ -206,7 +211,7 @@ article details .fluid-width-video-wrapper {
 
 article details pre {
   margin: 0.5em 1em;
-  background: #fafafa;
+  background: #fff;
   padding: 0.5em;
 }
 
@@ -243,9 +248,8 @@ article details pre {
   gap: 10px;
   margin: 0.25em 0;
   border-radius: 5px;
-  // border: 1px solid #ecebeb;
   padding: 0.4em;
-  background: #fafafa;
+  background: #fff;
 }
 
 .info-title {
@@ -360,17 +364,6 @@ article details pre {
 
 /* Research plan page */
 .research-plan-page {
-  background: #faf8f5;
-
-  .page__content h2 {
-    font-family: "Newsreader", Georgia, serif;
-    font-weight: 400;
-    color: #2c3e50;
-    border-bottom: 1px solid #e8e3dc;
-    padding-bottom: 0.3em;
-    margin-top: 1.5em;
-  }
-
   .rp-pub {
     box-shadow: 0 1px 3px #d0d8e0;
 
