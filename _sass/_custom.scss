@@ -159,9 +159,8 @@ details summary::-webkit-details-marker { display:none; }
 }
 
 .greedy-nav {
-  // background: #d9d9d924;
-  background: #17818F;
-  background: linear-gradient(15deg, rgba(23, 129, 143, 1) 0%, rgba(16, 86, 97, 1) 100%);
+  background: #3a5068;
+  background: linear-gradient(15deg, #3a5068 0%, #2c3e50 100%);
   border-radius: 5px;
   padding: 0.5em 1em;
   box-shadow: 3px 3px 3px #88888824;
@@ -356,6 +355,37 @@ article details pre {
 
   &.open .rp-pub-content {
     grid-template-rows: 1fr;
+  }
+}
+
+/* Research plan page */
+.research-plan-page {
+  .page__content h2 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 400;
+    color: #2c3e50;
+    border-bottom: 1px solid #e0e6ed;
+    padding-bottom: 0.3em;
+    margin-top: 1.5em;
+  }
+
+  .page__content p {
+    font-family: "Inter", sans-serif;
+    color: #3a5068;
+  }
+
+  .rp-pub {
+    box-shadow: 0 1px 3px #d0d8e0;
+
+    .rp-pub-title a {
+      color: #4a7c8a !important;
+    }
+
+    .rp-pub-toggle {
+      border-color: #4a7c8a;
+      color: #4a7c8a;
+      &:hover { background: #4a7c8a; color: #fff; }
+    }
   }
 }
 
