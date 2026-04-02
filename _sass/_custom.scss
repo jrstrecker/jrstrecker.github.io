@@ -312,69 +312,39 @@ article details pre {
   font-style: italic;
 }
 
+.rp-pub {
+  margin: 0.75em 0;
+
+  .rp-pub-title {
+    font-weight: 600;
+    font-size: 1.1em;
+    margin: 0 0 0.1em;
+    a { color: $blue-green !important; }
+  }
+
+  .rp-pub-venue {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    cursor: pointer;
+    &:hover { color: $blue-green; text-decoration: underline; }
+  }
+
+  .rp-pub-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s ease;
+    > * { overflow: hidden; min-height: 0; }
+  }
+
+  &.open .rp-pub-content {
+    grid-template-rows: 1fr;
+  }
+}
+
 .page_Teaching h3 {
   margin: 1.5em 0 0;
   padding-bottom: 0.5em;
   color: #9ba1a6;
   border-bottom: 1px solid #f2f3f3;
-}
-
-/* Outer collapsible wrapper on research-plan page */
-details.pub-collapsible {
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0px 0px 4px #cfcfcf;
-  padding: 0;
-  margin: 0.75em 0;
-  overflow: hidden;
-
-  > summary {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.7em 1em;
-    font-weight: 600;
-    font-size: 1em;
-    color: $blue-green;
-    background: #fff;
-    border-radius: 8px;
-    cursor: pointer;
-
-    &::after {
-      content: '▶';
-      font-size: 0.65em;
-      color: lighten($blue-green, 20%);
-      transition: transform 0.3s ease;
-      flex-shrink: 0;
-      margin-left: 0.75em;
-    }
-
-    // hide the generic absolute-positioned arrow
-    &::before {
-      display: none !important;
-    }
-  }
-
-  .pub-collapsible-venue {
-    display: block;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 0.85em;
-    color: #666;
-    margin-top: 0.15em;
-  }
-
-  &[open] > summary {
-    border-radius: 8px 8px 0 0;
-    border-bottom: 1px solid #eee;
-
-    &::after {
-      transform: rotate(90deg);
-    }
-  }
-
-  > .list__item {
-    overflow: hidden;
-  }
 }
