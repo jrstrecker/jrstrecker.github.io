@@ -9,7 +9,7 @@ This pages is a companion to the paper "Creating Personalized Realities That Con
 
 {% assign selected_ids = "/publication/2026-PR-SMP" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
-{% for post in selected_pubs %}
+{% for post in selected_pubs reversed %}
 	{% include archive-single-collapsible.html %}
 {% endfor %}
 
@@ -17,7 +17,7 @@ This pages is a companion to the paper "Creating Personalized Realities That Con
 
 {% assign selected_ids = "/publication/2025-RUPS,/publication/2024-PersonalizedReality" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
-{% for post in selected_pubs %}
+{% for post in selected_pubs reversed %}
 	{% include archive-single-collapsible.html %}
 {% endfor %}
 
@@ -26,7 +26,7 @@ This pages is a companion to the paper "Creating Personalized Realities That Con
 This RQ is still in progress. Papers that I have contributed to which are (loosely) connected to this RQ:
 {% assign selected_ids = "/publication/2024-Gaze-based-opportunistic" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
-{% for post in selected_pubs %}
+{% for post in selected_pubs reversed %}
 	{% include archive-single-collapsible.html %}
 {% endfor %}
 
@@ -35,14 +35,14 @@ This RQ is still in progress. Papers that I have contributed to which are (loose
 
 {% assign selected_ids = "/publication/2026-PRecMR,/publication/2024-ShoppingCoach" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
-{% for post in selected_pubs %}
+{% for post in selected_pubs reversed %}
 	{% include archive-single-collapsible.html %}
 {% endfor %}
 
 Papers that I have contributed to which are (loosely) connected to this RQ:
 {% assign selected_ids = "/publication/2025-AdBlockedReality" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
-{% for post in selected_pubs %}
+{% for post in selected_pubs reversed %}
 	{% include archive-single-collapsible.html %}
 {% endfor %}
 
@@ -51,6 +51,6 @@ Papers that I have contributed to which are (loosely) connected to this RQ:
 This RQ is still in progress. However, this vision paper sketches the basic idea:
 {% assign selected_ids = "/publication/2022-Sharing-P-MR" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
-{% for post in selected_pubs %}
+{% for post in selected_pubs reversed %}
 	{% include archive-single-collapsible.html %}
 {% endfor %}
