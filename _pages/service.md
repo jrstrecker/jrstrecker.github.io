@@ -27,8 +27,9 @@ author_profile: true
 I am (co-) responsible for the following social media pages:
 - [AlpCHI Conference 2026](https://alpchi.org)
     - Mastodon [https://hci.social/AlpCHI](https://hci.social/@AlpCHI)
-    - LinkedIn
-    - BlueSky
+    - LinkedIn [https://www.linkedin.com/company/alpchi-conference](https://www.linkedin.com/company/alpchi-conference)
+    - BlueSky [https://bsky.app/profile/alpchi.bsky.social](https://bsky.app/profile/alpchi.bsky.social)
+    - Instagram [https://www.instagram.com/alpchi.conference/](https://www.instagram.com/alpchi.conference/)
 - [IEEE Pervasive Computing Magazine](https://computer.org/pervasive)
     - Mastodon [https://hci.social/@IEEEPervasive](https://hci.social/@IEEEPervasive)
 - [Interactions Research Group](https://interactions.ics.unisg.ch) 
