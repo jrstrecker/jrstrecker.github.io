@@ -476,6 +476,9 @@ article details pre {
 }
 
 @media (max-width: $large) {
+  body {
+    padding: 0 5px !important;
+  }
   .sidebar {
     padding: 0 0.5em !important;
   }
@@ -511,6 +514,13 @@ article details pre {
 @media (max-width: 768px) {
   .presentation-iframe { display: none; }
   .presentation-fallback { display: inline-block; }
+}
+
+@include breakpoint($medium) {
+  .archive, .article { 
+    padding-right: 20px !important;
+    padding-left: 70px !important; 
+  }
 }
 
 .page_Teaching h3 {
