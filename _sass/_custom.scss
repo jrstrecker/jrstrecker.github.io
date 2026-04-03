@@ -187,6 +187,10 @@ body {
   color: #fff !important;
   text-decoration: none !important;
 }
+.greedy-nav .hidden-links a,
+.greedy-nav .hidden-links a:hover {
+  color: #3a5068 !important;
+}
 
 .greedy-nav .visible-links a::before {
   background: #fff !important;
@@ -432,7 +436,7 @@ article details pre {
 
 @media (max-width: $large) {
   .sidebar {
-    padding: 0.5em !important;
+    padding: 0 0.5em !important;
   }
   .author__avatar {
     width: 84px;
@@ -479,7 +483,7 @@ article details pre {
         display: inline-flex;
         align-items: center;
         gap: 0.35em;
-        margin-bottom: none !important;
+        margin-bottom: 0 !important;
       }
       i { flex-shrink: 0; padding-right: 0 !important; }
     }
