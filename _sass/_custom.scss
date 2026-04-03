@@ -431,11 +431,20 @@ article details pre {
 }
 
 @media (max-width: $large) {
+  .sidebar {
+    padding: 0.5em !important;
+  }
   .author__avatar {
-    width: 64px;
+    width: 84px;
   }
   .author__name {
-    font-size: 1.3em;
+    font-size: 1.3em !important;
+  }
+  .author__content {
+    padding-top: 10px !important;
+  }
+  .author__bio {
+    font-size: 1em !important;
   }
   .author__urls-wrapper {
     display: block;
@@ -470,6 +479,7 @@ article details pre {
         display: inline-flex;
         align-items: center;
         gap: 0.35em;
+        margin-bottom: none !important;
       }
       i { flex-shrink: 0; padding-right: 0 !important; }
     }
