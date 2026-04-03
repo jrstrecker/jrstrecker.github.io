@@ -1,6 +1,6 @@
 ---
-title: Research Plan
-permalink: /research-plan/
+title: Personalized Reality
+permalink: /personalized-reality/
 author_profile: true
 ---
 

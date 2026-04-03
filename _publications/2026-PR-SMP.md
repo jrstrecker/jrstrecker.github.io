@@ -2,7 +2,7 @@
 title: "Creating Personalized Realities That Connect People's Perceptions of Reality"
 collection: publications
 permalink: /publication/2026-PR-SMP
-tags: ["Personalized Reality", "Personalization", "Mixed Reality", "Ubiquitous Computing", "Critical Computing]
+tags: ["Personalized Reality", "Personalization", "Mixed Reality", "Ubiquitous Computing", "Critical Computing"]
 date: 2026-04-13
 venue: 'Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’26)'
 venuelink: "https://chi2026.acm.org/"
