@@ -430,6 +430,12 @@ article details pre {
   }
 }
 
+.presentation-fallback { display: none; }
+@media (max-width: 768px) {
+  .presentation-iframe { display: none; }
+  .presentation-fallback { display: inline-block; }
+}
+
 .page_Teaching h3 {
   margin: 1.5em 0 0;
   padding-bottom: 0.5em;
