@@ -430,6 +430,56 @@ article details pre {
   }
 }
 
+@media (max-width: 1024px) {
+  .author__avatar {
+    width: 64px;
+  }
+  .author__name {
+    font-size: 1.1em;
+  }
+  .author__urls-wrapper {
+    display: block;
+    width: 100%;
+    button { display: none; }
+  }
+  .author__urls {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4em;
+    position: static !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin-top: 0.75em !important;
+    z-index: auto !important;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.4em;
+      background: #fff;
+      border: 1px solid #cdd3d8;
+      border-radius: 20px;
+      padding: 0.3em 0.75em;
+      font-size: 0.85em;
+      color: #3a5068;
+      white-space: nowrap;
+      overflow: hidden;
+      a {
+        color: inherit;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.4em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      i { flex-shrink: 0; padding-right: 0 !important; }
+    }
+  }
+}
+
 .presentation-fallback { display: none; }
 @media (max-width: 768px) {
   .presentation-iframe { display: none; }
