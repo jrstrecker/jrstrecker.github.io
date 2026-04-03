@@ -2,6 +2,7 @@
 title: "Ad-hoc Action Adaptation through Spontaneous Context"
 collection: publications
 permalink: /publication/2025-AdhocActionAdaptation
+tags: ["Ubiquitous Computing"]
 date: 2025-10-12
 venue: 'Companion of the the 2025 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp Companion ’25)'
 venuelink: "https://www.ubicomp.org/ubicomp-iswc-2025"

@@ -2,6 +2,7 @@
 title: "Sharing Personalized Mixed Reality Experiences"
 collection: publications
 permalink: /publication/2022-Sharing-P-MR
+tags: ["Personalized Reality", "Personalization", "Mixed Reality", "Critical Computing"]
 date: 2023-09-03
 venue: 'ABIS 2023 - 27th International Workshop on Personalization and Recommendation at Mensch und Computer 2023'
 venuelink: "https://fg-abis.gi.de/veranstaltung/abis-2023"

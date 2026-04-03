@@ -2,6 +2,7 @@
 title: "SOCRAR: Semantic OCR through Augmented Reality"
 collection: publications
 permalink: /publication/2022-SOCRAR
+tags: ["Mixed Reality", "Ubiquitous Computing", "Computer Vision"]
 date: 2022-10-01
 venue: '12th International Conference on the Internet of Things (IoT22)'
 venuelink: "https://iot-conference.org/iot2022/"

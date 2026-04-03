@@ -2,6 +2,7 @@
 title: "ShoppingCoach: Using Diminished Reality to Prevent Unhealthy Food Choices in an Offline Supermarket Scenario"
 collection: publications
 permalink: /publication/2024-ShoppingCoach
+tags: ["Mixed Reality", "Ubiquitous Computing", "Personalized Reality"]
 date: 2024-05-11
 venue: 'Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’24)'
 venuelink: "https://chi2024.acm.org/"

@@ -2,6 +2,7 @@
 title: "GlassBoARd: A Gaze-Enabled AR Interface for Collaborative Work"
 collection: publications
 permalink: /publication/2024-GlassboARd
+tags: ["Mixed Reality", "Ubiquitous Computing", "Eye Tracking"]
 date: 2024-05-11
 venue: 'Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’24)'
 venuelink: "https://chi2024.acm.org/"

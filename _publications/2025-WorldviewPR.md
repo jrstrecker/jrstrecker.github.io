@@ -2,6 +2,7 @@
 title: "Change Your Perspective, Widen Your Worldview! Societally Beneficial Perceptual Filter Bubbles in Personalized Reality"
 collection: publications
 permalink: /publication/2025-WorldviewPR
+tags: ["Personalized Reality", "Recommender Systems", "Critical Computing", "Algorithms and Society"]
 date: 2025-04-26
 venue: "Purposeful XR: Affordances, Challenges, and Speculations for an Ethical Future (Purposeful XR ’25), co-located with CHI 2025"
 venuelink: "https://smrghsh.github.io/purposefulXR/"

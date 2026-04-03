@@ -2,6 +2,7 @@
 title: "JUIC-IoT: Just-In-Time User Interfaces for Interacting with IoT Devices in Mixed Reality"
 collection: publications
 permalink: /publication/2025-JUIC-IoT
+tags: ["Mixed Reality", "Ubiquitous Computing", "Personalized Reality"]
 date: 2025-10-12
 venue: 'Companion of the the 2025 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp Companion ’25)'
 venuelink: "https://www.ubicomp.org/ubicomp-iswc-2025"

@@ -2,6 +2,7 @@
 title: "Personalized Recommendations in Mixed Reality Enhance Explanation Satisfaction and Hedonic User Experience in Board Game Learning"
 collection: publications
 permalink: /publication/2026-PRecMR
+tags: ["Mixed Reality", "Personalization", "Recommender Systems", "Personalized Reality"]
 date: 2026-03-23
 venue: "31st International Conference on Intelligent User Interfaces (IUI '26)"
 venuelink: "https://iui.acm.org/2026"

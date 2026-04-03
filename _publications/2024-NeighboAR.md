@@ -2,6 +2,7 @@
 title: "NeighboAR: Efficient Object Retrieval using Proximity-and Gaze-based Object Grouping with an AR System"
 collection: publications
 permalink: /publication/2024-NeighboAR
+tags: ["Mixed Reality", "Ubiquitous Computing", "Computer Vision", "Eye Tracking"]
 date: 2024-05-28
 venue: 'Proceedings of the ACM on Human-Computer Interaction (ETRA)'
 venuelink: "https://etra.acm.org/2024/"

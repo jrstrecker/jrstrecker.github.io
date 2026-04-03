@@ -2,6 +2,7 @@
 title: "Personalized Reality: Challenges of Responsible Ubiquitous Personalization"
 collection: publications
 permalink: /publication/2024-PersonalizedReality
+tags: ["Personalized Reality", "Personalization", "Mixed Reality", "Ubiquitous Computing", "Critical Computing"]
 date: 2024-09-01
 venue: 'ABIS 2024 - 28th International Workshop on Personalization and Recommendation at Mensch und Computer 2024'
 venuelink: "https://fg-abis.gi.de/veranstaltung/abis-2024"

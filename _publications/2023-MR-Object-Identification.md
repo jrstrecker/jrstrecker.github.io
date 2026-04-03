@@ -2,6 +2,7 @@
 title: "MR Object Identification and Interaction: Fusing Object Situation Information from Heterogeneous Sources"
 collection: publications
 permalink: /publication/2022-MR-Object-Identification
+tags: ["Mixed Reality", "Ubiquitous Computing", "Computer Vision"]
 date: 2023-09-27
 venue: 'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies'
 venuelink: "https://dl.acm.org/journal/imwut"

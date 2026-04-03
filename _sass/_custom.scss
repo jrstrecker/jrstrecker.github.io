@@ -517,7 +517,7 @@ article details pre {
 }
 
 @include breakpoint($medium) {
-  .archive, .article { 
+  .archive, .page { 
     padding-right: 20px !important;
     padding-left: 70px !important; 
   }

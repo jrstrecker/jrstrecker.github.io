@@ -2,6 +2,7 @@
 title: "From Walls to Windows: Creating Transparency to Understand Filter Bubbles in Social Media"
 collection: publications
 permalink: /publication/2024-FilterBubbles
+tags: ["Social Media", "Recommender Systems", "Algorithms and Society", "Critical Computing", "Regulation"]
 date: 2024-10-18
 venue: 'NORMalize 2024: The Second Workshop on the Normative Design and Evaluation of Recommender Systems, co-located with the ACM Conference on Recommender Systems 2024 (RecSys 2024)'
 venuelink: "https://sites.google.com/view/normalizeworkshop/recsys24"

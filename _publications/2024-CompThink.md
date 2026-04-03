@@ -2,6 +2,7 @@
 title: "Measuring Computational Thinking - Developing A Short Performance Test For Higher Education"
 collection: publications
 permalink: /publication/2024-CompThink
+tags: ["Technology Acceptance"]
 date: 2024-10-26
 venue: '21st International Conference on Cognition and Exploratory Learning in Digital Age (CELDA 2024)'
 venuelink: "https://www.celda-conf.org/oldconferences/2024/"

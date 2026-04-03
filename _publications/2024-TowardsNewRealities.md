@@ -2,6 +2,7 @@
 title: "Towards new realities: implications of personalized online layers in our daily lives"
 collection: publications
 permalink: /publication/2024-TowardsNewRealities
+tags: ["Personalized Reality", "Personalization", "Ubiquitous Computing", "Critical Computing", "Algorithms and Society"]
 date: 2024-06-18
 venue: 'i-com - Journal of Interactive Media'
 venuelink: "https://i-com-journal.org/"

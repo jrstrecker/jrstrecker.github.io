@@ -2,6 +2,7 @@
 title: "AuctentionAR -Auctioning Off Visual Attention in Mixed Reality"
 collection: publications
 permalink: /publication/2024-AuctentionAR
+tags: ["Mixed Reality", "Privacy", "Algorithms and Society", "Eye Tracking"]
 date: 2024-05-11
 venue: 'Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’24)'
 venuelink: "https://chi2024.acm.org/"

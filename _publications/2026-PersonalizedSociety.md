@@ -2,6 +2,7 @@
 title: "Connecting Personalized Realities: Challenges and Opportunities in a Personalized Society"
 collection: publications
 permalink: /publication/2026-PersonalizedSociety
+tags: ["Personalized Reality", "Critical Computing", "Algorithms and Society", "Regulation", "Social Media"]
 date: 2026-04-13
 venue: "1st Workshop on Shaping Future Human Connection: Social Augmentation through XR Technologies, co-colocated with the ACM CHI 2026 Conference"
 venuelink: "https://sites.google.com/view/social-xr-chi2026"
