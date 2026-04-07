@@ -11,6 +11,9 @@ This pages is a companion to the paper "Creating Personalized Realities That Con
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}<div class="rp-pub"><div class="rp-pub-header"><p class="rp-pub-title"><a href="{{ post.url }}">📄 {{ post.title }}</a></p><em class="rp-pub-venue">{{ post.venue }}</em><button class="rp-pub-toggle">See details</button></div><div class="rp-pub-content">{% include archive-single.html %}</div></div>{% endfor %}
 
+![RUPS Model with RQs](images\research\RUPS_Model_RQs.png)
+
+
 ## RQ1
 > How can ubiquitous personalization systems be modeled to support the design, implementation and analysis of such systems in a responsible way?
 
