@@ -176,13 +176,24 @@ details summary::-webkit-details-marker { display:none; }
   margin-bottom: 0.3em;
 }
 
+.pub-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5em;
+
+  .archive__item-title {
+    margin-bottom: 0;
+  }
+}
+
 .pub-type-pill {
   font-size: 0.78em;
   color: #666;
   background: #f3f1ed;
   padding: 0.2em 0.65em;
   border-radius: 12px;
-  margin-left: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .pub-authors {

@@ -26,26 +26,24 @@
       </div>
     {% endif %}
 
-    {% if post.paperaward or post.papertype %}
+    {% if post.paperaward %}
     <div class="pub-top-row">
-      {% if post.paperaward %}
       <div class="pub-award-badge"><i class="fa fa-trophy" aria-hidden="true"></i> {{ post.paperaward }}</div>
-      {% endif %}
-      {% if post.papertype %}
-      <span class="pub-type-pill">{{ post.papertype }}</span>
-      {% endif %}
     </div>
     {% endif %}
 
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if post.collection == 'publications' %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% elsif post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
-    </h2>
+    <div class="pub-title-row">
+      <h2 class="archive__item-title" itemprop="headline">
+        {% if post.collection == 'publications' %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        {% elsif post.link %}
+          <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        {% else %}
+          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        {% endif %}
+      </h2>
+      {% if post.papertype %}<span class="pub-type-pill">{{ post.papertype }}</span>{% endif %}
+    </div>
 
     {% if post.venue or post.date or post.authors %}
     <div class="pub-meta">
