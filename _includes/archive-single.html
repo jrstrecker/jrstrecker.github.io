@@ -26,11 +26,12 @@
       </div>
     {% endif %}
 
-   
+    {% if post.paperaward %}
+    <div class="pub-award-badge"><i class="fa fa-trophy" aria-hidden="true"></i> {{ post.paperaward }}</div>
+    {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.collection == 'publications' %}
-        <!-- {{ title }}-->
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% elsif post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
@@ -39,43 +40,26 @@
       {% endif %}
     </h2>
 
-    <!-- {% if post.venue %}
-    <p> 
-      In: {{ post.venue }} ({{ post.date | date: "%Y-%m-%d" }})
-    </p> -->
-    {% if post.venue or post.date %}
-    <div class="info-card">
-
-      {% if post.paperaward %}
-      <div class="info-item item-award">
-        <p class="info-title"><i class="fa fa-trophy" aria-hidden="true"></i></p>
-        <p class="info-description">{{ post.paperaward }} Award</p>
-      </div>
-      {% endif %}
+    {% if post.venue or post.date or post.authors %}
+    <div class="pub-meta">
       {% if post.venue %}
-      <div class="info-item">
-        <p class="info-title">In</p>
-        <p class="info-description">{{ post.venue }} 
-          {% if post.venuelink %}
-            &nbsp;<a href="{{ post.venuelink}}" target="_blank" class="venue-link"><i class="fa fa-link" aria-hidden="true" title="permalink"></i></a>
-          {% endif %}
-        </p>
-        {% if post.papertype  %}
-        <div class="paper-type">{{ post.papertype }}</div>
+      <div class="pub-venue">
+        {{ post.venue }}
+        {% if post.venuelink %}
+          <a href="{{ post.venuelink}}" target="_blank" class="venue-link"><i class="fa fa-link" aria-hidden="true" title="permalink"></i></a>
         {% endif %}
       </div>
       {% endif %}
-      {% if post.date %}
-      <div class="info-item">
-        <p class="info-title">Date</p>
-        <p class="info-description">{{ post.date | date: "%B %d, %Y" }}</p>
+      <div class="pub-meta-line">
+        {% if post.date %}
+        <span class="pub-date">{{ post.date | date: "%B %Y" }}</span>
+        {% endif %}
+        {% if post.papertype %}
+        <span class="pub-type">{{ post.papertype }}</span>
+        {% endif %}
       </div>
-      {% endif %}
       {% if post.authors %}
-      <div class="info-item">
-        <p class="info-title">Authors</p>
-        <p class="info-description">{{ post.authors }}</p>
-      </div>
+      <div class="pub-authors">{{ post.authors }}</div>
       {% endif %}
     </div>
     {% endif %}
