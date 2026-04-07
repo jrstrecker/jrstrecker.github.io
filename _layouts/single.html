@@ -91,21 +91,14 @@ layout: default
         {% if page.venue or page.date or page.authors %}
     <div class="pub-meta">
       {% if page.venue %}
-      <div class="pub-venue">
-        {{ page.venue }}
-        {% if page.venuelink %}
-          <a href="{{ page.venuelink }}" target="_blank" class="venue-link"><i class="fa fa-link" aria-hidden="true"></i></a>
-        {% endif %}
-      </div>
+      <span class="pub-venue">{% if page.venuelink %}<a href="{{ page.venuelink }}" target="_blank">{{ page.venue }}</a>{% else %}{{ page.venue }}{% endif %}</span>
       {% endif %}
-      <div class="pub-meta-line">
-        {% if page.date %}
-        <span class="pub-date">{{ page.date | date: "%B %Y" }}</span>
-        {% endif %}
-        {% if page.papertype %}
-        <span class="pub-type">{{ page.papertype }}</span>
-        {% endif %}
-      </div>
+      {% if page.papertype %}
+      <span class="pub-type">{{ page.papertype }}</span>
+      {% endif %}
+      {% if page.date %}
+      <span class="pub-date">{{ page.date | date: "%B %Y" }}</span>
+      {% endif %}
       {% if page.authors %}
       <div class="pub-authors">{{ page.authors }}</div>
       {% endif %}

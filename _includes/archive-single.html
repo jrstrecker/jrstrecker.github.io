@@ -43,21 +43,14 @@
     {% if post.venue or post.date or post.authors %}
     <div class="pub-meta">
       {% if post.venue %}
-      <div class="pub-venue">
-        {{ post.venue }}
-        {% if post.venuelink %}
-          <a href="{{ post.venuelink}}" target="_blank" class="venue-link"><i class="fa fa-link" aria-hidden="true" title="permalink"></i></a>
-        {% endif %}
-      </div>
+      <span class="pub-venue">{% if post.venuelink %}<a href="{{ post.venuelink }}" target="_blank">{{ post.venue }}</a>{% else %}{{ post.venue }}{% endif %}</span>
       {% endif %}
-      <div class="pub-meta-line">
-        {% if post.date %}
-        <span class="pub-date">{{ post.date | date: "%B %Y" }}</span>
-        {% endif %}
-        {% if post.papertype %}
-        <span class="pub-type">{{ post.papertype }}</span>
-        {% endif %}
-      </div>
+      {% if post.papertype %}
+      <span class="pub-type">{{ post.papertype }}</span>
+      {% endif %}
+      {% if post.date %}
+      <span class="pub-date">{{ post.date | date: "%B %Y" }}</span>
+      {% endif %}
       {% if post.authors %}
       <div class="pub-authors">{{ post.authors }}</div>
       {% endif %}
