@@ -26,8 +26,15 @@
       </div>
     {% endif %}
 
-    {% if post.paperaward %}
-    <div class="pub-award-badge"><i class="fa fa-trophy" aria-hidden="true"></i> {{ post.paperaward }}</div>
+    {% if post.paperaward or post.papertype %}
+    <div class="pub-top-row">
+      {% if post.paperaward %}
+      <div class="pub-award-badge"><i class="fa fa-trophy" aria-hidden="true"></i> {{ post.paperaward }}</div>
+      {% endif %}
+      {% if post.papertype %}
+      <span class="pub-type-pill">{{ post.papertype }}</span>
+      {% endif %}
+    </div>
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
@@ -45,11 +52,8 @@
       {% if post.venue %}
       <span class="pub-venue">{% if post.venuelink %}<a href="{{ post.venuelink }}" target="_blank">{{ post.venue }}</a>{% else %}{{ post.venue }}{% endif %}</span>
       {% endif %}
-      {% if post.papertype %}
-      <span class="pub-type">{{ post.papertype }}</span>
-      {% endif %}
       {% if post.date %}
-      <span class="pub-date">{{ post.date | date: "%B %Y" }}</span>
+      <span class="pub-date">{{ post.date | date: "%-d %B %Y" }}</span>
       {% endif %}
       {% if post.authors %}
       <div class="pub-authors">{{ post.authors }}</div>

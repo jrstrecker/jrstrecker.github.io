@@ -30,7 +30,12 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.paperaward %}<div class="pub-award-badge"><i class="fa fa-trophy" aria-hidden="true"></i> {{ page.paperaward }}</div>{% endif %}
+          {% if page.paperaward or page.papertype %}
+          <div class="pub-top-row">
+            {% if page.paperaward %}<div class="pub-award-badge"><i class="fa fa-trophy" aria-hidden="true"></i> {{ page.paperaward }}</div>{% endif %}
+            {% if page.papertype %}<span class="pub-type-pill">{{ page.papertype }}</span>{% endif %}
+          </div>
+          {% endif %}
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
           {% if post.read_time %}
           {% elsif post.read_time and post.collection == 'posts' %}
@@ -93,11 +98,8 @@ layout: default
       {% if page.venue %}
       <span class="pub-venue">{% if page.venuelink %}<a href="{{ page.venuelink }}" target="_blank">{{ page.venue }}</a>{% else %}{{ page.venue }}{% endif %}</span>
       {% endif %}
-      {% if page.papertype %}
-      <span class="pub-type">{{ page.papertype }}</span>
-      {% endif %}
       {% if page.date %}
-      <span class="pub-date">{{ page.date | date: "%B %Y" }}</span>
+      <span class="pub-date">{{ page.date | date: "%-d %B %Y" }}</span>
       {% endif %}
       {% if page.authors %}
       <div class="pub-authors">{{ page.authors }}</div>

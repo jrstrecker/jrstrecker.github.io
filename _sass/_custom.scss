@@ -169,13 +169,20 @@ details summary::-webkit-details-marker { display:none; }
   text-decoration-color: rgba(#2a6496, 0.4) !important;
 }
 
-.pub-type {
-  font-style: italic;
+.pub-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3em;
 }
 
-.pub-type::before {
-  content: "\00b7";
-  margin: 0 0.3em;
+.pub-type-pill {
+  font-size: 0.78em;
+  color: #666;
+  background: #f3f1ed;
+  padding: 0.2em 0.65em;
+  border-radius: 12px;
+  margin-left: auto;
 }
 
 .pub-authors {
