@@ -101,9 +101,10 @@
       {% if post.presentationurl %}
       <p></p>
        <details><summary><i class="fa fa-fw fa-desktop fa-info-color" aria-hidden="true"> </i> Presentation</summary>
-        <iframe class="presentation-iframe" src="{{ post.presentationurl }}" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
+        <iframe class="presentation-iframe" data-src="{{ post.presentationurl }}" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
         <a class="presentation-fallback btn btn--info-outline text-decoration-none" href="{{ post.presentationurl }}" target="_blank"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download Presentation</a>
         </details>
+        <script>if(!window._presIframesLoaded){window._presIframesLoaded=true;window.addEventListener('DOMContentLoaded',function(){if(window.innerWidth>768){document.querySelectorAll('.presentation-iframe[data-src]').forEach(function(f){f.src=f.dataset.src})}})}</script>
       {% endif %}
       <!-- citation and icon code -->
       
