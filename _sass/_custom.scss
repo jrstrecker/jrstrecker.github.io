@@ -652,7 +652,7 @@ article details pre {
     z-index: auto !important;
   }
 
-  // On non-start pages: hide avatar/name, shrink links to icon-only circles
+  // On non-start pages: hide avatar/name, shrink link pills
   .author--compact {
     .author__avatar,
     .author__content {
@@ -662,31 +662,14 @@ article details pre {
     .author__urls {
       margin-top: 0.3em !important;
 
+      &::before,
+      &::after {
+        display: none !important; // hide the dropdown triangle
+      }
+
       li {
-        padding: 0;
-        width: 28px;
-        height: 28px;
-        border-radius: 50%;
-        justify-content: center;
-        font-size: 0 !important; // hides text nodes
-
-        &:not(:has(a)) {
-          display: none; // hide non-linked items (location, employer)
-        }
-
-        i {
-          font-size: 13px !important;
-          padding: 0 !important;
-        }
-
-        a {
-          font-size: 0 !important;
-          width: 100%;
-          height: 100%;
-          justify-content: center;
-
-          i { font-size: 13px !important; }
-        }
+        font-size: 0.68em !important;
+        padding: 0.15em 0.5em !important;
       }
     }
   }
