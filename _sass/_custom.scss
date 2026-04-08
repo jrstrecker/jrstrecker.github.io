@@ -487,37 +487,28 @@ article details pre {
 
 .lightbox-trigger {
   cursor: zoom-in;
-
-  img { display: block; }
+  display: block;
 }
 
-.lightbox-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  align-items: center;
-  justify-content: center;
+dialog.lightbox-overlay {
+  border: none;
+  background: transparent;
+  max-width: 90vw;
+  max-height: 90vh;
+  padding: 0;
 
-  &:target {
-    display: flex;
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.82);
+    cursor: zoom-out;
   }
 
   img {
     max-width: 90vw;
     max-height: 90vh;
     object-fit: contain;
-    position: relative;
-    z-index: 1;
     border-radius: 4px;
+    display: block;
   }
-}
-
-.lightbox-backdrop {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.82);
-  cursor: zoom-out;
 }
 
 .rq-divider {
@@ -733,7 +724,7 @@ article details pre {
 @include breakpoint($medium) {
   .archive, .page {
     padding-right: 20px !important;
-    padding-left: 20px !important;
+    padding-left: 30px !important;
   }
 }
 

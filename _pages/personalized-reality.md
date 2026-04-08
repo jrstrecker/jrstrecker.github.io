@@ -11,8 +11,8 @@ This pages is a companion to the paper "Creating Personalized Realities That Con
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}{% include archive-single.html %}{% endfor %}
 
-<a href="#lightbox-rups" class="lightbox-trigger"><img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs"></a>
-<div id="lightbox-rups" class="lightbox-overlay"><a href="#" class="lightbox-backdrop"></a><img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs"></div>
+<img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs" class="lightbox-trigger">
+<dialog class="lightbox-overlay"><img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs"></dialog>
 
 
 ## RQ1
@@ -53,3 +53,14 @@ This RQ is still in progress. However, these vision papers sketch the basic idea
 {% assign selected_ids = "/publication/2022-Sharing-P-MR,/publication/WorldviewPR,/publication/2026-PersonalizedSociety" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}{% include archive-single.html %}{% endfor %}
+
+<script>
+document.querySelectorAll('.lightbox-trigger').forEach(function(img) {
+  img.addEventListener('click', function() {
+    this.nextElementSibling.showModal();
+  });
+});
+document.querySelectorAll('dialog.lightbox-overlay').forEach(function(dialog) {
+  dialog.addEventListener('click', function() { this.close(); });
+});
+</script>
