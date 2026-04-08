@@ -69,50 +69,37 @@
     {% if post.collection == 'teaching' %}
       <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.collection == 'publications' %}
-      {% if post.abstract %}
-        <details><summary><i class="fa fa-fw fa-file-alt fa-info-color" aria-hidden="true"> </i> Abstract</summary>
-        <p>
-        {{ post.abstract }}
-        </p>
-        </details>
-      {% endif %}
+      {% if post.abstract or post.presentationurl or post.citation or post.bib %}
+      <details class="pub-details-outer"><summary><i class="fa fa-fw fa-info-circle fa-info-color" aria-hidden="true"></i> Show Details</summary>
+        <div class="pub-details-inner">
+          {% if post.abstract %}
+          <details class="pub-details-section"><summary><i class="fa fa-fw fa-file-alt fa-info-color" aria-hidden="true"> </i> Abstract</summary>
+          <p>{{ post.abstract }}</p>
+          </details>
+          {% endif %}
 
-      {% if post.presentationurl %}
-      <p></p>
-       <details><summary><i class="fa fa-fw fa-desktop fa-info-color" aria-hidden="true"> </i> Presentation</summary>
-        <iframe class="presentation-iframe" data-src="{{ post.presentationurl }}" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
-        <a class="presentation-fallback btn btn--info-outline text-decoration-none" href="{{ post.presentationurl }}" target="_blank"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download Presentation</a>
-        </details>
-        <script>if(!window._presIframesLoaded){window._presIframesLoaded=true;window.addEventListener('DOMContentLoaded',function(){if(window.innerWidth>768){document.querySelectorAll('.presentation-iframe[data-src]').forEach(function(f){f.src=f.dataset.src})}})}</script>
-      {% endif %}
-      <!-- citation and icon code -->
-      
-      {% if post.citation %}
-      <p>
-      <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Text Reference</summary>
-        <blockquote>
-        <p>
-        {{ post.citation }}
-        </p>
-      </blockquote>
-      </details>
-      
-      {% endif %}
-      {% if post.bib %}
-      <p></p>
-      <details><summary><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="true"> </i> BibTex Reference</summary>
-        <pre>{{ post.bib }}</pre>
+          {% if post.presentationurl %}
+          <details class="pub-details-section"><summary><i class="fa fa-fw fa-desktop fa-info-color" aria-hidden="true"> </i> Presentation</summary>
+          <iframe class="presentation-iframe" data-src="{{ post.presentationurl }}" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
+          <a class="presentation-fallback btn btn--info-outline text-decoration-none" href="{{ post.presentationurl }}" target="_blank"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download Presentation</a>
+          </details>
+          <script>if(!window._presIframesLoaded){window._presIframesLoaded=true;window.addEventListener('DOMContentLoaded',function(){if(window.innerWidth>768){document.querySelectorAll('.presentation-iframe[data-src]').forEach(function(f){f.src=f.dataset.src})}})}</script>
+          {% endif %}
+
+          {% if post.citation %}
+          <details class="pub-details-section"><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Text Reference</summary>
+          <blockquote><p>{{ post.citation }}</p></blockquote>
+          </details>
+          {% endif %}
+
+          {% if post.bib %}
+          <details class="pub-details-section"><summary><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="true"> </i> BibTeX Reference</summary>
+          <pre>{{ post.bib }}</pre>
+          </details>
+          {% endif %}
+        </div>
       </details>
       {% endif %}
-      <!-- {% if post.excerpt %}
-      <details><summary><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="true"> </i> BibTex Reference</summary>
-        <blockquote>
-        <p>
-        {{ post.excerpt }}
-        </p>
-      </blockquote>
-      </details>
-      {% endif %} -->
 
     {% if post.excerpt and post.collection == 'research' and site.read_more != 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description">

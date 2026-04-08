@@ -298,6 +298,52 @@ body {
  //padding: 1em 1.5em;
 }
 
+.pub-details-outer {
+  background: #f8f7f5;
+  border: 1px solid #e8e5df !important;
+  border-radius: 6px;
+  padding: 0 !important;
+  margin: 0.5em 0;
+
+  > summary {
+    padding: 0.5em 0.8em;
+    font-weight: 500;
+    font-size: 0.88em;
+    color: #555;
+    border-radius: 6px;
+    margin: 0;
+  }
+}
+
+.pub-details-inner {
+  padding: 0.25em 0.8em 0.5em;
+}
+
+.pub-details-section {
+  background: #fff;
+  border: 1px solid #ece9e3 !important;
+  border-radius: 5px;
+  margin: 0.35em 0;
+  padding: 0 !important;
+
+  > summary {
+    padding: 0.4em 0.7em;
+    font-size: 0.88em;
+    margin: 0;
+    border-radius: 5px;
+  }
+
+  p, blockquote, pre {
+    padding: 0.4em 0.7em;
+    margin: 0;
+  }
+
+  pre {
+    background: #faf9f7;
+    border-radius: 0 0 5px 5px;
+  }
+}
+
 article details p {
   padding: 0.25em 0.7em;
   text-align: justify;
