@@ -485,6 +485,41 @@ article details pre {
 }
 
 
+.lightbox-trigger {
+  cursor: zoom-in;
+
+  img { display: block; }
+}
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+
+  &:target {
+    display: flex;
+  }
+
+  img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    border-radius: 4px;
+  }
+}
+
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  cursor: zoom-out;
+}
+
 .rq-divider {
   border: none;
   border-top-width: 2px;
@@ -704,7 +739,7 @@ article details pre {
 
 @include breakpoint($large) {
   .page, .archive {
-    @include span(8.5 of 12 last);
+    @include span(7.5 of 12 last);
     float: left !important;
   }
 }

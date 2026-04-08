@@ -11,7 +11,8 @@ This pages is a companion to the paper "Creating Personalized Realities That Con
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}{% include archive-single.html %}{% endfor %}
 
-![RUPS Model with RQs](/images/research/RUPS_Model_RQs.png)
+<a href="#lightbox-rups" class="lightbox-trigger"><img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs"></a>
+<div id="lightbox-rups" class="lightbox-overlay"><a href="#" class="lightbox-backdrop"></a><img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs"></div>
 
 
 ## RQ1
