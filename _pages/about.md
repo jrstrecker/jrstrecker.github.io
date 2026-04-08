@@ -22,7 +22,7 @@ I am been reviewing for multiple conferences and journals, for more details see 
 
 For updates on what I'm doing, have a look at the [Publications](./publications) of my colleagues and me,
 follow me on the Fediverse: [https://hci.social/@jannis](https://hci.social/@jannis),
-or contact me via email: [jannisrene.strecker@unisg.ch](mailto:jannisrene.strecker@unisg.ch). 😀
+or contact me via email: [jannis.strecker-bischoff@unisg.ch](mailto:jannis.strecker-bischoff@unisg.ch). 😀
 </div>
 
 ## 📑 Recent Publications

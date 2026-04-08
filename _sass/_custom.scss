@@ -669,7 +669,7 @@ article details pre {
 @include breakpoint($large) {
   .page, .archive {
     @include span(8.5 of 12 last);
-    margin: left !important;
+    float: left !important;
   }
 }
 
