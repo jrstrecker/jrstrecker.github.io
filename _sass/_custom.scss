@@ -628,9 +628,15 @@ article details pre {
 }
 
 @include breakpoint($medium) {
-  .archive, .page { 
+  .archive, .page {
     padding-right: 20px !important;
-    padding-left: 70px !important; 
+    padding-left: 70px !important;
+  }
+}
+
+@include breakpoint($large) {
+  .page, .archive {
+    @include span(8.5 of 12 last);
   }
 }
 
