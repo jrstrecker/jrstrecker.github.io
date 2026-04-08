@@ -51,8 +51,7 @@ a:hover {
 }
 
 .fa-info-color {
-  color: $blue-green;
-  ;
+  color: #3a5068;
 }
 
 
@@ -343,7 +342,7 @@ body {
     padding: 0.6em 1em;
     font-weight: 500;
     font-size: 0.93em;
-    color: $blue-green;
+    color: #3a5068;
     border-radius: 6px;
     margin: 0;
     display: flex;
@@ -357,7 +356,7 @@ body {
       font-size: 0.7em;
       margin-left: auto;
       transition: transform 0.2s ease;
-      color: #999;
+      color: #aaa;
     }
   }
   &[open] > summary::after {
