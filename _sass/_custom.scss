@@ -651,6 +651,45 @@ article details pre {
     margin-top: 0.6em !important;
     z-index: auto !important;
   }
+
+  // On non-start pages: hide avatar/name, shrink links to icon-only circles
+  .author--compact {
+    .author__avatar,
+    .author__content {
+      display: none !important;
+    }
+
+    .author__urls {
+      margin-top: 0.3em !important;
+
+      li {
+        padding: 0;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        justify-content: center;
+        font-size: 0 !important; // hides text nodes
+
+        &:not(:has(a)) {
+          display: none; // hide non-linked items (location, employer)
+        }
+
+        i {
+          font-size: 13px !important;
+          padding: 0 !important;
+        }
+
+        a {
+          font-size: 0 !important;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+
+          i { font-size: 13px !important; }
+        }
+      }
+    }
+  }
 }
 
 .presentation-fallback { display: none; }
