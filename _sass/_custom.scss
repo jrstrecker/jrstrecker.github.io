@@ -120,6 +120,7 @@ details summary::-webkit-details-marker { display:none; }
   border-radius: 7px;
   margin: 1em 0;
   box-shadow: 0px 1px 4px rgba(0,0,0,0.08);
+  background: #fdfdfd;
 }
 
 .publications-list-item h2 {
@@ -669,6 +670,7 @@ article details pre {
 @include breakpoint($large) {
   .page, .archive {
     @include span(8.5 of 12 last);
+    margin: left !important;
   }
 }
 
