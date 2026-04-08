@@ -336,6 +336,20 @@ body {
   padding: 0.3em 0.75em 0.65em;
 }
 
+.pub-details-outer > .pub-details-inner,
+.pub-details-section > p,
+.pub-details-section > blockquote,
+.pub-details-section > pre,
+.pub-details-section > iframe,
+.pub-details-section > a.presentation-fallback {
+  animation: details-expand 0.3s ease;
+}
+
+@keyframes details-expand {
+  from { opacity: 0; max-height: 0; overflow: hidden; }
+  to   { opacity: 1; max-height: 2000px; overflow: hidden; }
+}
+
 .pub-details-section {
   background: #fff;
   border: 1px solid #ece9e3 !important;
@@ -381,6 +395,46 @@ body {
   pre {
     background: #faf9f7;
     border-radius: 0 0 5px 5px;
+  }
+}
+
+.publications-list-item > .archive__item-excerpt > details,
+.publications-list-item > .archive__item-excerpt details {
+  background: #f8f7f5;
+  border: 1px solid #e8e5df !important;
+  border-radius: 6px;
+  padding: 0 !important;
+  margin: 0.75em 0;
+
+  > summary {
+    list-style: none;
+    padding: 0.6em 1em;
+    font-weight: 500;
+    font-size: 0.93em;
+    color: $blue-green;
+    border-radius: 6px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    &::-webkit-details-marker { display: none; }
+    &::after {
+      content: "\f078";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 0.7em;
+      margin-left: auto;
+      transition: transform 0.2s ease;
+      color: #999;
+    }
+  }
+  &[open] > summary::after {
+    transform: rotate(180deg);
+  }
+
+  .video-container {
+    padding: 0.5em 0.75em 0.65em;
+    animation: details-expand 0.3s ease;
   }
 }
 
