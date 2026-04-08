@@ -14,6 +14,7 @@ This pages is a companion to the paper "Creating Personalized Realities That Con
 <img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs" class="lightbox-trigger" data-lightbox="lightbox-rups">
 <dialog id="lightbox-rups" class="lightbox-overlay"><img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs"></dialog>
 
+<hr>
 
 ## RQ1
 <hr class="rq-divider rq1">
@@ -23,14 +24,18 @@ This pages is a companion to the paper "Creating Personalized Realities That Con
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}{% include archive-single.html %}{% endfor %}
 
+<hr>
+
 ## RQ2
 <hr class="rq-divider rq2">
 > What are suitable ways to give humans transparency and agency over the flow of their personal data in resonsible ubiquitous personalization systems?
 
 This RQ is still in progress. Papers that I have contributed to which are connected to this RQ:
-{% assign selected_ids = "/publication/2024-Gaze-based-opportunistic" | split: "," %}
+{% assign selected_ids = "/publication/2024-Gaze-based-opportunistic,/publication/2025-DogsGoPods" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}{% include archive-single.html %}{% endfor %}
+
+<hr>
 
 ## RQ3
 <hr class="rq-divider rq3">
@@ -45,12 +50,14 @@ Papers that I have contributed to which are connected to this RQ:
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}{% include archive-single.html %}{% endfor %}
 
+<hr>
+
 ## RQ4
 <hr class="rq-divider rq4">
 > In a multi-user PR scenario, what are suitable, effective and usable methods to counter isolated perceptions of reality?
 
 This RQ is still in progress. However, these vision papers sketch the basic ideas:
-{% assign selected_ids = "/publication/2022-Sharing-P-MR,/publication/WorldviewPR,/publication/2026-PersonalizedSociety" | split: "," %}
+{% assign selected_ids = "/publication/2026-PersonalizedSociety,/publication/2025-WorldviewPR,/publication/2024-TowardsNewRealities,/publication/2022-Sharing-P-MR" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}{% include archive-single.html %}{% endfor %}
 
