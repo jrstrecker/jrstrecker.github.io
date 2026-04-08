@@ -133,24 +133,24 @@
       </p>
     {% endif %}
     
-    {% if post.pressurl %}
-        <!-- <a href="{{ post.link }}"><i class="fas fa-fw fa-link " aria-hidden="true"></i> Link to paper</a> -->
-        <a href="{{ post.pressurl }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-newspaper " aria-hidden="true"></i> Link to Press Article</a>
+    {% if post.pressurl or post.link or post.paperurl or post.code or post.github %}
+      <div class="pub-actions">
+      {% if post.pressurl %}
+        <a href="{{ post.pressurl }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-newspaper" aria-hidden="true"></i> Press Article</a>
       {% endif %}
-    {% if post.link %}
-        <!-- <a href="{{ post.link }}"><i class="fas fa-fw fa-link " aria-hidden="true"></i> Link to paper</a> -->
-        <a href="{{ post.link }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-link " aria-hidden="true"></i> Link to Published Paper</a>
+      {% if post.link %}
+        <a href="{{ post.link }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Published Paper</a>
       {% endif %}
       {% if post.paperurl %}
-        <!-- <a href="{{ post.paperurl }}"><i class="fas fa-fw fa-file-pdf " aria-hidden="true"></i> Download paper</a> -->
-        <a href="{{ post.paperurl }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-file-pdf " aria-hidden="true"></i> Download Paper</a>
+        <a href="{{ post.paperurl }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download PDF</a>
       {% endif %}
       {% if post.code %}
-        <!-- <a href="{{ post.code }}"><i class="fas fa-fw fa-code " aria-hidden="true"></i></a> -->
-        <a href="{{ post.code }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-code " aria-hidden="true"></i> Link to Code</a>
+        <a href="{{ post.code }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-code" aria-hidden="true"></i> Code</a>
       {% endif %}
       {% if post.github %}
-        <a href="{{ post.github }}"><i class="fab fa-fw fa-github " aria-hidden="true"></i></a>
+        <a href="{{ post.github }}" target="_blank" class="pub-action-pill"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a>
+      {% endif %}
+      </div>
       {% endif %}
     {% elsif post.collection == 'posts' and post.date %}
       <p class="page__date"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>

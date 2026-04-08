@@ -214,6 +214,38 @@ details summary::-webkit-details-marker { display:none; }
 
 
 
+.pub-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45em;
+  margin-top: 0.75em;
+  padding-top: 0.6em;
+  border-top: 1px solid #e8e5df;
+}
+
+.pub-action-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  background: #ece9e3;
+  border: none;
+  border-radius: 20px;
+  padding: 0.3em 0.85em;
+  font-size: 0.85em;
+  color: #3a5068 !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s;
+
+  &:hover {
+    background: $blue-green;
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+
+  i { font-size: 0.9em; }
+}
+
 .btn--info-outline {
   border: 1px solid $blue-green !important;
   background-color: transparent;
