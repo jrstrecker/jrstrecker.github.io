@@ -11,8 +11,8 @@ This pages is a companion to the paper "Creating Personalized Realities That Con
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}{% include archive-single.html %}{% endfor %}
 
-<img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs" class="lightbox-trigger">
-<dialog class="lightbox-overlay"><img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs"></dialog>
+<img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs" class="lightbox-trigger" data-lightbox="lightbox-rups">
+<dialog id="lightbox-rups" class="lightbox-overlay"><img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs"></dialog>
 
 
 ## RQ1
@@ -57,7 +57,7 @@ This RQ is still in progress. However, these vision papers sketch the basic idea
 <script>
 document.querySelectorAll('.lightbox-trigger').forEach(function(img) {
   img.addEventListener('click', function() {
-    this.nextElementSibling.showModal();
+    document.getElementById(this.dataset.lightbox).showModal();
   });
 });
 document.querySelectorAll('dialog.lightbox-overlay').forEach(function(dialog) {

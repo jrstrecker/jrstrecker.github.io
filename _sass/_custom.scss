@@ -732,6 +732,13 @@ dialog.lightbox-overlay {
   .page, .archive {
     @include span(7.5 of 12 last);
     float: left !important;
+    padding-left: 70px !important;
+  }
+}
+
+@include breakpoint($x-large) {
+  .page, .archive {
+    padding-left: 30px !important;
   }
 }
 
