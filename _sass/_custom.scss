@@ -132,6 +132,19 @@ details summary::-webkit-details-marker { display:none; }
 
 .publications-list-item h2 a {
   text-decoration: none !important;
+  &::before {
+    display: none !important;
+  }
+}
+
+.publications-list-item h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: rgba($blue-green, 0.3);
+  margin-top: 0.3em;
+  border-radius: 1px;
 }
 
 .pub-award-badge {
