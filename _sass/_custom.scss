@@ -485,6 +485,17 @@ article details pre {
 }
 
 
+.rq-divider {
+  border: none;
+  border-top-width: 2px;
+  border-top-style: solid;
+  margin: 0.4em 0 1em;
+
+  &.rq1 { border-top-color: #961414; }
+  &.rq2 { border-top-color: #00802F; }
+  &.rq3 { border-top-color: #FFC000; }
+  &.rq4 { border-top-color: #0070C0; }
+}
 
 .rp-pub {
   margin: 0.75em 0;
@@ -619,6 +630,9 @@ article details pre {
 }
 
 @media (max-width: $large) {
+  #main {
+    margin-top: 0;
+  }
   body {
     padding: 0 5px !important;
   }
@@ -668,7 +682,7 @@ article details pre {
       }
 
       li {
-        font-size: 0.68em !important;
+        font-size: 0.8em !important;
         padding: 0.15em 0.5em !important;
       }
     }
@@ -684,7 +698,7 @@ article details pre {
 @include breakpoint($medium) {
   .archive, .page {
     padding-right: 20px !important;
-    padding-left: 70px !important;
+    padding-left: 20px !important;
   }
 }
 
