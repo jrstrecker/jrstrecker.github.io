@@ -8,6 +8,7 @@ venue: 'Extended Abstracts of the CHI Conference on Human Factors in Computing S
 venuelink: "https://chi2024.acm.org/"
 papertype: "Conference"
 paperurl: '/files/pdf/research/2024-ShoppingCoach.pdf'
+videolink: 'https://www.youtube-nocookie.com/embed/CE9yjehvfLY?si=cATdvPw_54aq0cqu'
 link: 'https://doi.org/10.1145/3613905.3650795' 
 authors: "Jannis Strecker, Jing Wu, Kenan Bektaş, Conrad Vaslin, and Simon Mayer"
 citation: 'Jannis Strecker, Jing Wu, Kenan Bektaş, Conrad Vaslin, and Simon Mayer. 2024. ShoppingCoach: Using Diminished Reality to Prevent Unhealthy Food Choices in an Offline Supermarket Scenario. In Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’24), May 11–16, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, 8 pages. https://doi.org/10.1145/3613905.3650795'
@@ -31,9 +32,3 @@ bib: |
     series = {CHI EA '24}
     }
 ---
-
-<details open><summary><i class="fa fa-fw fa-film fa-info-color" aria-hidden="true"></i> Teaser Video</summary>
-<div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/CE9yjehvfLY?si=cATdvPw_54aq0cqu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
- </details>

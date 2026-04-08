@@ -9,6 +9,7 @@ venuelink: "https://chi2024.acm.org/"
 papertype: "Conference"
 link: 'https://doi.org/10.1145/3613905.3650965' 
 paperurl: '/files/pdf/research/2024-QRCoGlassboARd.pdf'
+videolink: 'https://www.youtube-nocookie.com/embed/31yi3k47XxM?si=V-Ze-1RyC3cndH7k'
 code: https://github.com/Interactions-HSG/GBoARd
 authors: "Kenan Bektaş, Adrian Pandjaitan, Jannis Strecker, and Simon Mayer"
 citation: 'Kenan Bektaş, Adrian Pandjaitan, Jannis Strecker, and Simon Mayer. 2024. GlassBoARd: A Gaze-Enabled AR Interface for Collaborative Work. In Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’24), May 11–16, 2024, Honolulu, HI, USA. ACM, New York, NY, USA, 8 pages. https://doi.org/10.1145/3613905.3650965'
@@ -32,10 +33,4 @@ bib: |
     series = {CHI EA '24}
     }
 ---
-
-<details open><summary><i class="fa fa-fw fa-film fa-info-color" aria-hidden="true"></i> Teaser Video</summary>
-<div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/31yi3k47XxM?si=V-Ze-1RyC3cndH7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
- </details>
 

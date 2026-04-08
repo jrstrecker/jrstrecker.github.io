@@ -8,6 +8,8 @@ venue: "CHI Conference on Human Factors in Computing Systems (CHI '25)"
 venuelink: "https://chi2025.acm.org/"
 papertype: "Conference"
 paperurl: '/files/pdf/research/2025-AdBlockedReality.pdf'
+videolink: 'https://www.youtube-nocookie.com/embed/LsiOZaSqbnA?si=Po0zfQJywL8cjdVR'
+videotitle: 'Presentation Video'
 link: 'https://doi.org/10.1145/3706598.3713230' 
 authors: "Christopher Katins, Jannis Strecker, Jan Hinrichs, Pascal Knierim, Bastian Pfleging, and Thomas Kosch"
 citation: "Christopher Katins, Jannis Strecker, Jan Hinrichs, Pascal Knierim, Bastian Pfleging, and Thomas Kosch. 2025. Ad-Blocked Reality: Evaluating User Perceptions of Content Blocking Concepts Using Extended Reality. In CHI Conference on Human Factors in Computing Systems (CHI '25), April 26–May 01, 2025, Yokohama, Japan. ACM, New York, NY, USA, 18 pages. https://doi.org/10.1145/3706598.3713230"
@@ -32,9 +34,3 @@ bib:  |
     }
     
 ---
-
-<details open><summary><i class="fa fa-fw fa-film fa-info-color" aria-hidden="true"></i> Presentation Video</summary>
-<div class="video-container">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LsiOZaSqbnA?si=Po0zfQJywL8cjdVR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
- </details>
