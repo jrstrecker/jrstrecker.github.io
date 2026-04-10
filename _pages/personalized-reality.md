@@ -4,9 +4,9 @@ permalink: /personalized-reality/
 author_profile: true
 ---
 
-As devices like XR head-mounted displays and AI-enabled smart glasses become part of everyday life, personalization is extending beyond the Web into people's physical reality. When personalization is applied ubiquitously, each person may perceive a different, system-mediated version of reality -- a *Personalized Reality* (PR). While this can make interactions more efficient and information access more equitable, it also risks isolating people in fragmented realities and grants system designers unprecedented influence over how users experience the world.
+As devices like XR head-mounted displays and AI-enabled smart glasses become part of everyday life, personalization is extending beyond the Web into people's physical reality. When personalization is applied ubiquitously, each person may perceive a different, system-mediated version of reality -- a *Personalized Reality* (PR). While this can make interactions more efficient and information access more equitable, it also risks isolating people in fragmented realities and grants system designers unprecedented influence over how people experience the world and others.
 
-In my dissertation, I investigate how *Responsible Ubiquitous Personalization Systems* (RUPS) can create beneficial PRs while mitigating harmful implications. My research combines conceptual frameworks, technical prototypes, and controlled user studies to provide theoretical and practical foundations for designing PR experiences that connect people's realities instead of isolating them.
+In my dissertation, I investigate how *Responsible Ubiquitous Personalization Systems* (RUPS) can create beneficial PRs while mitigating harmful social and societal implications. My research combines conceptual frameworks, technical prototypes, and controlled user studies to provide theoretical and practical foundations for designing PR experiences that connect people's realities instead of isolating them.
 
 This page accompanies the poster I present at the [CHI 2026](https://chi2026.acm.org) Dissertation Research Roundtable and provides an overview of my research and all referenced publications.
 
@@ -16,7 +16,7 @@ This page accompanies the poster I present at the [CHI 2026](https://chi2026.acm
 
 ## The RUPS Model
 
-The figure below shows the model for Responsible Ubiquitous Personalization Systems (RUPS) that structures my dissertation. It consists of five main components -- UP Recipients, UP Data Sources, UP Creation, UP Sharing, and UP Delivery -- each potentially influenced by UP Mediators. My four research questions each address specific parts of this model.
+A key outcome of my research (see RQ1) is the model for Responsible Ubiquitous Personalization Systems (RUPS), which also structures my dissertation. It consists of five main components -- UP Recipients, UP Data Sources, UP Creation, UP Sharing, and UP Delivery -- each potentially influenced by UP Mediators. My four research questions each address specific parts of this model.
 
 <img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs" class="lightbox-trigger" data-lightbox="lightbox-rups">
 <dialog id="lightbox-rups" class="lightbox-overlay"><img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs"></dialog>

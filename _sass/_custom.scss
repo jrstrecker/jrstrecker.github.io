@@ -489,10 +489,36 @@ dialog.lightbox-overlay {
   max-width: 90vw;
   max-height: 90vh;
   padding: 0;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.25s ease, transform 0.25s ease,
+              display 0.25s ease allow-discrete,
+              overlay 0.25s ease allow-discrete;
+
+  &[open] {
+    opacity: 1;
+    transform: scale(1);
+
+    @starting-style {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+  }
 
   &::backdrop {
-    background: rgba(0, 0, 0, 0.82);
+    background: rgba(0, 0, 0, 0);
     cursor: zoom-out;
+    transition: background 0.25s ease,
+                display 0.25s ease allow-discrete,
+                overlay 0.25s ease allow-discrete;
+  }
+
+  &[open]::backdrop {
+    background: rgba(0, 0, 0, 0.82);
+
+    @starting-style {
+      background: rgba(0, 0, 0, 0);
+    }
   }
 
   img {
@@ -744,6 +770,9 @@ dialog.lightbox-overlay {
 @include breakpoint($x-large) {
   .page, .archive {
     padding-left: 30px !important;
+  }
+  .lightbox-trigger {
+    padding: 0 2em;
   }
 }
 
