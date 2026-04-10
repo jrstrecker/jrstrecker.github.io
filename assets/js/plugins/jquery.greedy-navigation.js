@@ -14,6 +14,21 @@ var breaks = [];
 
 function updateNav() {
 
+  // Below $medium-wide (900px): move all items except the site title into the hidden menu
+  var collapseAll = window.matchMedia('(max-width: 900px)').matches;
+
+  if (collapseAll) {
+    while ($vlinks.children().length > 1) {
+      breaks.push($vlinks.width());
+      $vlinks.children().last().prependTo($hlinks);
+    }
+    if ($btn.hasClass('hidden')) {
+      $btn.removeClass('hidden');
+    }
+    $btn.attr("count", breaks.length);
+    return;
+  }
+
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
   // The visible list is overflowing the nav

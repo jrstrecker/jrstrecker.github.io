@@ -540,9 +540,10 @@ dialog.lightbox-overlay {
   font-weight: 700 !important;
   border-left: 4px solid;
   border-bottom: none !important;
-  background: #f0eee9;
+  background: #fdfdfd;;
   border-radius: 0 5px 5px 0;
   letter-spacing: 0.03em;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.08);
 
   &.rq1 { border-left-color: #961414; }
   &.rq2 { border-left-color: #00802F; }
