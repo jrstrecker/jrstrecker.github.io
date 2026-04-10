@@ -14,20 +14,14 @@ This pages is a companion to the paper "Creating Personalized Realities That Con
 <img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs" class="lightbox-trigger" data-lightbox="lightbox-rups">
 <dialog id="lightbox-rups" class="lightbox-overlay"><img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs"></dialog>
 
-<hr>
-
-## RQ1
-<hr class="rq-divider rq1">
+<h2 class="rq-heading rq1">RQ1</h2>
 > How can ubiquitous personalization systems be modeled to support the design, implementation and analysis of such systems in a responsible way?
 
 {% assign selected_ids = "/publication/2025-RUPS,/publication/2024-PersonalizedReality" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}{% include archive-single.html %}{% endfor %}
 
-<hr>
-
-## RQ2
-<hr class="rq-divider rq2">
+<h2 class="rq-heading rq2">RQ2</h2>
 > What are suitable ways to give humans transparency and agency over the flow of their personal data in resonsible ubiquitous personalization systems?
 
 This RQ is still in progress. Papers that I have contributed to which are connected to this RQ:
@@ -35,10 +29,7 @@ This RQ is still in progress. Papers that I have contributed to which are connec
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}{% include archive-single.html %}{% endfor %}
 
-<hr>
-
-## RQ3
-<hr class="rq-divider rq3">
+<h2 class="rq-heading rq3">RQ3</h2>
 > How can PR support humans transparently to efficiently navigate affordance-rich realities?
 
 {% assign selected_ids = "/publication/2026-PRecMR,/publication/2024-ShoppingCoach, /publication/2025-AdBlockedReality" | split: "," %}
@@ -50,10 +41,7 @@ Papers that I have contributed to which are connected to this RQ:
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}{% include archive-single.html %}{% endfor %}
 
-<hr>
-
-## RQ4
-<hr class="rq-divider rq4">
+<h2 class="rq-heading rq4">RQ4</h2>
 > In a multi-user PR scenario, what are suitable, effective and usable methods to counter isolated perceptions of reality?
 
 This RQ is still in progress. However, these vision papers sketch the basic ideas:
