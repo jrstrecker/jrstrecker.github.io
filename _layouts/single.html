@@ -95,14 +95,19 @@ layout: default
 
         {% if page.venue or page.date or page.authors %}
     <div class="pub-meta">
-      {% if page.venue %}
-      <span class="pub-venue">{% if page.venuelink %}<a href="{{ page.venuelink }}" target="_blank">{{ page.venue }}</a>{% else %}{{ page.venue }}{% endif %}</span>
-      {% endif %}
-      {% if page.date %}
-      <span class="pub-date">{{ page.date | date: "%-d %B %Y" }}</span>
-      {% endif %}
       {% if page.authors %}
-      <div class="pub-authors">{{ page.authors }}</div>
+      <div class="pub-authors"><i class="fas fa-users" aria-hidden="true"></i> {{ page.authors }}</div>
+      {% endif %}
+      {% if page.venue or page.date %}
+      <div class="pub-venue-date">
+        {% if page.venue %}
+        <span class="pub-venue"><i class="fas fa-bookmark" aria-hidden="true"></i> {% if page.venuelink %}<a href="{{ page.venuelink }}" target="_blank">{{ page.shortvenue | default: page.venue }}</a>{% else %}{{ page.shortvenue | default: page.venue }}{% endif %}</span>
+        {% endif %}
+        {% if page.venue and page.date %}<span class="pub-meta-sep" aria-hidden="true">&middot;</span>{% endif %}
+        {% if page.date %}
+        <span class="pub-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ page.date | date: "%-d %B %Y" }}</span>
+        {% endif %}
+      </div>
       {% endif %}
     </div>
     {% endif %}

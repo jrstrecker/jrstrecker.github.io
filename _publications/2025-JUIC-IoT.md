@@ -6,6 +6,7 @@ tags: ["Mixed Reality", "Ubiquitous Computing", "Personalized Reality"]
 date: 2025-10-12
 venue: 'Companion of the the 2025 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp Companion ’25)'
 venuelink: "https://www.ubicomp.org/ubicomp-iswc-2025"
+shortvenue: "UbiComp Companion '25"
 papertype: "Conference"
 paperurl: '/files/pdf/research/2025-JUIC-IoT.pdf'
 link: 'https://www.alexandria.unisg.ch/handle/20.500.14171/123193' 

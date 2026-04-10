@@ -6,6 +6,7 @@ tags: ["Social Media", "Personalization", "Regulation", "Recommender Systems", "
 date: 2026-01-30
 venue: 'ACM Transactions on Recommender Systems'
 venuelink: "https://dl.acm.org/journal/tors"
+shortvenue: "ACM TORS"
 papertype: "Journal"
 paperurl: '/files/pdf/research/2026SockPuppets.pdf'
 link: 'https://doi.org/10.1145/3795516'

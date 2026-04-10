@@ -6,6 +6,7 @@ tags: ["Personalized Reality", "Personalization", "Mixed Reality", "Ubiquitous C
 date: 2026-04-13
 venue: 'Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’26)'
 venuelink: "https://chi2026.acm.org/"
+shortvenue: "CHI EA '26"
 papertype: "Conference"
 paperurl: '/files/pdf/research/2026-PR-SMP.pdf'
 link: 'https://doi.org/10.1145/3613905.3650795' 

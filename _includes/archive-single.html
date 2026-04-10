@@ -47,14 +47,19 @@
 
     {% if post.venue or post.date or post.authors %}
     <div class="pub-meta">
-      {% if post.venue %}
-      <span class="pub-venue">{% if post.venuelink %}<a href="{{ post.venuelink }}" target="_blank">{{ post.venue }}</a>{% else %}{{ post.venue }}{% endif %}</span>
-      {% endif %}
-      {% if post.date %}
-      <span class="pub-date">{{ post.date | date: "%-d %B %Y" }}</span>
-      {% endif %}
       {% if post.authors %}
-      <div class="pub-authors">{{ post.authors }}</div>
+      <div class="pub-authors"><i class="fas fa-users" aria-hidden="true"></i> {{ post.authors }}</div>
+      {% endif %}
+      {% if post.venue or post.date %}
+      <div class="pub-venue-date">
+        {% if post.venue %}
+        <span class="pub-venue"><i class="fas fa-bookmark" aria-hidden="true"></i> {% if post.venuelink %}<a href="{{ post.venuelink }}" target="_blank">{{ post.shortvenue | default: post.venue }}</a>{% else %}{{ post.shortvenue | default: post.venue }}{% endif %}</span>
+        {% endif %}
+        {% if post.venue and post.date %}<span class="pub-meta-sep" aria-hidden="true">&middot;</span>{% endif %}
+        {% if post.date %}
+        <span class="pub-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%-d %B %Y" }}</span>
+        {% endif %}
+      </div>
       {% endif %}
     </div>
     {% endif %}

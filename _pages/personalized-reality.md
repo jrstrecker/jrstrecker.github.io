@@ -18,7 +18,10 @@ This page accompanies the poster I present at the [CHI 2026](https://chi2026.acm
 
 A key outcome of my research (see RQ1) is the model for Responsible Ubiquitous Personalization Systems (RUPS), which also structures my dissertation. It consists of five main components -- UP Recipients, UP Data Sources, UP Creation, UP Sharing, and UP Delivery -- each potentially influenced by UP Mediators. My four research questions each address specific parts of this model.
 
+<figure class="lightbox-figure">
 <img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs" class="lightbox-trigger" data-lightbox="lightbox-rups">
+<figcaption>Click to enlarge</figcaption>
+</figure>
 <dialog id="lightbox-rups" class="lightbox-overlay"><img src="/images/research/RUPS_Model_RQs.png" alt="RUPS Model with RQs"></dialog>
 
 <h2 class="rq-heading rq1">RQ1: Modeling Responsible Ubiquitous Personalization Systems</h2>
@@ -70,6 +73,12 @@ document.querySelectorAll('.lightbox-trigger').forEach(function(img) {
   img.addEventListener('click', function() {
     document.getElementById(this.dataset.lightbox).showModal();
   });
+  var caption = img.parentElement.querySelector('figcaption');
+  if (caption) {
+    caption.addEventListener('click', function() {
+      document.getElementById(img.dataset.lightbox).showModal();
+    });
+  }
 });
 document.querySelectorAll('dialog.lightbox-overlay').forEach(function(dialog) {
   dialog.addEventListener('click', function() { this.close(); });

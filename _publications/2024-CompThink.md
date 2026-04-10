@@ -6,6 +6,7 @@ tags: ["Technology Acceptance"]
 date: 2024-10-26
 venue: '21st International Conference on Cognition and Exploratory Learning in Digital Age (CELDA 2024)'
 venuelink: "https://www.celda-conf.org/oldconferences/2024/"
+shortvenue: "CELDA '24"
 papertype: "Conference"
 link: 'https://www.alexandria.unisg.ch/handle/20.500.14171/121521' 
 authors: "Josef Guggemos, Roman Rietsche, Stephan Aier, Jannis Strecker and Simon Mayer"

@@ -6,6 +6,7 @@ tags: ["Mixed Reality", "Ubiquitous Computing", "Computer Vision"]
 date: 2022-10-01
 venue: '12th International Conference on the Internet of Things (IoT22)'
 venuelink: "https://iot-conference.org/iot2022/"
+shortvenue: "IoT '22"
 papertype: "Conference"
 paperurl: '/files/pdf/research/2022-SOCRAR.pdf'
 videolink: 'https://www.youtube-nocookie.com/embed/NEpDXWGrsPw?si=a6x8ZGjABGO9IV7E'

@@ -6,6 +6,7 @@ tags: ["Mixed Reality", "Ubiquitous Computing", "Computer Vision", "Eye Tracking
 date: 2024-05-28
 venue: 'Proceedings of the ACM on Human-Computer Interaction (ETRA)'
 venuelink: "https://etra.acm.org/2024/"
+shortvenue: "ETRA '24"
 papertype: "Journal"
 paperurl: '/files/pdf/research/2024-NeighboAR.pdf'
 link: 'https://doi.org/10.1145/3655599' 

@@ -6,6 +6,7 @@ tags: ["Mixed Reality", "Ubiquitous Computing", "Personalized Reality"]
 date: 2024-05-11
 venue: 'Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA ’24)'
 venuelink: "https://chi2024.acm.org/"
+shortvenue: "CHI EA '24"
 papertype: "Conference"
 paperurl: '/files/pdf/research/2024-ShoppingCoach.pdf'
 videolink: 'https://www.youtube-nocookie.com/embed/CE9yjehvfLY?si=cATdvPw_54aq0cqu'

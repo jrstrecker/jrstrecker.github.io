@@ -6,6 +6,7 @@ tags: ["Mixed Reality", "Personalization", "Recommender Systems", "Personalized 
 date: 2026-03-23
 venue: "31st International Conference on Intelligent User Interfaces (IUI '26)"
 venuelink: "https://iui.acm.org/2026"
+shortvenue: "IUI '26"
 papertype: "Conference"
 paperurl: '/files/pdf/research/2026-PRecMR.pdf'
 link: 'https://doi.org/10.1145/3742413.3789129' 

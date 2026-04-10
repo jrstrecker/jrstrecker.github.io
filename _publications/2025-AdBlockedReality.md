@@ -6,6 +6,7 @@ tags: ["Personalized Reality", "Mixed Reality", "Privacy", "Technology Acceptanc
 date: 2025-04-26
 venue: "CHI Conference on Human Factors in Computing Systems (CHI '25)"
 venuelink: "https://chi2025.acm.org/"
+shortvenue: "CHI '25"
 papertype: "Conference"
 paperurl: '/files/pdf/research/2025-AdBlockedReality.pdf'
 videolink: 'https://www.youtube-nocookie.com/embed/LsiOZaSqbnA?si=Po0zfQJywL8cjdVR'

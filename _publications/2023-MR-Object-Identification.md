@@ -6,6 +6,7 @@ tags: ["Mixed Reality", "Ubiquitous Computing", "Computer Vision"]
 date: 2023-09-27
 venue: 'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies'
 venuelink: "https://dl.acm.org/journal/imwut"
+shortvenue: "IMWUT"
 papertype: "Journal"
 paperurl: '/files/pdf/research/2023-Sharing-P-MR.pdf'
 videolink: 'https://www.youtube-nocookie.com/embed/pmwpOFGvSwc?si=HBNIOHo0Rtze_Ziu'

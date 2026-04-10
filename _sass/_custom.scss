@@ -162,14 +162,33 @@ details summary::-webkit-details-marker { display:none; }
 
 .pub-meta {
   margin-bottom: 0.75em;
-  margin-top: 0.2em;
-  font-size: 0.88em;
+  margin-top: 0.25em;
+  font-size: 0.85em;
   color: #666;
-  line-height: 1.6;
+  line-height: 1.5;
+
+  i {
+    font-size: 0.8em;
+    color: #aaa;
+    width: 1.1em;
+    text-align: center;
+    margin-right: 0.2em;
+  }
 }
 
-.pub-venue {
-  display: block;
+.pub-authors {
+  margin-bottom: 0.15em;
+}
+
+.pub-venue-date {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.1em 0.5em;
+}
+
+.pub-meta-sep {
+  color: #ccc;
 }
 
 .pub-venue a {
@@ -181,6 +200,10 @@ details summary::-webkit-details-marker { display:none; }
 .pub-venue a:hover {
   color: #2a6496 !important;
   text-decoration-color: rgba(#2a6496, 0.4) !important;
+}
+
+.pub-date {
+  white-space: nowrap;
 }
 
 .pub-top-row {
@@ -385,7 +408,7 @@ body {
   > summary {
     list-style: none;
     padding: 0.5em 0.75em;
-    font-size: 0.93em;
+    font-size: 1em;
     margin: 0;
     border-radius: 5px;
     display: flex;
@@ -481,6 +504,18 @@ article details pre {
 .lightbox-trigger {
   cursor: zoom-in;
   display: block;
+}
+
+.lightbox-figure {
+  margin: 1em 0;
+
+  figcaption {
+    text-align: center;
+    font-size: 0.85em;
+    color: #999;
+    margin-top: 0.4em;
+    cursor: zoom-in;
+  }
 }
 
 dialog.lightbox-overlay {

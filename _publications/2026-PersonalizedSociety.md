@@ -6,6 +6,7 @@ tags: ["Personalized Reality", "Critical Computing", "Algorithms and Society", "
 date: 2026-04-13
 venue: "1st Workshop on Shaping Future Human Connection: Social Augmentation through XR Technologies, co-colocated with the ACM CHI 2026 Conference"
 venuelink: "https://sites.google.com/view/social-xr-chi2026"
+shortvenue: "SAXR '26 @ CHI 2026"
 papertype: "Workshop"
 paperurl: '/files/pdf/research/2026-PersonalizedSociety.pdf'
 link: 'https://www.alexandria.unisg.ch/handle/20.500.14171/125161' 

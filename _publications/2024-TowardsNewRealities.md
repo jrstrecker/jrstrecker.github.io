@@ -6,6 +6,7 @@ tags: ["Personalized Reality", "Personalization", "Ubiquitous Computing", "Criti
 date: 2024-06-18
 venue: 'i-com - Journal of Interactive Media'
 venuelink: "https://i-com-journal.org/"
+shortvenue: "i-com"
 papertype: "Journal"
 paperurl: '/files/pdf/research/2024-TowardsNewRealities.pdf'
 link: 'https://doi.org/10.1515/icom-2024-0017' 
