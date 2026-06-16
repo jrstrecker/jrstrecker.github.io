@@ -18,6 +18,10 @@ author_profile: true
     - Short Paper AC
 
 ## Workshop Organization
+- [International Workshop on Reality Mediation: Personalized, Shared, and Connected Realities](https://reality-mediation.github.io/2026/index.html)
+    - at [UbiComp / ISWC 2026](https://www.ubicomp.org/ubicomp-iswc-2026/)
+- [ABIS 2026 – The Effects of the Adaptive Web on Society](https://fg-abis.gi.de/veranstaltung/abis-2026)
+    - at [18th ACM Web Science Conference](https://websci26.org/)
 - [ABIS 2025 – International Workshop on Personalization and Recommendation](https://fg-abis.gi.de/veranstaltung/abis-2025)
     - at [Mensch und Computer 2025](https://muc2025.mensch-und-computer.de/en)
 - [ABIS 2024 – International Workshop on Personalization and Recommendation](https://fg-abis.gi.de/veranstaltung/abis-2024)
@@ -39,9 +43,7 @@ I am (co-) responsible for the following social media pages:
 
 ## Peer Reviewing
 
-I am more or less regularily reviewing for different venues. If you are a chair or AC in need of a review for a paper that aligns topic-wise with my interests, feel free to contact me via email:
-
-[jannis.strecker-bischoff@unisg.ch](mailto:jannis.strecker-bischoff@unisg.ch)!
+I am more or less regularily reviewing for different venues. If you are a chair or AC in need of a review for a paper that aligns topic-wise with my interests, feel free to contact me via email: [jannis.strecker-bischoff@unisg.ch](mailto:jannis.strecker-bischoff@unisg.ch)!
 
 My reviewing service so far:
 
