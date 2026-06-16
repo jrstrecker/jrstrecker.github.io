@@ -227,11 +227,11 @@ details summary::-webkit-details-marker { display:none; }
 .pub-type-pill {
   font-size: 0.78em;
   color: #666;
-  background: #f3f1ed;
   padding: 0.2em 0.65em;
   border-radius: 12px;
   white-space: nowrap;
   flex-shrink: 0;
+  border: 1px solid #ece9e3;
 }
 
 
@@ -241,17 +241,17 @@ details summary::-webkit-details-marker { display:none; }
   display: flex;
   flex-wrap: wrap;
   gap: 0.45em;
-  margin-top: 0.75em;
-  padding-top: 0.6em;
-  border-top: 1px solid #e8e5df;
+  margin-top: 0;
+  padding-top: 0.3em;
+  /*border-top: 1px solid #e8e5df;*/
 }
 
 .pub-action-pill {
   display: inline-flex;
   align-items: center;
   gap: 0.3em;
-  background: #ece9e3;
-  border: none;
+  background: #f8f7f5;
+  border: 1px solid #f0eee9;
   border-radius: 20px;
   padding: 0.3em 0.85em;
   font-size: 0.85em;
@@ -348,7 +348,7 @@ body {
 
 .pub-details-outer {
   background: #f8f7f5;
-  border: 1px solid #e8e5df !important;
+  border: none !important;
   border-radius: 6px;
   padding: 0 !important;
   margin: 0.75em 0;

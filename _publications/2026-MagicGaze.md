@@ -2,7 +2,7 @@
 title: "Magic Gaze: Enabling Seamless Control of IoT Devices Through Eye Tracking"
 collection: publications
 permalink: /publication/2026-MagicGaze
-tags: ["Eye Tracking", "Internet of Things", "Gaze Interaction", "Ubiquitous Computing"]
+tags: ["Eye Tracking", "Internet of Things", "Gaze Interaction", "Ubiquitous Computing", "Computer Vision"]
 date: 2026-06-01
 venue: '2026 Symposium on Eye Tracking Research and Applications (ETRA ’26)'
 venuelink: "https://etra.acm.org/2026/"
