@@ -1,33 +1,25 @@
 {% include base_path %}
 
 <div class="list__item">
-  <article class="archive__item publications-list-item" itemscope itemtype="http://schema.org/Event">
+  <article class="archive__item talk-list-item" itemscope itemtype="http://schema.org/Event">
 
-    <div class="pub-title-row">
-      <h2 class="archive__item-title" itemprop="headline">
-        {% if post.link %}
-          <a href="{{ post.link }}" target="_blank">{{ post.title }}</a>
-        {% else %}
-          {{ post.title }}
-        {% endif %}
-      </h2>
-      {% if post.type %}<span class="pub-type-pill">{{ post.type }}</span>{% endif %}
+    <div class="talk-title-row">
+      <h2 class="talk-title" itemprop="name">{{ post.title }}</h2>
+      {% if post.type %}<span class="talk-type-pill">{{ post.type }}</span>{% endif %}
     </div>
 
     {% if post.venue or post.location or post.date %}
-    <div class="pub-meta">
-      <div class="pub-venue-date">
-        {% if post.venue %}
-        <span class="pub-venue"><i class="fas fa-bookmark" aria-hidden="true"></i> {% if post.venuelink %}<a href="{{ post.venuelink }}" target="_blank">{{ post.venue }}</a>{% else %}{{ post.venue }}{% endif %}</span>
-        {% endif %}
-        {% if post.location %}<span class="pub-meta-sep" aria-hidden="true">&middot;</span><span class="pub-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ post.location }}</span>{% endif %}
-        {% if post.date %}<span class="pub-meta-sep" aria-hidden="true">&middot;</span><span class="pub-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%-d %B %Y" }}</span>{% endif %}
-      </div>
+    <div class="talk-meta">
+      {% if post.venue %}
+      <span class="talk-venue"><i class="fas fa-bookmark" aria-hidden="true"></i> {% if post.venuelink %}<a href="{{ post.venuelink }}" target="_blank">{{ post.venue }}</a>{% else %}{{ post.venue }}{% endif %}</span>
+      {% endif %}
+      {% if post.location %}<span class="talk-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ post.location }}</span>{% endif %}
+      {% if post.date %}<span class="talk-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%-d %B %Y" }}</span>{% endif %}
     </div>
     {% endif %}
 
     {% if post.excerpt %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    <p class="talk-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% endif %}
 
     {% if post.link or post.slides or post.video %}
