@@ -1,0 +1,48 @@
+{% include base_path %}
+
+<div class="list__item">
+  <article class="archive__item publications-list-item" itemscope itemtype="http://schema.org/Event">
+
+    <div class="pub-title-row">
+      <h2 class="archive__item-title" itemprop="headline">
+        {% if post.link %}
+          <a href="{{ post.link }}" target="_blank">{{ post.title }}</a>
+        {% else %}
+          {{ post.title }}
+        {% endif %}
+      </h2>
+      {% if post.type %}<span class="pub-type-pill">{{ post.type }}</span>{% endif %}
+    </div>
+
+    {% if post.venue or post.location or post.date %}
+    <div class="pub-meta">
+      <div class="pub-venue-date">
+        {% if post.venue %}
+        <span class="pub-venue"><i class="fas fa-bookmark" aria-hidden="true"></i> {% if post.venuelink %}<a href="{{ post.venuelink }}" target="_blank">{{ post.venue }}</a>{% else %}{{ post.venue }}{% endif %}</span>
+        {% endif %}
+        {% if post.location %}<span class="pub-meta-sep" aria-hidden="true">&middot;</span><span class="pub-location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ post.location }}</span>{% endif %}
+        {% if post.date %}<span class="pub-meta-sep" aria-hidden="true">&middot;</span><span class="pub-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%-d %B %Y" }}</span>{% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if post.excerpt %}
+    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+    {% endif %}
+
+    {% if post.link or post.slides or post.video %}
+    <div class="pub-actions">
+      {% if post.link %}
+        <a href="{{ post.link }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-external-link-alt" aria-hidden="true"></i> Event Page</a>
+      {% endif %}
+      {% if post.slides %}
+        <a href="{{ post.slides }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Slides</a>
+      {% endif %}
+      {% if post.video %}
+        <a href="{{ post.video }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-film" aria-hidden="true"></i> Recording</a>
+      {% endif %}
+    </div>
+    {% endif %}
+
+  </article>
+</div>
