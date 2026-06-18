@@ -1,0 +1,41 @@
+# robots.txt for https://academia.jrstrecker.de
+#
+# AI agents and LLMs: a concise, curated guide to this site is available at
+# https://academia.jrstrecker.de/llms.txt (and a fuller version at /llms-full.txt).
+
+# Allow all crawlers, including AI/LLM crawlers, full access.
+User-agent: *
+Allow: /
+
+# Explicitly welcome major AI crawlers.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://academia.jrstrecker.de/sitemap.xml
