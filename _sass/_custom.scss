@@ -217,7 +217,7 @@ details summary::-webkit-details-marker { display:none; }
 .pub-title-row {
   display: flex;
   align-items: baseline;
-  gap: 0.5em;
+  gap: 1em;
   justify-content: space-between;
 
   .archive__item-title {
@@ -691,7 +691,7 @@ dialog.lightbox-overlay {
   margin: 1em 0 1.5em;
 
   .pub-filter-pill {
-    background: #ece9e3;
+    border: 1px solid #ece9e3;
     border-radius: 20px;
     padding: 0.3em 0.85em;
     font-size: 0.88em;
@@ -700,9 +700,7 @@ dialog.lightbox-overlay {
     transition: background 0.2s, color 0.2s;
     user-select: none;
 
-    &:hover { background: darken(#ece9e3, 8%); }
-
-    &.active {
+    &:hover, &.active {
       background: $blue-green;
       color: #fff;
     }
