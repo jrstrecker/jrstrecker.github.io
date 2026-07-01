@@ -112,51 +112,69 @@ layout: default
     </div>
     {% endif %}
 
-        {% if page.abstract %}
-        <details open><summary><i class="fa fa-fw fa-file-alt fa-info-color" aria-hidden="true"> </i> Abstract</summary>
-        <p>
-        {{ page.abstract }}
-        </p>
-        </details>
-      {% endif %}
+        {% if page.abstract or page.presentationurl or page.citation or page.bib %}
+        <div class="pub-details-outer">
+          <div class="pub-details-inner">
+            {% if page.abstract %}
+            <details class="pub-details-section" open><summary><i class="fa fa-fw fa-file-alt fa-info-color" aria-hidden="true"> </i> Abstract</summary>
+            <p>{{ page.abstract }}</p>
+            </details>
+            {% endif %}
 
-        {% if page.citation %}
-        <details><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Text Reference</summary>
-          <blockquote>
-          <p>
-          {{ page.citation }}
-          </p>
-        </blockquote>
-        </details>
+            {% if page.presentationurl %}
+            <details class="pub-details-section"><summary><i class="fa fa-fw fa-desktop fa-info-color" aria-hidden="true"> </i> Presentation</summary>
+            <iframe class="presentation-iframe" data-src="{{ page.presentationurl }}" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
+            <a class="presentation-fallback btn btn--info-outline text-decoration-none" href="{{ page.presentationurl }}" target="_blank"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download Presentation</a>
+            </details>
+            <script>if(!window._presIframesLoaded){window._presIframesLoaded=true;window.addEventListener('DOMContentLoaded',function(){if(window.innerWidth>768){document.querySelectorAll('.presentation-iframe[data-src]').forEach(function(f){f.src=f.dataset.src})}})}</script>
+            {% endif %}
+
+            {% if page.citation %}
+            <details class="pub-details-section"><summary><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Text Reference</summary>
+            <blockquote><p>{{ page.citation }}</p></blockquote>
+            </details>
+            {% endif %}
+
+            {% if page.bib %}
+            <details class="pub-details-section"><summary><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="true"> </i> BibTeX Reference</summary>
+            <pre>{{ page.bib }}</pre>
+            </details>
+            {% endif %}
+          </div>
+        </div>
         {% endif %}
 
-        {% if page.bib %}
-        <details><summary><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="true"> </i> BibTex Reference</summary>
-          <pre>{{ page.bib }}</pre>
+        {% if page.videolink %}
+        <details class="pub-details-outer" open><summary><i class="fa fa-fw fa-film fa-info-color" aria-hidden="true"></i> {{ page.videotitle | default: "Teaser Video" }}</summary>
+          <div class="pub-details-inner">
+            <div class="video-container">
+              <iframe width="560" height="315" src="{{ page.videolink }}" title="YouTube video player" frameborder="0" allow="web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
         </details>
         {% endif %}
 
         {{ content }}
-        <div>
-          <!-- {% if page.paperurl %}<a href="{{ page.paperurl }}" target="_blank" class="btn text-decoration-none">Download Paper</a>{% endif %}
-          {% if page.link %}<a href="{{ page.link }}" target="_blank" class="btn btn-info text-decoration-none">Link to Published Paper</a>{% endif %} -->
+
+        {% if page.pressurl or page.link or page.paperurl or page.code or page.github %}
+        <div class="pub-actions">
+          {% if page.pressurl %}
+          <a href="{{ page.pressurl }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-newspaper" aria-hidden="true"></i> Press Article</a>
+          {% endif %}
           {% if page.link %}
-          <!-- <a href="{{ post.link }}"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i> Link to paper</a> -->
-          <a href="{{ page.link }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-link zoom" aria-hidden="true"></i> Link to Published Paper</a>
-        {% endif %}
-        {% if page.paperurl %}
-          <!-- <a href="{{ post.paperurl }}"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i> Download paper</a> -->
-          <a href="{{ page.paperurl }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-file-pdf zoom" aria-hidden="true"></i> Download PDF</a>
-        {% endif %}
-        {% if page.code %}
-          <!-- <a href="{{ post.code }}"><i class="fas fa-fw fa-code zoom" aria-hidden="true"></i></a> -->
-          <a href="{{ page.code }}" target="_blank" class="btn btn--info-outline text-decoration-none"><i class="fas fa-fw fa-code zoom" aria-hidden="true"></i> Link to Code</a>
-        {% endif %}
-        {% if page.github %}
-          <a href="{{ page.github }}"><i class="fab fa-fw fa-github zoom" aria-hidden="true"></i></a>
-        {% endif %}
-        
+          <a href="{{ page.link }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Published Paper</a>
+          {% endif %}
+          {% if page.paperurl %}
+          <a href="{{ page.paperurl }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download PDF</a>
+          {% endif %}
+          {% if page.code %}
+          <a href="{{ page.code }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-code" aria-hidden="true"></i> Code</a>
+          {% endif %}
+          {% if page.github %}
+          <a href="{{ page.github }}" target="_blank" class="pub-action-pill"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a>
+          {% endif %}
         </div>
+        {% endif %}
       </section>
 
       <footer class="page__meta">
