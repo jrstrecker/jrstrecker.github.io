@@ -52,7 +52,7 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
         <div>
-        {% if page.paperurl %}<a href="{{ page.paperurl }}" class="btn">Download Paper</a>{% endif %}
+        {% if page.paperurl %}<a href="{{ page.paperurl }}" class="btn">Download PDF</a>{% endif %}
         {% if page.link %}<a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a>{% endif %}
         </div>
       </section>
