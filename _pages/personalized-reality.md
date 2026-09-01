@@ -64,7 +64,7 @@ Related publications:
 
 Personalization is often seen as targeting only individuals, but consuming personalized content can have consequences for others. As physical reality provides a basis for shared worlds and intersubjectivity, personalizing it risks diminishing the perceptual overlap that connects people. To counter this, we investigate methods for sharing personalized content across users -- for example, swapping perceived content to foster mutual understanding, or sharing personalized recommendations with family members while grocery shopping. This work is currently in progress, building on the vision and sharing modes we have described in the publications below.
 
-{% assign selected_ids = "/publication/2026-PersonalizedSociety,/publication/2025-WorldviewPR,/publication/2024-TowardsNewRealities,/publication/2022-Sharing-P-MR" | split: "," %}
+{% assign selected_ids = "/publication/2026-WeMix,/publication/2026-PersonalizedSociety,/publication/2025-WorldviewPR,/publication/2024-TowardsNewRealities,/publication/2022-Sharing-P-MR" | split: "," %}
 {% assign selected_pubs = site.publications | where_exp: "item", "selected_ids contains item.permalink" %}
 {% for post in selected_pubs reversed %}{% include archive-single.html %}{% endfor %}
 
