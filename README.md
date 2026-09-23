@@ -18,6 +18,14 @@ See more info at https://academicpages.github.io/
 
 ## To run locally (not on GitHub Pages, to serve on your own computer)
 
+### Windows
+
+1. Install Ruby (one-time): `winget install RubyInstallerTeam.RubyWithDevKit.3.3`, then open a new terminal
+2. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+3. Run `bundle exec jekyll serve --livereload` and open `http://localhost:4000`. The site rebuilds and refreshes on change.
+
+### Linux
+
 1. Clone the repository and made updates as detailed above
 2. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
 3. Run `bundle clean` to clean up the directory (no need to run `--force`)
