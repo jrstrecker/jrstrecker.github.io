@@ -6,11 +6,11 @@
    Visibility
    ========================================================================== */
 
-$blue-green: #2a6496;
+$accent: #30607a; // softened petrol from the hero photo
 
 a {
   text-decoration: none !important;
-  color: $blue-green !important;
+  color: $accent !important;
 }
 
 a:hover {
@@ -103,9 +103,9 @@ details summary::-webkit-details-marker { display:none; }
 .page__content a {
   text-decoration: underline !important;
   text-underline-offset: 2px;
-  text-decoration-color: rgba($blue-green, 0.4) !important;
+  text-decoration-color: rgba($accent, 0.4) !important;
   &:hover {
-    text-decoration-color: $blue-green !important;
+    text-decoration-color: $accent !important;
   }
 }
 
@@ -133,6 +133,11 @@ details summary::-webkit-details-marker { display:none; }
 
 .publications-list-item h2 a {
   text-decoration: none !important;
+  color: $accent !important;
+  transition: color 0.2s;
+  &:hover {
+    color: darken($accent, 10%) !important;
+  }
   &::before {
     display: none !important;
   }
@@ -143,7 +148,7 @@ details summary::-webkit-details-marker { display:none; }
   display: block;
   width: 40px;
   height: 2px;
-  background: rgba($blue-green, 0.3);
+  background: rgba($accent, 0.3);
   margin-top: 0.3em;
   border-radius: 1px;
 }
@@ -199,8 +204,8 @@ details summary::-webkit-details-marker { display:none; }
 }
 
 .pub-venue a:hover {
-  color: #2a6496 !important;
-  text-decoration-color: rgba(#2a6496, 0.4) !important;
+  color: $accent !important;
+  text-decoration-color: rgba($accent, 0.4) !important;
 }
 
 .pub-date {
@@ -294,7 +299,7 @@ details summary::-webkit-details-marker { display:none; }
   transition: background 0.2s, color 0.2s;
 
   &:hover {
-    background: $blue-green;
+    background: $accent;
     color: #fff !important;
     text-decoration: none !important;
   }
@@ -303,15 +308,15 @@ details summary::-webkit-details-marker { display:none; }
 }
 
 .btn--info-outline {
-  border: 1px solid $blue-green !important;
+  border: 1px solid $accent !important;
   background-color: transparent;
-  color: $blue-green !important;
+  color: $accent !important;
   font-weight: 400 !important;
   font-size: 0.85em;
 }
 
 .btn--info-outline:hover {
-  background-color: $blue-green !important;
+  background-color: $accent !important;
   color: #fff !important;
 }
 
@@ -633,7 +638,7 @@ dialog.lightbox-overlay {
     font-weight: 400;
     font-size: 1.1em;
     margin: 0 0 0.15em;
-    a { color: $blue-green !important; }
+    a { color: $accent !important; }
   }
 
   .rp-pub-venue {
@@ -646,13 +651,13 @@ dialog.lightbox-overlay {
 
   .rp-pub-toggle {
     background: none;
-    border: 1px solid $blue-green;
-    color: $blue-green;
+    border: 1px solid $accent;
+    color: $accent;
     border-radius: 20px;
     padding: 0.2em 0.6em;
     font-size: 0.8em;
     cursor: pointer;
-    &:hover { background: $blue-green; color: #fff; }
+    &:hover { background: $accent; color: #fff; }
   }
 
   .rp-pub-content {
@@ -701,7 +706,7 @@ dialog.lightbox-overlay {
     user-select: none;
 
     &:hover, &.active {
-      background: $blue-green;
+      background: $accent;
       color: #fff;
     }
   }
