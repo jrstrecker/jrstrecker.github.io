@@ -85,6 +85,7 @@ author:
   name             : "Jannis Strecker-Bischoff"
   avatar           : "profile.jpg"
   bio              : "PhD Student"
+  lead             : 'I’m a PhD Student in Computer Science at the <a href="https://unisg.ch">University of St. Gallen</a> in Switzerland in the lab for <a href="https://interactions.ics.unisg.ch">Interactions- and Communication-based Systems</a>. I study how ubiquitous personalization systems can make people’s interactions with their environment more efficient, safer and more inclusive, and how these systems can be built in a responsible and societally beneficial way.'
   employer         : "University of St.Gallen"
   location         : 
   pubmed           :

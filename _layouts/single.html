@@ -14,6 +14,8 @@ layout: default
   {% endunless %}
 {% endif %}
 
+{% if page.is_title_page %}{% include author-profile.html hero=true %}{% endif %}
+
 <div id="main" role="main">
   {% include sidebar.html %}
 

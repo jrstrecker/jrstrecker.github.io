@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: "Hi there!"
 excerpt: "About me"
 author_profile: true
 is_title_page: true
@@ -11,12 +10,14 @@ redirect_from:
 ---
 <div class="about-box"  markdown="1">
 
-I’m a PhD Student in Computer Science at the [University of St. Gallen](https://unisg.ch) in Switzerland in the lab for [Interactions- and Communication-based Systems](https://interactions.ics.unisg.ch). 
+As XR headsets and AI-enabled smart glasses become part of everyday life, personalization is moving beyond the Web into people's physical surroundings. When it is applied everywhere, each person may perceive a different, system-mediated version of reality: a [Personalized Reality](./personalized-reality). This can make interactions more efficient and information access more equitable. It can also isolate people in fragmented realities and give system designers considerable influence over how people experience the world and each other.
 
-I study  how ubiquitous personalization systems can make people’s interactions with their environment more efficient, safer and more inclusive, and how these systems can be built in a responsible and societally beneficial way, by combining the following research areas:
+In my dissertation, I investigate how Responsible Ubiquitous Personalization Systems can create beneficial Personalized Realities while mitigating their harmful social and societal effects. I combine conceptual frameworks, technical prototypes and controlled user studies. So far, this includes the RUPS model for describing and analyzing such systems, Mixed Reality prototypes that filter or explain options while shopping or learning board games, and ways to give people control over their personal data using Solid Pods. My current work focuses on multi-user settings, where people share personalized content so that their realities stay connected.
+
+To do this, I draw on the following research areas:
 <div class="topic-pills"><span>Personalization</span><span>Mixed Reality</span><span>Ubiquitous Computing</span><span>Privacy</span><span>Algorithms and Society</span><span>Technology Acceptance</span><span>Regulation</span><span>Recommender Systems</span><span>Computer Vision</span><span>Critical Computing</span><span>Philosophy of Technology</span></div>
 
-Next to my main PhD topic _Personalized Reality_, I work with colleagues on related topics, I am teaching assistant for multiple lectures (see [Teaching](./teaching)), and I am co-supervising Bachelor- and Master Theses.
+Next to my main PhD topic, I collaborate with colleagues on related research in personalization, privacy and ubiquitous interaction. I am a teaching assistant for multiple lectures (see [Teaching](./teaching)) and co-supervise Bachelor's and Master's theses.
 
 I am been reviewing for multiple conferences and journals, for more details see [Community Service](./communityservice). 
 

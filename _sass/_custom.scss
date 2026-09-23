@@ -765,7 +765,7 @@ dialog.lightbox-overlay {
 
 // Single-column layout at all widths: author block sits above the content
 #main {
-  max-width: 880px !important;
+  max-width: 740px !important;
 }
 .sidebar {
   float: none !important;
@@ -909,4 +909,85 @@ body {
   font-size: 1em;
   line-height: 1.3;
   color: $gray;
+}
+
+// Start page hero: full-width band under the nav, like the IWRM title block
+.author-hero {
+  margin: 1em 0 1.5em;
+  padding: 2.5em 0 0;
+
+  // tall hero with empty space on top and the text block at the bottom
+  @include breakpoint($medium) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: min(65vh, 600px);
+    padding: 3em 0 1em;
+    margin-bottom: 3em;
+  }
+}
+
+.author-hero__inner {
+  width: 100%;
+}
+
+.author-hero__inner {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 0 1.5em; // #main padding + .page padding
+}
+
+.author-hero__head {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+
+  @include breakpoint($medium) {
+    gap: 1.5em;
+  }
+}
+
+.author-hero__avatar {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  @include breakpoint($medium) {
+    width: 96px;
+    height: 96px;
+  }
+}
+
+.author-hero__name {
+  margin: 0;
+  font-size: clamp(1.6rem, 4.5vw, 2.3rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  color: $text-color;
+}
+
+.author-hero__lead {
+  margin: 1.1em 0 0;
+  font-size: 1em;
+  line-height: 1.65;
+  color: lighten($text-color, 10%);
+  text-align: justify;
+  hyphens: auto;
+
+  @include breakpoint($medium) {
+    font-size: 1.1em;
+  }
+}
+
+.author-hero__links .author__urls {
+  margin-top: 1.75em !important;
+}
+
+// Justified body text with hyphenation, like the IWRM page
+.page__content p {
+  text-align: justify;
+  hyphens: auto;
 }
