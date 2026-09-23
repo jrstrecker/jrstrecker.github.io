@@ -1077,3 +1077,20 @@ body {
   text-align: justify;
   hyphens: auto;
 }
+
+// "See all publications": accent pill instead of the theme's grey button
+a.btn.btn--light { // beats the underline rule for .page__content a
+  background: transparent !important;
+  border: 1px solid $accent !important;
+  border-radius: 20px !important;
+  color: $accent !important;
+  font-weight: 600;
+  padding: 0.5em 1.25em !important;
+  text-decoration: none !important;
+  transition: background 0.2s, color 0.2s;
+
+  &:hover {
+    background: $accent !important;
+    color: #fff !important;
+  }
+}
