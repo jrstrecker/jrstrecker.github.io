@@ -347,6 +347,24 @@ details summary::-webkit-details-marker { display:none; }
   font-weight: 800;
   letter-spacing: -0.01em;
 }
+
+// Name left, links pushed to the right edge: the list fills the nav and the
+// name cell absorbs the free space. While the menu button shows, leave room
+// for it so the greedy-nav JS (which compares list width to free space)
+// does not see an overflow.
+.greedy-nav .visible-links {
+  width: 100%;
+}
+.greedy-nav button:not(.hidden) ~ .visible-links {
+  width: calc(100% - 4rem);
+}
+.greedy-nav .visible-links li:first-child {
+  width: 100%;
+
+  a {
+    display: inline-block; // keep the hover underline to the name only
+  }
+}
 .greedy-nav .visible-links a::before {
   height: 2px !important;
   background: $accent !important;
@@ -948,7 +966,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    min-height: 550px;
+    min-height: 650px;
     padding: 3em 0 3.5em;
     margin-bottom: 3.5em;
   }

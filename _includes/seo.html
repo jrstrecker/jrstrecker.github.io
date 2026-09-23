@@ -14,12 +14,15 @@
 
 {% if page.title and page.author_profile != true %}
   {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
-{% elsif page.title and page.author_profile == true %}
-  {% assign seo_title = "Jannis Strecker | PhD Student | Personalized Reality" %}
 {% endif %}
 
 {% if seo_title %}
   {% assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once %}
+{% endif %}
+
+{% comment %} Assigned after markdownify, which would turn the "|" into a table {% endcomment %}
+{% if page.is_title_page or page.title and page.author_profile == true %}
+  {% assign seo_title = "Jannis Strecker | PhD Student | Personalized Reality" %}
 {% endif %}
 
 {% if site.url %}
@@ -30,7 +33,7 @@
 
 {% if page.title and page.author_profile != true %}
   {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
-{% elsif page.title and page.is_title_page == true %}
+{% elsif page.is_title_page %}
   {% assign seo_description = "As a PhD Student at the University of St.Gallen, I am studying how we can realize a 'Personalized Reality' that is responsible and societally beneficial by combining Personalization, Mixed Reality, Ubiquitous Computing and Privacy." %}
 {% endif %}
 
