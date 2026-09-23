@@ -750,67 +750,135 @@ dialog.lightbox-overlay {
     }
     i { flex-shrink: 0; padding-right: 0 !important; }
   }
+  &::before, &::after { display: none !important; } // dropdown triangle
 }
 
-@media (max-width: $large) {
-  #main {
-    margin-top: 0;
-  }
-  body {
-    padding-bottom: 5em !important;
-  }
-  .sidebar {
-    padding: 0 0.5em !important;
-  }
-  .author__avatar {
-    width: 84px;
-  }
-  .author__name {
-    font-size: 1.3em !important;
-  }
-  .author__content {
-    padding-top: 10px !important;
-  }
-  .author__bio {
-    font-size: 1em !important;
-  }
-  .author__urls-wrapper {
-    display: block;
-    width: 100%;
-    button { display: none; }
-  }
+@media (max-width: $medium) {
   .author__urls {
-    position: static !important;
-    border: none !important;
-    box-shadow: none !important;
-    background: transparent !important;
+    gap: 0.4em;
+    li {
+      font-size: 0.78em;
+      padding: 0.2em 0.7em;
+    }
+  }
+}
+
+// Single-column layout at all widths: author block sits above the content
+#main {
+  max-width: 880px !important;
+}
+.sidebar {
+  float: none !important;
+  width: auto !important;
+  margin-right: 0 !important;
+  position: static !important;
+}
+.page, .archive {
+  float: none !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding-left: 0.5em !important;
+  padding-right: 0.5em !important;
+}
+.author__avatar {
+  display: table-cell !important;
+  vertical-align: middle;
+  img {
     padding: 0 !important;
-    margin-top: 0.6em !important;
-    z-index: auto !important;
+    border: 0 !important;
+  }
+}
+.author__content {
+  display: table-cell !important;
+  vertical-align: middle;
+  width: auto !important;
+  padding-left: 15px !important;
+}
+
+// Hero on the start page from medium widths up
+@include breakpoint($medium) {
+  .sidebar {
+    margin-bottom: 2.5em;
+  }
+  div:not(.author--compact) > .author__avatar {
+    width: 128px;
+  }
+  div:not(.author--compact) > .author__content {
+    padding-left: 24px !important;
+    .author__name {
+      font-size: $type-size-3 !important;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .author__bio,
+    .author__employer {
+      font-size: $type-size-5 !important;
+    }
+  }
+  div:not(.author--compact) > .author__urls-wrapper .author__urls {
+    margin-top: 1.2em !important;
+  }
+}
+
+#main {
+  margin-top: 0;
+}
+body {
+  padding-bottom: 5em !important;
+}
+
+.sidebar {
+  padding: 0 0.5em !important;
+}
+.author__avatar {
+  width: 84px;
+}
+.author__name {
+  font-size: 1.3em !important;
+}
+.author__content {
+  padding-top: 10px !important;
+}
+.author__bio {
+  font-size: 1em !important;
+}
+.author__urls-wrapper {
+  display: block;
+  width: 100%;
+  button { display: none; }
+}
+.author__urls {
+  position: static !important;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin-top: 0.6em !important;
+  z-index: auto !important;
+}
+
+// On non-start pages: hide avatar/name, shrink link pills
+.author--compact {
+  .author__avatar,
+  .author__content {
+    display: none !important;
   }
 
-  // On non-start pages: hide avatar/name, shrink link pills
-  .author--compact {
-    .author__avatar,
-    .author__content {
-      display: none !important;
+  .author__urls {
+    margin-top: 0.3em !important;
+
+    &::before,
+    &::after {
+      display: none !important; // hide the dropdown triangle
     }
 
-    .author__urls {
-      margin-top: 0.3em !important;
-
-      &::before,
-      &::after {
-        display: none !important; // hide the dropdown triangle
-      }
-
-      li {
-        font-size: 0.82em !important;
-        padding: 0.2em 0.65em !important;
-      }
-
-      .hide-compact { display: none !important; }
+    li {
+      font-size: 0.82em !important;
+      padding: 0.2em 0.65em !important;
     }
+
+    .hide-compact { display: none !important; }
   }
 }
 
@@ -820,25 +888,7 @@ dialog.lightbox-overlay {
   .presentation-fallback { display: inline-block; }
 }
 
-@include breakpoint($medium) {
-  .archive, .page {
-    padding-right: 20px !important;
-    padding-left: 30px !important;
-  }
-}
-
-@include breakpoint($large) {
-  .page, .archive {
-    @include span(8 of 12 last);
-    float: left !important;
-    padding-left: 70px !important;
-  }
-}
-
 @include breakpoint($x-large) {
-  .page, .archive {
-    padding-left: 30px !important;
-  }
   .lightbox-trigger {
     padding: 0 2em;
   }
@@ -849,4 +899,14 @@ dialog.lightbox-overlay {
   padding-bottom: 0.5em;
   color: #9ba1a6;
   border-bottom: 1px solid #f2f3f3;
+}
+
+.sidebar .author__bio {
+  margin: 0.3em 0 0 !important;
+}
+.sidebar .author__employer {
+  margin: 0.15em 0 0;
+  font-size: 1em;
+  line-height: 1.3;
+  color: $gray;
 }
