@@ -114,11 +114,13 @@
 {% if include.hero %}
 <section class="author-hero" itemscope itemtype="http://schema.org/Person">
 <div class="author-hero__inner">
-  <div class="author-hero__head">
-    <img class="author-hero__avatar" src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" itemprop="image">
+  <img class="author-hero__avatar" src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" itemprop="image">
+  <div class="author-hero__text">
     <p class="author-hero__name" itemprop="name">{{ author.name | replace: "-", "&#8209;" }}</p>
+    {% if author.bio %}<p class="author-hero__role" itemprop="jobTitle">{{ author.bio }}</p>{% endif %}
+    {% if author.affiliation %}<p class="author-hero__affiliation">{{ author.affiliation }}</p>{% endif %}
+    <p class="author-hero__lead" itemprop="description">{{ author.lead }}</p>
   </div>
-  <p class="author-hero__lead" itemprop="description">{{ author.lead }}</p>
   <div class="author-hero__links">{{ author_links }}</div>
 </div>
 </section>
