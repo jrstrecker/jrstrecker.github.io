@@ -22,9 +22,17 @@
 }
 @font-face {
    font-family: 'Inter';
-   src: asset-url('./fonts/Inter-Regular.ttf') format('truetype');
-   font-weight: normal;
+   src: url('/assets/fonts/InterVariable.woff2') format('woff2');
+   font-weight: 100 900;
    font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: 'Inter';
+   src: url('/assets/fonts/InterVariable-Italic.woff2') format('woff2');
+   font-weight: 100 900;
+   font-style: italic;
+   font-display: swap;
 }
 
 @font-face {
@@ -47,7 +55,7 @@
    font-style: normal;
 }
 
-$doc-font-size              : 16;
+$doc-font-size              : 17;
 
 /* paragraph indention */
 $paragraph-indent           : false; // true, false (default)
@@ -70,7 +78,7 @@ $calisto                    : "Calisto MT", serif;
 $garamond                   : Garamond, serif;
 
 $global-font-family         : $sans-serif;
-$header-font-family         : $serif;
+$header-font-family         : $sans-serif;
 $caption-font-family        : $sans-serif;
 
 /* type scale */
