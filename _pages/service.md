@@ -38,15 +38,18 @@ My reviewing service so far:
 
 ## Social Media
 I am (co-) responsible for the following social media pages:
+- [Future Society Hub](https://futuresociety.ch)
+    - <i class="fab fa-fw fa-linkedin" aria-hidden="true" title="LinkedIn"></i><span class="visually-hidden">LinkedIn</span> [https://www.linkedin.com/company/future-society-hub](https://www.linkedin.com/company/future-society-hub)
+    - <i class="fab fa-fw fa-bluesky" aria-hidden="true" title="BlueSky"></i><span class="visually-hidden">BlueSky</span> [https://bsky.app/profile/fuso.eurosky.social](https://bsky.app/profile/fuso.eurosky.social)
 - [AlpCHI Conference 2026](https://alpchi.org)
-    - Mastodon [https://hci.social/AlpCHI](https://hci.social/@AlpCHI)
-    - LinkedIn [https://www.linkedin.com/company/alpchi-conference](https://www.linkedin.com/company/alpchi-conference)
-    - BlueSky [https://bsky.app/profile/alpchi.bsky.social](https://bsky.app/profile/alpchi.bsky.social)
-    - Instagram [https://www.instagram.com/alpchi.conference/](https://www.instagram.com/alpchi.conference/)
+    - <i class="fab fa-fw fa-mastodon" aria-hidden="true" title="Mastodon"></i><span class="visually-hidden">Mastodon</span> [https://hci.social/AlpCHI](https://hci.social/@AlpCHI)
+    - <i class="fab fa-fw fa-linkedin" aria-hidden="true" title="LinkedIn"></i><span class="visually-hidden">LinkedIn</span> [https://www.linkedin.com/company/alpchi-conference](https://www.linkedin.com/company/alpchi-conference)
+    - <i class="fab fa-fw fa-bluesky" aria-hidden="true" title="BlueSky"></i><span class="visually-hidden">BlueSky</span> [https://bsky.app/profile/alpchi.bsky.social](https://bsky.app/profile/alpchi.bsky.social)
+    - <i class="fab fa-fw fa-instagram" aria-hidden="true" title="Instagram"></i><span class="visually-hidden">Instagram</span> [https://www.instagram.com/alpchi.conference/](https://www.instagram.com/alpchi.conference/)
 - [IEEE Pervasive Computing Magazine](https://computer.org/pervasive)
-    - Mastodon [https://hci.social/@IEEEPervasive](https://hci.social/@IEEEPervasive)
+    - <i class="fab fa-fw fa-mastodon" aria-hidden="true" title="Mastodon"></i><span class="visually-hidden">Mastodon</span> [https://hci.social/@IEEEPervasive](https://hci.social/@IEEEPervasive)
 - [Interactions Research Group](https://interactions.ics.unisg.ch) 
-    - Mastodon
-    - LinkedIn
-    - YouTube
+    - <i class="fab fa-fw fa-mastodon" aria-hidden="true" title="Mastodon"></i><span class="visually-hidden">Mastodon</span> [https://mastodon.acm.org/@InteractionsUniSG](https://mastodon.acm.org/@InteractionsUniSG)
+    - <i class="fab fa-fw fa-linkedin" aria-hidden="true" title="LinkedIn"></i><span class="visually-hidden">LinkedIn</span> [https://www.linkedin.com/company/interactions-research-group](https://www.linkedin.com/company/interactions-research-group)
+    - <i class="fab fa-fw fa-youtube" aria-hidden="true" title="YouTube"></i><span class="visually-hidden">YouTube</span> [https://www.youtube.com/@interactionshsg2533](https://www.youtube.com/@interactionshsg2533)
 
