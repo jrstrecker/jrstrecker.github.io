@@ -119,6 +119,7 @@
     <p class="author-hero__name" itemprop="name">{{ author.name | replace: "-", "&#8209;" }}</p>
     {% if author.bio %}<p class="author-hero__role" itemprop="jobTitle">{{ author.bio }}</p>{% endif %}
     {% if author.affiliation %}<p class="author-hero__affiliation">{{ author.affiliation }}</p>{% endif %}
+    {% for role in author.roles %}<p class="author-hero__affiliation">{{ role }}</p>{% endfor %}
     <p class="author-hero__lead" itemprop="description">{{ author.lead }}</p>
   </div>
   <div class="author-hero__links">{{ author_links }}</div>

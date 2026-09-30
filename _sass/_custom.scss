@@ -1022,7 +1022,7 @@ body {
 
 .author-hero__name {
   margin: 0;
-  font-size: clamp(1.6rem, 4.5vw, 2.3rem);
+  font-size: clamp(2rem, 6vw, 3rem);
   font-weight: 800;
   letter-spacing: -0.035em;
   line-height: 1.05;
@@ -1048,10 +1048,6 @@ body {
   color: rgba(255, 255, 255, 0.9);
   hyphens: manual;
   text-wrap: pretty; // avoid one- or two-word last lines
-
-  @include breakpoint($medium) {
-    font-size: 1.1em;
-  }
 }
 
 .author-hero__links .author__urls {
@@ -1093,4 +1089,13 @@ a.btn.btn--light { // beats the underline rule for .page__content a
     background: $accent !important;
     color: #fff !important;
   }
+}
+
+.author-hero .author-hero__role a,
+.author-hero .author-hero__affiliation a {
+  color: inherit !important;
+  text-decoration: none !important;
+  &::before { display: none; }
+  &::after { content: "\2197"; margin-left: 0.15em; }
+  &:hover { color: #fff !important; }
 }

@@ -84,8 +84,10 @@ analytics:
 author:
   name             : "Jannis Strecker-Bischoff"
   avatar           : "profile.jpg"
-  bio              : "PhD Student in Computer Science"
-  affiliation      : 'University of St. Gallen, Switzerland'
+  bio              : 'PhD Student in Computer Science, <a href="https://ics.unisg.ch/chairs/simon-mayer-interaction-and-communication-based-systems/">University of St.Gallen</a>'
+  roles            :
+    - 'Associated Doctoral Student, <a href="https://ai.ethz.ch/about-us/people/associated.html">ETH AI Center</a>'
+    - 'Hub Leader, <a href="https://futuresociety.ch/#team">Future Society Hub</a>'
   lead             : 'In my research, I investigate how ubiquitous personalization systems can make people’s interactions with their environment more efficient, safer and more inclusive, and how these systems can be built in a responsible and societally beneficial way.'
   employer         : "University of St.Gallen"
   location         : 
