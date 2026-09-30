@@ -420,6 +420,23 @@ details summary::-webkit-details-marker { display:none; }
  //padding: 1em 1.5em;
 }
 
+// arrows mark where inline links go: → stays on the site, ↗ leaves it
+// (.page, not .page__content: single.html closes that section before the content)
+.page {
+  p, li {
+    a[href^="http"]::after { content: "\2197"; margin-left: 0.15em; }
+    a[href^="./"]::after,
+    a[href^="/"]::after,
+    a[href^="https://academia.jrstrecker.de"]::after { content: "\2192"; margin-left: 0.15em; }
+  }
+}
+// publication and talk entries have their own link icons
+.page .publications-list-item {
+  p, li {
+    a::after { content: none; }
+  }
+}
+
 .pub-details-outer {
   background: #f8f7f5;
   border: none !important;

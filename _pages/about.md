@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
   - /research/
 ---
-<div class="about-box"  markdown="1">
+<div class="about-box" markdown="1">
 
 As XR headsets and AI-enabled smart glasses become part of everyday life, personalization is moving beyond the Web into people's physical surroundings. When it is applied everywhere, each person may perceive a different, system-mediated version of reality: a [Personalized Reality](./personalized-reality). This can make interactions more efficient and information access more equitable. It can also isolate people in fragmented realities and give system designers considerable influence over how people experience the world and each other.
 
 In my dissertation at the [Interactions- and Communication-based Systems](https://interactions.ics.unisg.ch) lab, I investigate how Responsible Ubiquitous Personalization Systems can create beneficial Personalized Realities while mitigating their harmful social and societal effects. I combine conceptual frameworks, technical prototypes and controlled user studies. So far, this includes the RUPS model for describing and analyzing such systems, Mixed Reality prototypes that filter or explain options while shopping or learning board games, and ways to give people control over their personal data using Solid Pods. My current work focuses on multi-user settings, where people share personalized content so that their realities stay connected.
 
-To do this, I draw on the following research areas:
+My work sits at the intersection of:
 <div class="topic-pills"><span>Personalization</span><span>Mixed Reality</span><span>Ubiquitous Computing</span><span>Privacy</span><span>Algorithms and Society</span><span>Technology Acceptance</span><span>Regulation</span><span>Recommender Systems</span><span>Computer Vision</span><span>Critical Computing</span><span>Philosophy of Technology</span></div>
 
 Beyond my dissertation, I collaborate with colleagues on related research in personalization, privacy and ubiquitous interaction. I am/was a teaching assistant for several lectures (see [Teaching](./teaching)), co-supervise(d) Bachelor's and Master's theses, and review for and serve on committees of conferences and journals (see [Community Service](./communityservice)).
