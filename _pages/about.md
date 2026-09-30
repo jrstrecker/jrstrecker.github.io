@@ -17,13 +17,9 @@ In my dissertation at the [Interactions- and Communication-based Systems](https:
 To do this, I draw on the following research areas:
 <div class="topic-pills"><span>Personalization</span><span>Mixed Reality</span><span>Ubiquitous Computing</span><span>Privacy</span><span>Algorithms and Society</span><span>Technology Acceptance</span><span>Regulation</span><span>Recommender Systems</span><span>Computer Vision</span><span>Critical Computing</span><span>Philosophy of Technology</span></div>
 
-Next to my main PhD topic, I collaborate with colleagues on related research in personalization, privacy and ubiquitous interaction. I am a teaching assistant for multiple lectures (see [Teaching](./teaching)) and co-supervise Bachelor's and Master's theses.
+Beyond my dissertation, I collaborate with colleagues on related research in personalization, privacy and ubiquitous interaction. I am/was a teaching assistant for several lectures (see [Teaching](./teaching)), co-supervise(d) Bachelor's and Master's theses, and review for and serve on committees of conferences and journals (see [Community Service](./communityservice)).
 
-I am been reviewing for multiple conferences and journals, for more details see [Community Service](./communityservice). 
-
-For updates on what I'm doing, have a look at the [Publications](./publications) of my colleagues and me,
-follow me on the Fediverse: [https://hci.social/@jannis](https://hci.social/@jannis),
-or contact me via email: [jannis.strecker-bischoff@unisg.ch](mailto:jannis.strecker-bischoff@unisg.ch)!
+For updates, have a look at the [Publications](./publications) of my colleagues and me, follow me on the Fediverse at [@jannis@hci.social](https://hci.social/@jannis), or email me at [jannis.strecker-bischoff@unisg.ch](mailto:jannis.strecker-bischoff@unisg.ch).
 </div>
 
 ## 📑 Recent Publications
