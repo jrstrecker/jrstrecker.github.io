@@ -7,6 +7,7 @@ date: 2026-10-11
 venue: 'Companion of the 2026 ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp Companion ’26)'
 venuelink: "https://www.ubicomp.org/ubicomp-iswc-2026"
 shortvenue: "UbiComp Companion '26"
+paperaward: "Best Poster Award - Runner-Up"
 papertype: "Conference"
 paperurl: '/files/pdf/research/2026-BlinkArt.pdf'
 link: 'https://doi.org/10.1145/3798063.3837172'
