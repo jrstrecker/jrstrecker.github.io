@@ -17,7 +17,7 @@ bib: |
     @misc{strecker2025changeperspectivewidenworldview,
         title={Change Your Perspective, Widen Your Worldview! Societally Beneficial Perceptual Filter Bubbles in Personalized Reality}, 
         author={Jannis Strecker and Luka Bekavac and Kenan Bektaş and Simon Mayer},
-        booktitle={Proceedings of Purposeful XR: Affordances, Challenges, and Speculations for an Ethical Future at CHI 2025 (Purposeful XR ’25)}
+        booktitle={Proceedings of Purposeful XR: Affordances, Challenges, and Speculations for an Ethical Future at CHI 2025 (Purposeful XR ’25)},
         year={2025},
         eprint={2504.10271},
         archivePrefix={arXiv},

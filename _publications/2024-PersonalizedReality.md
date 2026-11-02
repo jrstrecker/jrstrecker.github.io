@@ -20,7 +20,7 @@ bib: |
     author = {Strecker, Jannis and Mayer, Simon and Bekta{\c s}, Kenan},
     year = 2024,
     publisher = {{Gesellschaft f\"ur Informatik e.V.}},
-    doi = {muc2024-mci-ws11-200},
+    doi = {10.18420/muc2024-mci-ws11-200},
     langid = {english}
     }
     

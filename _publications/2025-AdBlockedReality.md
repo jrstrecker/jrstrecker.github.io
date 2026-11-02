@@ -30,7 +30,7 @@ bib:  |
     articleno = {626},
     numpages = {18},
     keywords = {Extended Reality, Content Curation, Visualization, Physical Ad Blocker},
-    location = {Yokhama, Japan},
+    location = {Yokohama, Japan},
     series = {CHI '25}
     }
     

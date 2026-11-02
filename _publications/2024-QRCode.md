@@ -32,6 +32,5 @@ bib: |
     location = {Honolulu,HI,USA},
     series = {CHI EA '24}
     }
-    }
 ---
 
