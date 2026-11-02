@@ -4,20 +4,20 @@ title: "Teaching"
 ---
 
 ## Theses
-I was co-supervising the following theses:
+I was co-supervising the following theses. Student names are omitted for privacy reasons.
 
 ### 2025
-- Sandra Dojcinovic. Transparent Personalized Recommendations in Mixed Reality for Strategic Board Gaming (Master). Related paper: [GLAMRec](/publication/2024-PRecMR).
-- Camilla Becker. Enhancing Privacy Awareness in Smart Environments (Master).
+- Transparent Personalized Recommendations in Mixed Reality for Strategic Board Gaming (Master). Related paper: [GLAMRec](/publication/2024-PRecMR).
+- Enhancing Privacy Awareness in Smart Environments (Master).
 
 ### 2024
-- Luka Bekavac. Filter Bubbles in Personalized Recommender Systems (Master). Related paper: [SOAP](/publication/2024-FilterBubbles).
-- Lucien Ledermann. MR User Interfaces for IoT Devices (Bachelor). Related paper: [JUIC-IoT](/publications/2025-DogsGoPods)
-- Adrian Pandjaitan. Personalized Advertisements in XR Contexts (Master)
+- Filter Bubbles in Personalized Recommender Systems (Master). Related paper: [SOAP](/publication/2024-FilterBubbles).
+- MR User Interfaces for IoT Devices (Bachelor). Related paper: [JUIC-IoT](/publications/2025-DogsGoPods)
+- Personalized Advertisements in XR Contexts (Master)
 
 ### 2023
-- Aleksandar Slavujica. Object Retrieval using Proximity-based Graphs and a Gaze-enabled AR System (Bachelor). Related paper: [NeighboAR](/publication/2024-NeighboAR).
-- Conrad Vaslin. SupermarketCoach (Bachelor). Related paper: [ShoppingCoach](/publication/2024-ShoppingCoach).
+- Object Retrieval using Proximity-based Graphs and a Gaze-enabled AR System (Bachelor). Related paper: [NeighboAR](/publication/2024-NeighboAR).
+- SupermarketCoach (Bachelor). Related paper: [ShoppingCoach](/publication/2024-ShoppingCoach).
 
 ## Courses 
 I am/was a teaching assistant in various courses:
