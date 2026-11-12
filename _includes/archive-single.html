@@ -12,9 +12,9 @@
   {% assign title = post.title %}
 {% endif %}
 
-{%- comment -%} thumb=true (start page): first-page PNG from /images/publications/<pdf name>.png, if that file exists {%- endcomment -%}
+{%- comment -%} first-page PNG from /images/publications/<pdf name>.png, shown if that file exists {%- endcomment -%}
 {%- assign thumb_file = nil -%}
-{%- if include.thumb and post.paperurl -%}
+{%- if post.paperurl -%}
   {%- assign thumb_path = post.paperurl | split: "/" | last | replace: ".pdf", ".png" | prepend: "/images/publications/" -%}
   {%- assign thumb_file = site.static_files | where: "path", thumb_path | first -%}
 {%- endif -%}

@@ -1231,7 +1231,7 @@ $ink-icon: #6a7986;  // icons and chevrons, 4.5:1 on white, 4.2:1 on the tints
     }
   }
 
-  // first-page image left of the card text, desktop only (thumb=true, file in /images/publications/)
+  // first-page image left of the card text, desktop only (file in /images/publications/)
   .pub-thumb { display: none; }
 
   @media (min-width: 1024px) {
@@ -1252,6 +1252,10 @@ $ink-icon: #6a7986;  // icons and chevrons, 4.5:1 on white, 4.2:1 on the tints
         display: block;
         width: 100%;
         height: auto;
+        // A4 pages are taller than Letter: crop all to Letter from the top, so every card lines up
+        aspect-ratio: 300 / 389;
+        object-fit: cover;
+        object-position: top;
         border: 1px solid $hairline;
         border-radius: 3px;
         box-shadow: 0 1px 3px rgba($ink, 0.1);
