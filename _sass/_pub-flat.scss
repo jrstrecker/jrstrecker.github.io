@@ -1,0 +1,103 @@
+/* Flat publication entries in the style of the start page hero (preview on the start page only).
+   Markup: _includes/archive-single-flat.html. Revert: delete this file and its import in assets/css/main.scss. */
+
+$pub-ink: #2b2420;   // warm near-black, like the hero overlay
+$pub-muted: #7a716a;
+
+.pub-flat {
+  padding: 1.5em 0 1.6em;
+  border-bottom: 1px solid #ecebe8;
+}
+
+.pub-flat__kicker {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.2em 1.4em; // spacing only, no separator glyphs
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $pub-muted;
+
+  a {
+    color: inherit !important;
+    &:hover { color: $accent !important; }
+  }
+}
+
+.pub-flat__award {
+  color: #a87a0a;
+  i { margin-right: 0.2em; }
+}
+
+.pub-flat__title {
+  margin: 0.35em 0 0.3em !important;
+  padding: 0;
+  border: none !important;
+  font-size: 1.35em !important;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+
+  a {
+    color: $pub-ink !important;
+    &:hover { color: $accent !important; }
+    &::before { display: none !important; }
+  }
+}
+
+.pub-flat__authors {
+  font-size: 0.88em;
+  line-height: 1.5;
+  color: $pub-muted;
+
+  strong {
+    font-weight: 600;
+    color: lighten($pub-ink, 15%);
+  }
+}
+
+.pub-flat__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45em;
+  margin-top: 0.9em;
+}
+
+// outlined petrol pills on white, the light counterpart of the hero link pills
+.pub-flat .pub-action-pill {
+  background: transparent;
+  border: 1px solid rgba($accent, 0.35);
+  color: $accent !important;
+  font-family: inherit;
+  font-size: 0.82em;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.pub-flat .pub-flat__toggle[aria-expanded="true"] {
+  background: $accent;
+  border-color: $accent;
+  color: #fff !important;
+}
+
+.pub-flat__panel {
+  margin-top: 0.9em;
+  font-size: 0.9em;
+  animation: details-expand 0.3s ease;
+
+  p { margin: 0; }
+
+  blockquote {
+    margin: 0;
+    border-left: 2px solid rgba($accent, 0.35);
+  }
+
+  pre {
+    margin: 0;
+    font-size: 0.85em;
+  }
+
+  .presentation-fallback { margin-top: 0.5em; }
+}

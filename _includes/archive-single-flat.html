@@ -1,0 +1,54 @@
+{% include base_path %}
+{%- comment -%}
+  Flat publication entry (start page preview). Shows the same fields as archive-single.html.
+  Revert: use archive-single.html in _pages/about.md again, delete this file and _sass/_pub-flat.scss.
+{%- endcomment -%}
+{%- assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" -%}
+{%- assign pid = post.id | slugify -%}
+{%- assign me = site.author.name -%}
+{%- assign me_old = me | split: "-" | first -%}
+{%- capture me_strong %}<strong>{{ me }}</strong>{% endcapture -%}
+{%- capture me_old_strong %}<strong>{{ me_old }}</strong>{% endcapture -%}
+{%- assign authors = post.authors | replace: me, "@@me@@" | replace: me_old, "@@old@@" | replace: "@@me@@", me_strong | replace: "@@old@@", me_old_strong -%}
+
+<div class="list__item" data-tags="{{ post.tags | join: ',' }}">
+  <article class="pub-flat" itemscope itemtype="http://schema.org/CreativeWork">
+
+    <div class="pub-flat__kicker">
+      {% if post.paperaward %}<span class="pub-flat__award"><i class="fa fa-trophy" aria-hidden="true"></i> {{ post.paperaward }}</span>{% endif %}
+      {% if post.venue %}<span>{% if post.venuelink %}<a href="{{ post.venuelink }}" target="_blank">{{ post.shortvenue | default: post.venue }}</a>{% else %}{{ post.shortvenue | default: post.venue }}{% endif %}</span>{% endif %}
+      {% if post.date %}<span>{{ post.date | date: "%-d %B %Y" }}</span>{% endif %}
+      {% if post.papertype %}<span>{{ post.papertype }}</span>{% endif %}
+    </div>
+
+    <h2 class="pub-flat__title" itemprop="headline"><a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a></h2>
+
+    {% if post.authors %}<div class="pub-flat__authors">{{ authors }}</div>{% endif %}
+
+    <div class="pub-flat__actions">
+      {% if post.abstract %}<button type="button" class="pub-action-pill pub-flat__toggle" aria-expanded="false" aria-controls="{{ pid }}-abstract"><i class="fa fa-fw fa-file-alt" aria-hidden="true"></i> Abstract</button>{% endif %}
+      {% if post.presentationurl %}<button type="button" class="pub-action-pill pub-flat__toggle" aria-expanded="false" aria-controls="{{ pid }}-presentation"><i class="fa fa-fw fa-desktop" aria-hidden="true"></i> Presentation</button>{% endif %}
+      {% if post.videolink %}<button type="button" class="pub-action-pill pub-flat__toggle" aria-expanded="true" aria-controls="{{ pid }}-video"><i class="fa fa-fw fa-film" aria-hidden="true"></i> {{ post.videotitle | default: "Teaser Video" }}</button>{% endif %}
+      {% if post.citation %}<button type="button" class="pub-action-pill pub-flat__toggle" aria-expanded="false" aria-controls="{{ pid }}-citation"><i class="fa fa-fw fa-bookmark" aria-hidden="true"></i> Text Reference</button>{% endif %}
+      {% if post.bib %}<button type="button" class="pub-action-pill pub-flat__toggle" aria-expanded="false" aria-controls="{{ pid }}-bib"><i class="fa fa-fw fa-file-code" aria-hidden="true"></i> BibTeX Reference</button>{% endif %}
+      {% if post.pressurl %}<a href="{{ post.pressurl }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-newspaper" aria-hidden="true"></i> Press Article</a>{% endif %}
+      {% if post.link %}<a href="{{ post.link }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Published Paper</a>{% endif %}
+      {% if post.paperurl %}<a href="{{ post.paperurl }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download PDF</a>{% endif %}
+      {% if post.code %}<a href="{{ post.code }}" target="_blank" class="pub-action-pill"><i class="fas fa-fw fa-code" aria-hidden="true"></i> Code</a>{% endif %}
+      {% if post.github %}<a href="{{ post.github }}" target="_blank" class="pub-action-pill"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a>{% endif %}
+    </div>
+
+    {% if post.abstract %}<div id="{{ pid }}-abstract" class="pub-flat__panel" hidden><p>{{ post.abstract }}</p></div>{% endif %}
+    {% if post.presentationurl %}<div id="{{ pid }}-presentation" class="pub-flat__panel" hidden>
+      <iframe class="presentation-iframe" data-src="{{ post.presentationurl }}" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
+      <a class="presentation-fallback pub-action-pill" href="{{ post.presentationurl }}" target="_blank"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download Presentation</a>
+    </div>{% endif %}
+    {% if post.videolink %}<div id="{{ pid }}-video" class="pub-flat__panel">
+      <div class="video-container"><iframe width="560" height="315" src="{{ post.videolink }}" title="YouTube video player" frameborder="0" allow="web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    </div>{% endif %}
+    {% if post.citation %}<div id="{{ pid }}-citation" class="pub-flat__panel" hidden><blockquote><p>{{ post.citation }}</p></blockquote></div>{% endif %}
+    {% if post.bib %}<div id="{{ pid }}-bib" class="pub-flat__panel" hidden><pre>{{ post.bib }}</pre></div>{% endif %}
+
+  </article>
+</div>
+<script>if(!window._pubFlat){window._pubFlat=true;document.addEventListener('click',function(e){var b=e.target.closest('.pub-flat__toggle');if(!b)return;var open=b.getAttribute('aria-expanded')!=='true';var p=document.getElementById(b.getAttribute('aria-controls'));b.setAttribute('aria-expanded',open);p.hidden=!open;var f=p.querySelector('iframe[data-src]');if(open&&f&&!f.src&&window.innerWidth>768)f.src=f.dataset.src;});}</script>
