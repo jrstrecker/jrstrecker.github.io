@@ -1118,9 +1118,9 @@ a.btn.btn--light { // beats the underline rule for .page__content a
   &:hover { color: #fff !important; }
 }
 
-/* Publication cards and single paper pages in the start page palette.
-   Scope: .pub-styled, set for publications in _includes/archive-single.html and _layouts/single.html
-   (talk cards share the classes but stay unchanged).
+/* Publication cards, single paper pages and talk cards in the start page palette.
+   Scope: .pub-styled, set in _includes/archive-single.html (publications only),
+   _layouts/single.html (publications only) and _includes/archive-single-talk-card.html.
    Hierarchy: the title is the only strong element, authors and venue come second,
    all controls stay quiet until hovered. */
 $ink: #2a3f52;      // dark ink of the menu gradient
@@ -1159,6 +1159,7 @@ $ink-icon: #6a7986;  // icons and chevrons, 4.5:1 on white, 4.2:1 on the tints
     color: $ink-text;
     i { color: $ink-icon; }
   }
+  .talk-item .pub-meta { margin-bottom: 0; } // talk cards have no controls below, keep them compact
   .pub-venue a {
     color: inherit !important;
     text-decoration-color: rgba($ink, 0.2) !important;
