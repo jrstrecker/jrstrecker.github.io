@@ -27,7 +27,7 @@ For updates, have a look at the [Publications](./publications) of my colleagues 
 <div class="home-pubs">
 {% assign sorted_posts = site.publications | sort: 'date' | reverse %}
 {% for post in sorted_posts limit:3 %}
-  {% include archive-single.html flat_details=true %}
+  {% include archive-single.html flat_details=true thumb=true %}
 {% endfor %}
 </div>
 

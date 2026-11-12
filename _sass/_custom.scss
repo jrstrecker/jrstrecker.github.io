@@ -1230,4 +1230,32 @@ $ink-icon: #6a7986;  // icons and chevrons, 4.5:1 on white, 4.2:1 on the tints
       color: #fff !important;
     }
   }
+
+  // first-page image left of the card text, desktop only (thumb=true, file in /images/publications/)
+  .pub-thumb { display: none; }
+
+  @media (min-width: 1024px) {
+    .publications-list-item.has-thumb {
+      position: relative;
+      padding-left: 9.5em; // 1.25em edge + 7em image + 1.25em gap
+      min-height: 11.1em;  // image height (7em * 389 / 300) + 2em padding
+    }
+
+    .pub-thumb {
+      display: block;
+      position: absolute;
+      top: 1em;
+      left: 1.25em;
+      width: 7em;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid $hairline;
+        border-radius: 3px;
+        box-shadow: 0 1px 3px rgba($ink, 0.1);
+      }
+    }
+  }
 }

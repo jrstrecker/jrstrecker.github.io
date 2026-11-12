@@ -12,8 +12,16 @@
   {% assign title = post.title %}
 {% endif %}
 
+{%- comment -%} thumb=true (start page): first-page PNG from /images/publications/<pdf name>.png, if that file exists {%- endcomment -%}
+{%- assign thumb_file = nil -%}
+{%- if include.thumb and post.paperurl -%}
+  {%- assign thumb_path = post.paperurl | split: "/" | last | replace: ".pdf", ".png" | prepend: "/images/publications/" -%}
+  {%- assign thumb_file = site.static_files | where: "path", thumb_path | first -%}
+{%- endif -%}
+
 <div class="{{ include.type | default: "list" }}__item" data-tags="{{ post.tags | join: ',' }}">
-  <article class="archive__item publications-list-item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item publications-list-item{% if thumb_file %} has-thumb{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if thumb_file %}<a class="pub-thumb" href="{{ base_path }}{{ post.url }}" tabindex="-1" aria-hidden="true"><img src="{{ base_path }}{{ thumb_file.path }}" alt="" width="300" height="389" loading="lazy"></a>{% endif %}
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
