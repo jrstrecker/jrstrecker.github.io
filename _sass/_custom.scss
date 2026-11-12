@@ -1117,3 +1117,84 @@ a.btn.btn--light { // beats the underline rule for .page__content a
   &::after { content: "\2197"; margin-left: 0.15em; }
   &:hover { color: #fff !important; }
 }
+
+/* Publication cards in the start page palette.
+   Preview on the start page only (wrapper .home-pubs in _pages/about.md).
+   Apply everywhere: drop the .home-pubs scope. Revert: delete this block and the wrapper.
+   Same elements and layout as before, only colours, weights and lines change. */
+$ink: #2a3f52;      // dark ink of the menu gradient
+$hairline: #ecebe8; // menu border
+
+.home-pubs {
+  // card: white with the menu's hairline instead of beige
+  .publications-list-item {
+    background: #fff;
+    border-color: $hairline;
+    box-shadow: 0 1px 2px rgba($ink, 0.06);
+  }
+
+  // title: heavier and slightly tighter, like the name in the menu
+  .publications-list-item h2 {
+    font-weight: 700 !important;
+    letter-spacing: -0.01em;
+  }
+
+  // authors, venue, date: ink at 72%, like the role lines in the hero (white at 72%)
+  .pub-meta {
+    color: rgba($ink, 0.72);
+    i { color: rgba($ink, 0.4); }
+  }
+  .pub-venue a {
+    color: inherit !important;
+    text-decoration-color: rgba($ink, 0.25) !important;
+    &:hover {
+      color: $accent !important;
+      text-decoration-color: rgba($accent, 0.4) !important;
+    }
+  }
+  // separator between venue and date: thin line instead of the middle dot glyph
+  .pub-meta-sep {
+    display: inline-block;
+    align-self: center;
+    width: 1px;
+    height: 0.9em;
+    overflow: hidden;
+    color: transparent;
+    background: rgba($ink, 0.25);
+  }
+
+  .pub-type-pill {
+    border-color: $hairline;
+    color: rgba($ink, 0.72);
+  }
+
+  .fa-info-color { color: $ink; }
+
+  // "Show Details" and "Teaser Video": petrol tint, as on the menu button hover
+  .pub-details-outer {
+    background: rgba($accent, 0.04);
+    > summary { color: $ink; }
+    > summary::after { color: rgba($ink, 0.4); }
+  }
+
+  // Abstract, Presentation, Text Reference, BibTeX
+  .pub-details-section {
+    border-color: $hairline !important;
+    > summary { color: $ink; }
+    > summary::after { color: rgba($ink, 0.3); }
+    blockquote { border-left-color: rgba($accent, 0.3); }
+    pre { background: rgba($accent, 0.03); }
+  }
+
+  // Press Article, Published Paper, Download PDF: outlined petrol, like "See all publications"
+  .pub-action-pill {
+    background: transparent;
+    border-color: rgba($accent, 0.45);
+    color: $accent !important;
+    &:hover {
+      background: $accent;
+      border-color: $accent;
+      color: #fff !important;
+    }
+  }
+}

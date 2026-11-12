@@ -24,9 +24,11 @@ For updates, have a look at the [Publications](./publications) of my colleagues 
 
 ## 📑 Recent Publications
 
+<div class="home-pubs">
 {% assign sorted_posts = site.publications | sort: 'date' | reverse %}
 {% for post in sorted_posts limit:3 %}
   {% include archive-single.html %}
 {% endfor %}
+</div>
 
 <a href="./publications" target="_top" class="btn btn--light btn--large text-decoration-none">See all publications</a>
