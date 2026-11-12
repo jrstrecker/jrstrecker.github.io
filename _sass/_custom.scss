@@ -1194,6 +1194,18 @@ $hairline: #ecebe8; // menu border
     border-color: $hairline !important;
     > summary { color: rgba($ink, 0.7); }
     > summary::after { color: rgba($ink, 0.25); }
+    // plain heading instead of a toggle (flat_details=true): same look as the old summary row, no chevron
+    > h3.pub-details-heading {
+      display: flex;
+      align-items: center;
+      gap: 0.3em;
+      margin: 0;
+      padding: 0.5em 0.75em 0;
+      font-size: 1em;
+      font-weight: 400;
+      line-height: inherit;
+      color: rgba($ink, 0.7);
+    }
     blockquote { border-left-color: $hairline; }
     pre { background: rgba($ink, 0.025); }
   }
