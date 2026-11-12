@@ -1125,6 +1125,8 @@ a.btn.btn--light { // beats the underline rule for .page__content a
    authors and venue come second, all controls stay quiet until hovered. */
 $ink: #2a3f52;      // dark ink of the menu gradient
 $hairline: #ecebe8; // menu border
+$ink-text: #5f6f7d;  // secondary text, WCAG AA: 5.2:1 on white, 4.9:1 on the pill tint
+$ink-icon: #7f8c97;  // icons and chevrons, at least 3:1 (non-text contrast)
 
 .home-pubs {
   .publications-list-item {
@@ -1132,6 +1134,8 @@ $hairline: #ecebe8; // menu border
     border-color: $hairline;
     box-shadow: 0 1px 2px rgba($ink, 0.05);
   }
+
+  .pub-award-badge { color: #8a6508; } // darker gold, 4.9:1 on the badge background
 
   // 1. title: the only petrol, bold element of the card
   .publications-list-item h2 {
@@ -1146,8 +1150,8 @@ $hairline: #ecebe8; // menu border
   // 2. authors, venue, date: one quiet grey, like the role lines under the hero name
   .pub-meta {
     margin-bottom: 1em; // more air between the title block and the controls
-    color: rgba($ink, 0.6);
-    i { color: rgba($ink, 0.3); }
+    color: $ink-text;
+    i { color: $ink-icon; }
   }
   .pub-venue a {
     color: inherit !important;
@@ -1175,37 +1179,38 @@ $hairline: #ecebe8; // menu border
   }
   .pub-type-pill {
     border-color: $hairline;
-    color: rgba($ink, 0.5);
+    color: $ink-text;
   }
 
   // 3. controls: no colour of their own, petrol only on hover
-  .fa-info-color { color: rgba($ink, 0.35); }
+  .fa-info-color { color: $ink-icon; }
 
   .pub-details-outer {
     background: rgba($ink, 0.025);
     > summary {
       font-weight: 400;
-      color: rgba($ink, 0.7);
+      color: $ink-text;
     }
-    > summary::after { color: rgba($ink, 0.3); }
+    > summary::after { color: $ink-icon; }
   }
 
   .pub-details-section {
     border-color: $hairline !important;
-    > summary { color: rgba($ink, 0.7); }
-    > summary::after { color: rgba($ink, 0.25); }
+    > summary { color: $ink-text; }
+    > summary::after { color: $ink-icon; }
     // plain heading instead of a toggle (flat_details=true): same look as the old summary row, no chevron
     > h3.pub-details-heading {
       display: flex;
       align-items: center;
       gap: 0.3em;
       margin: 0;
-      padding: 0.5em 0.75em 0;
+      padding: 0.5em 0.75em; // space below too, so the BibTeX box does not touch the heading
       font-size: 1em;
       font-weight: 400;
       line-height: inherit;
-      color: rgba($ink, 0.7);
+      color: $ink-text;
     }
+    > h3.pub-details-heading + p { padding-top: 0; } // abstract keeps its old spacing
     blockquote { border-left-color: $hairline; }
     pre { background: rgba($ink, 0.025); }
   }
@@ -1213,7 +1218,7 @@ $hairline: #ecebe8; // menu border
   .pub-action-pill {
     background: rgba($ink, 0.035);
     border-color: transparent;
-    color: rgba($ink, 0.75) !important;
+    color: $ink-text !important;
     &:hover {
       background: $accent;
       color: #fff !important;
