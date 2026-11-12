@@ -1,0 +1,6 @@
+<li>
+  <a href="{{ post.titlelink }}" target="_blank">{{ post.title }}</a>
+  {% if post.type %}<span class="service-meta">{{ post.type }}</span>{% endif %}
+  {% if post.venue %}<span class="service-meta">at <a href="{{ post.venuelink }}" target="_blank">{{ post.venue }}</a></span>{% endif %}
+  {% if post.links %}<span class="service-meta">{% for l in post.links %}<a href="{{ l.url }}" target="_blank"><i class="{{ l.icon }} fa-fw" aria-hidden="true"></i>{{ l.name }}</a>{% endfor %}</span>{% endif %}
+</li>

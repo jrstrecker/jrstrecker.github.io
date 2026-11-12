@@ -1232,6 +1232,24 @@ $ink-icon: #6a7986;  // icons and chevrons, 4.5:1 on white, 4.2:1 on the tints
     }
   }
 
+}
+
+// community service: plain list, role or venue as a grey line under the title
+.service-list {
+  margin: 0.5em 0 1.5em;
+
+  li { margin-bottom: 0.6em; }
+
+  .service-meta {
+    display: block;
+    color: $ink-text;
+    font-size: 0.85em;
+
+    a + a { margin-left: 1.6em; }
+  }
+}
+
+.pub-styled {
   // first-page image left of the card text, desktop only (file in /images/publications/)
   .pub-thumb { display: none; }
 

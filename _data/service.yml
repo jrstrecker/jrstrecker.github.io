@@ -1,0 +1,66 @@
+# Entries for /communityservice/, rendered with _includes/archive-single-talk-card.html.
+# Fields: title, titlelink, type (pill), venue, venuelink, links (platform pills).
+
+roles:
+  - title: "GI Special Interest Group ABIS – Adaptivity and User Modeling in Interactive Software Systems"
+    titlelink: "https://fg-abis.gi.de/en/"
+    type: "Vice Chair"
+  - title: "AlpCHI Conference 2026"
+    titlelink: "https://alpchi.org"
+    type: "Web & Social Media Chair"
+  - title: "IoT Conference 2025"
+    titlelink: "https://iot-conference.org/iot2025/"
+    type: "Proceedings Chair"
+
+committees:
+  - title: "Mensch und Computer 2025"
+    titlelink: "https://muc2025.mensch-und-computer.de"
+    type: "Short Paper AC"
+  - title: "CHI 2025"
+    titlelink: "https://chi2025.acm.org/for-authors/late-breaking-work/"
+    type: "Late-Breaking Work AC"
+  - title: "Mensch und Computer 2024"
+    titlelink: "https://muc2024.mensch-und-computer.de/en/program-committee/"
+    type: "Short Paper AC"
+
+workshops:
+  - title: "International Workshop on Reality Mediation: Personalized, Shared, and Connected Realities"
+    titlelink: "https://reality-mediation.github.io/2026/index.html"
+    venue: "UbiComp / ISWC 2026"
+    venuelink: "https://www.ubicomp.org/ubicomp-iswc-2026/"
+  - title: "ABIS 2026 – The Effects of the Adaptive Web on Society"
+    titlelink: "https://fg-abis.gi.de/veranstaltung/abis-2026"
+    venue: "18th ACM Web Science Conference"
+    venuelink: "https://websci26.org/"
+  - title: "ABIS 2025 – International Workshop on Personalization and Recommendation"
+    titlelink: "https://fg-abis.gi.de/veranstaltung/abis-2025"
+    venue: "Mensch und Computer 2025"
+    venuelink: "https://muc2025.mensch-und-computer.de/en"
+  - title: "ABIS 2024 – International Workshop on Personalization and Recommendation"
+    titlelink: "https://fg-abis.gi.de/veranstaltung/abis-2024"
+    venue: "Mensch und Computer 2024"
+    venuelink: "https://muc2024.mensch-und-computer.de/en"
+
+social:
+  - title: "Future Society Hub"
+    titlelink: "https://futuresociety.ch"
+    links:
+      - { name: "LinkedIn", icon: "fab fa-linkedin", url: "https://www.linkedin.com/company/future-society-hub" }
+      - { name: "Bluesky", icon: "fab fa-bluesky", url: "https://bsky.app/profile/fuso.eurosky.social" }
+  - title: "AlpCHI Conference 2026"
+    titlelink: "https://alpchi.org"
+    links:
+      - { name: "Mastodon", icon: "fab fa-mastodon", url: "https://hci.social/@AlpCHI" }
+      - { name: "LinkedIn", icon: "fab fa-linkedin", url: "https://www.linkedin.com/company/alpchi-conference" }
+      - { name: "Bluesky", icon: "fab fa-bluesky", url: "https://bsky.app/profile/alpchi.bsky.social" }
+      - { name: "Instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/alpchi.conference/" }
+  - title: "IEEE Pervasive Computing Magazine"
+    titlelink: "https://computer.org/pervasive"
+    links:
+      - { name: "Mastodon", icon: "fab fa-mastodon", url: "https://hci.social/@IEEEPervasive" }
+  - title: "Interactions Research Group"
+    titlelink: "https://interactions.ics.unisg.ch"
+    links:
+      - { name: "Mastodon", icon: "fab fa-mastodon", url: "https://mastodon.acm.org/@InteractionsUniSG" }
+      - { name: "LinkedIn", icon: "fab fa-linkedin", url: "https://www.linkedin.com/company/interactions-research-group" }
+      - { name: "YouTube", icon: "fab fa-youtube", url: "https://www.youtube.com/@interactionshsg2533" }
