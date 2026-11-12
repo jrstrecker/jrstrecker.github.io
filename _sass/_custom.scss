@@ -1125,8 +1125,8 @@ a.btn.btn--light { // beats the underline rule for .page__content a
    authors and venue come second, all controls stay quiet until hovered. */
 $ink: #2a3f52;      // dark ink of the menu gradient
 $hairline: #ecebe8; // menu border
-$ink-text: #5f6f7d;  // secondary text, WCAG AA: 5.2:1 on white, 4.9:1 on the pill tint
-$ink-icon: #7f8c97;  // icons and chevrons, at least 3:1 (non-text contrast)
+$ink-text: #4a5c6c;  // secondary text, WCAG AA: 6.9:1 on white, 6.5:1 on the pill tint
+$ink-icon: #6a7986;  // icons and chevrons, 4.5:1 on white, 4.2:1 on the tints
 
 .home-pubs {
   .publications-list-item {
@@ -1135,7 +1135,13 @@ $ink-icon: #7f8c97;  // icons and chevrons, at least 3:1 (non-text contrast)
     box-shadow: 0 1px 2px rgba($ink, 0.05);
   }
 
-  .pub-award-badge { color: #8a6508; } // darker gold, 4.9:1 on the badge background
+  // award: gold text only, 5.3:1 on white
+  .pub-award-badge {
+    padding: 0;
+    background: none;
+    border: none;
+    color: #8a6508;
+  }
 
   // 1. title: the only petrol, bold element of the card
   .publications-list-item h2 {
@@ -1188,7 +1194,7 @@ $ink-icon: #7f8c97;  // icons and chevrons, at least 3:1 (non-text contrast)
   .pub-details-outer {
     background: rgba($ink, 0.025);
     > summary {
-      font-weight: 400;
+      font-weight: 500; // as in the original card
       color: $ink-text;
     }
     > summary::after { color: $ink-icon; }
