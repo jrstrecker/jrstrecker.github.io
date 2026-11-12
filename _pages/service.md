@@ -5,12 +5,16 @@ excerpt: "Community Service"
 author_profile: true
 ---
 
-## Commitees
+## Special Interest Groups
+- [GI Special Interest Group ABIS – Adaptivity and User Modeling in Interactive Software Systems](https://fg-abis.gi.de/en/)
+    - Vice Chair
+
+## Committees
 - [AlpCHI Conference 2026](https://alpchi.org)
     - Web & Social Media Chair
 - [IoT Conference 2025](https://iot-conference.org/iot2025/)
     - Proceedings Chair
-- [Mensch und Computer 2024](https://muc2025.mensch-und-computer.de)
+- [Mensch und Computer 2025](https://muc2025.mensch-und-computer.de)
     - Short Paper AC
 - [CHI 2025](https://chi2025.acm.org/for-authors/late-breaking-work/)
     - Late-Breaking Work AC
