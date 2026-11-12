@@ -1118,17 +1118,17 @@ a.btn.btn--light { // beats the underline rule for .page__content a
   &:hover { color: #fff !important; }
 }
 
-/* Publication cards in the start page palette.
-   Preview on the start page only (wrapper .home-pubs in _pages/about.md).
-   Apply everywhere: drop the .home-pubs scope. Revert: delete this block and the wrapper.
-   Same elements and layout as before. Hierarchy: the title is the only strong element,
-   authors and venue come second, all controls stay quiet until hovered. */
+/* Publication cards and single paper pages in the start page palette.
+   Scope: .pub-styled, set for publications in _includes/archive-single.html and _layouts/single.html
+   (talk cards share the classes but stay unchanged).
+   Hierarchy: the title is the only strong element, authors and venue come second,
+   all controls stay quiet until hovered. */
 $ink: #2a3f52;      // dark ink of the menu gradient
 $hairline: #ecebe8; // menu border
 $ink-text: #4a5c6c;  // secondary text, WCAG AA: 6.9:1 on white, 6.5:1 on the pill tint
 $ink-icon: #6a7986;  // icons and chevrons, 4.5:1 on white, 4.2:1 on the tints
 
-.home-pubs {
+.pub-styled {
   .publications-list-item {
     background: #fff;
     border-color: $hairline;
@@ -1204,7 +1204,7 @@ $ink-icon: #6a7986;  // icons and chevrons, 4.5:1 on white, 4.2:1 on the tints
     border-color: $hairline !important;
     > summary { color: $ink-text; }
     > summary::after { color: $ink-icon; }
-    // plain heading instead of a toggle (flat_details=true): same look as the old summary row, no chevron
+    // plain heading instead of a toggle (cards in lists): same look as the old summary row, no chevron
     > h3.pub-details-heading {
       display: flex;
       align-items: center;

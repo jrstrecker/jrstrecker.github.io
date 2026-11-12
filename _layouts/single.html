@@ -20,9 +20,9 @@ layout: default
   {% include sidebar.html %}
 
   {% if page.title %}
-  <article class="page page_{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}" itemscope itemtype="http://schema.org/CreativeWork"> 
+  <article class="page page_{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}{% if page.collection == 'publications' %} pub-styled{% endif %}" itemscope itemtype="http://schema.org/CreativeWork"> 
     {% else %}
-    <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <article class="page{% if page.collection == 'publications' %} pub-styled{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
   {% endif %}
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}

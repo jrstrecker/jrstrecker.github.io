@@ -19,7 +19,7 @@
   {%- assign thumb_file = site.static_files | where: "path", thumb_path | first -%}
 {%- endif -%}
 
-<div class="{{ include.type | default: "list" }}__item" data-tags="{{ post.tags | join: ',' }}">
+<div class="{{ include.type | default: "list" }}__item{% if post.collection == 'publications' %} pub-styled{% endif %}" data-tags="{{ post.tags | join: ',' }}">
   <article class="archive__item publications-list-item{% if thumb_file %} has-thumb{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if thumb_file %}<a class="pub-thumb" href="{{ base_path }}{{ post.url }}" tabindex="-1" aria-hidden="true"><img src="{{ base_path }}{{ thumb_file.path }}" alt="" width="300" height="389" loading="lazy"></a>{% endif %}
     {% if include.type == "grid" and teaser %}
@@ -85,33 +85,31 @@
       {% if post.abstract or post.presentationurl or post.citation or post.bib %}
       
       <details class="pub-details-outer"><summary>Show Details</summary>
-        {%- comment -%} flat_details=true (start page): sections are plain blocks with headings, all shown with one click on Show Details {%- endcomment -%}
-        {%- if include.flat_details -%}{%- assign sec_tag = "div" -%}{%- assign head_tag = "h3" -%}{%- assign abs_open = "" -%}{%- else -%}{%- assign sec_tag = "details" -%}{%- assign head_tag = "summary" -%}{%- assign abs_open = " open" -%}{%- endif -%}
         <div class="pub-details-inner">
           {% if post.abstract %}
-          <{{ sec_tag }} class="pub-details-section"{{ abs_open }}><{{ head_tag }} class="pub-details-heading"><i class="fa fa-fw fa-file-alt fa-info-color" aria-hidden="true"> </i> Abstract</{{ head_tag }}>
+          <div class="pub-details-section"><h3 class="pub-details-heading"><i class="fa fa-fw fa-file-alt fa-info-color" aria-hidden="true"> </i> Abstract</h3>
           <p>{{ post.abstract }}</p>
-          </{{ sec_tag }}>
+          </div>
           {% endif %}
 
           {% if post.presentationurl %}
-          <{{ sec_tag }} class="pub-details-section"><{{ head_tag }} class="pub-details-heading"><i class="fa fa-fw fa-desktop fa-info-color" aria-hidden="true"> </i> Presentation</{{ head_tag }}>
+          <div class="pub-details-section"><h3 class="pub-details-heading"><i class="fa fa-fw fa-desktop fa-info-color" aria-hidden="true"> </i> Presentation</h3>
           <iframe class="presentation-iframe" data-src="{{ post.presentationurl }}" width="100%" height="500" frameborder="no" border="0" marginwidth="0" marginheight="0"></iframe>
           <a class="presentation-fallback btn btn--info-outline text-decoration-none" href="{{ post.presentationurl }}" target="_blank"><i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i> Download Presentation</a>
-          </{{ sec_tag }}>
+          </div>
           <script>if(!window._presIframesLoaded){window._presIframesLoaded=true;window.addEventListener('DOMContentLoaded',function(){if(window.innerWidth>768){document.querySelectorAll('.presentation-iframe[data-src]').forEach(function(f){f.src=f.dataset.src})}})}</script>
           {% endif %}
 
           {% if post.citation %}
-          <{{ sec_tag }} class="pub-details-section"><{{ head_tag }} class="pub-details-heading"><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Text Reference</{{ head_tag }}>
+          <div class="pub-details-section"><h3 class="pub-details-heading"><i class="fa fa-fw fa-bookmark fa-info-color" aria-hidden="true"> </i> Text Reference</h3>
           <blockquote><p>{{ post.citation }}</p></blockquote>
-          </{{ sec_tag }}>
+          </div>
           {% endif %}
 
           {% if post.bib %}
-          <{{ sec_tag }} class="pub-details-section"><{{ head_tag }} class="pub-details-heading"><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="true"> </i> BibTeX Reference</{{ head_tag }}>
+          <div class="pub-details-section"><h3 class="pub-details-heading"><i class="fa fa-fw fa-file-code fa-info-color" aria-hidden="true"> </i> BibTeX Reference</h3>
           <pre>{{ post.bib }}</pre>
-          </{{ sec_tag }}>
+          </div>
           {% endif %}
         </div>
       </details>
