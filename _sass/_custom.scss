@@ -1121,38 +1121,43 @@ a.btn.btn--light { // beats the underline rule for .page__content a
 /* Publication cards in the start page palette.
    Preview on the start page only (wrapper .home-pubs in _pages/about.md).
    Apply everywhere: drop the .home-pubs scope. Revert: delete this block and the wrapper.
-   Same elements and layout as before, only colours, weights and lines change. */
+   Same elements and layout as before. Hierarchy: the title is the only strong element,
+   authors and venue come second, all controls stay quiet until hovered. */
 $ink: #2a3f52;      // dark ink of the menu gradient
 $hairline: #ecebe8; // menu border
 
 .home-pubs {
-  // card: white with the menu's hairline instead of beige
   .publications-list-item {
     background: #fff;
     border-color: $hairline;
-    box-shadow: 0 1px 2px rgba($ink, 0.06);
+    box-shadow: 0 1px 2px rgba($ink, 0.05);
   }
 
-  // title: heavier and slightly tighter, like the name in the menu
+  // 1. title: the only petrol, bold element of the card
   .publications-list-item h2 {
+    font-size: 1.2em !important;
     font-weight: 700 !important;
     letter-spacing: -0.01em;
   }
+  .publications-list-item h2::after {
+    background: rgba($accent, 0.2);
+  }
 
-  // authors, venue, date: ink at 72%, like the role lines in the hero (white at 72%)
+  // 2. authors, venue, date: one quiet grey, like the role lines under the hero name
   .pub-meta {
-    color: rgba($ink, 0.72);
-    i { color: rgba($ink, 0.4); }
+    margin-bottom: 1em; // more air between the title block and the controls
+    color: rgba($ink, 0.6);
+    i { color: rgba($ink, 0.3); }
   }
   .pub-venue a {
     color: inherit !important;
-    text-decoration-color: rgba($ink, 0.25) !important;
+    text-decoration-color: rgba($ink, 0.2) !important;
     &:hover {
       color: $accent !important;
       text-decoration-color: rgba($accent, 0.4) !important;
     }
   }
-  // separator between venue and date: thin line instead of the middle dot glyph
+  // thin line instead of the middle dot glyph
   .pub-meta-sep {
     display: inline-block;
     align-self: center;
@@ -1160,40 +1165,39 @@ $hairline: #ecebe8; // menu border
     height: 0.9em;
     overflow: hidden;
     color: transparent;
-    background: rgba($ink, 0.25);
+    background: rgba($ink, 0.2);
   }
-
   .pub-type-pill {
     border-color: $hairline;
-    color: rgba($ink, 0.72);
+    color: rgba($ink, 0.5);
   }
 
-  .fa-info-color { color: $ink; }
+  // 3. controls: no colour of their own, petrol only on hover
+  .fa-info-color { color: rgba($ink, 0.35); }
 
-  // "Show Details" and "Teaser Video": petrol tint, as on the menu button hover
   .pub-details-outer {
-    background: rgba($accent, 0.04);
-    > summary { color: $ink; }
-    > summary::after { color: rgba($ink, 0.4); }
+    background: rgba($ink, 0.025);
+    > summary {
+      font-weight: 400;
+      color: rgba($ink, 0.7);
+    }
+    > summary::after { color: rgba($ink, 0.3); }
   }
 
-  // Abstract, Presentation, Text Reference, BibTeX
   .pub-details-section {
     border-color: $hairline !important;
-    > summary { color: $ink; }
-    > summary::after { color: rgba($ink, 0.3); }
-    blockquote { border-left-color: rgba($accent, 0.3); }
-    pre { background: rgba($accent, 0.03); }
+    > summary { color: rgba($ink, 0.7); }
+    > summary::after { color: rgba($ink, 0.25); }
+    blockquote { border-left-color: $hairline; }
+    pre { background: rgba($ink, 0.025); }
   }
 
-  // Press Article, Published Paper, Download PDF: outlined petrol, like "See all publications"
   .pub-action-pill {
-    background: transparent;
-    border-color: rgba($accent, 0.45);
-    color: $accent !important;
+    background: rgba($ink, 0.035);
+    border-color: transparent;
+    color: rgba($ink, 0.75) !important;
     &:hover {
       background: $accent;
-      border-color: $accent;
       color: #fff !important;
     }
   }
