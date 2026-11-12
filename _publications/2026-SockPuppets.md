@@ -8,7 +8,7 @@ venue: 'ACM Transactions on Recommender Systems'
 venuelink: "https://dl.acm.org/journal/tors"
 shortvenue: "ACM TORS"
 papertype: "Journal"
-paperurl: '/files/pdf/research/2026SockPuppets.pdf'
+paperurl: '/files/pdf/research/2026-SockPuppets.pdf'
 link: 'https://doi.org/10.1145/3795516'
 authors: "Luka Bekavac, Jannis Strecker-Bischoff, Kimberly Garcia, Simon Mayer, and Aurelia Tamò-Larrieux"
 citation: "Luka Bekavac, Jannis Strecker-Bischoff, Kimberly Garcia, Simon Mayer, and Aurelia Tamò-Larrieux. 2026. Scrutinizing Systemic Risks in Personalized Recommender Systems Through Sock-Puppet Auditing of VLOPs. ACM Trans. Recomm. Syst. 5, 1 (September 2026), 1–47. https://doi.org/10.1145/3795516 "

@@ -9,7 +9,7 @@ venuelink: "https://chi2024.acm.org/"
 shortvenue: "CHI EA '24"
 papertype: "Conference"
 link: 'https://doi.org/10.1145/3613905.3650965' 
-paperurl: '/files/pdf/research/2024-QRCoGlassboARd.pdf'
+paperurl: '/files/pdf/research/2024-GlassBoARd.pdf'
 videolink: 'https://www.youtube-nocookie.com/embed/31yi3k47XxM?si=V-Ze-1RyC3cndH7k'
 code: https://github.com/Interactions-HSG/GBoARd
 authors: "Kenan Bektaş, Adrian Pandjaitan, Jannis Strecker, and Simon Mayer"
