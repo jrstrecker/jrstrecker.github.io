@@ -83,7 +83,7 @@ analytics:
 # Site Author
 author:
   name             : "Jannis Strecker-Bischoff"
-  avatar           : "profile.jpg"
+  avatar           : "https://jsb.solidcommunity.net/public/profile-picture.jpg"
   bio              : 'PhD Student in Computer Science, <a href="https://ics.unisg.ch/chairs/simon-mayer-interaction-and-communication-based-systems/">University of St.Gallen</a>'
   roles            :
     - 'Associated Doctoral Student, <a href="https://ai.ethz.ch/about-us/people/associated.html">ETH AI Center</a>'

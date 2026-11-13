@@ -114,7 +114,7 @@
 {% if include.hero %}
 <section class="author-hero" itemscope itemtype="http://schema.org/Person">
 <div class="author-hero__inner">
-  <img class="author-hero__avatar" src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" itemprop="image">
+  <img class="author-hero__avatar" src="{% if author.avatar contains "://" %}{{ author.avatar }}{% else %}{{ author.avatar | prepend: "/images/" | prepend: base_path }}{% endif %}" alt="{{ author.name }}" itemprop="image">
   <div class="author-hero__text">
     <p class="author-hero__name" itemprop="name">{{ author.name | replace: "-", "&#8209;" }}</p>
     {% if author.bio %}<p class="author-hero__role" itemprop="jobTitle">{{ author.bio }}</p>{% endif %}
